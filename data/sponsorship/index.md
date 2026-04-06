@@ -134,18 +134,19 @@ If this firewall is ever perceived as compromised, AI-AA's credibility collapses
 
 ## Pipeline Tracker
 
-| Sponsor | Stage | Next Action | Owner | Notes |
-|---------|-------|-------------|-------|-------|
-| Microsoft | Research | Identify warm contacts | Sponsorships Director | AI for Accessibility team is entry point |
-| Google | Research | Identify warm contacts | Sponsorships Director | Google.org AI Opportunity Fund |
-| Anthropic | Research | Identify warm contacts | Sponsorships Director | Policy team / CEO office |
-| OpenAI | Research | Identify warm contacts | Sponsorships Director | Nonprofits program |
-| Meta | Research | Identify warm contacts | Sponsorships Director | AI Glasses Impact Grants |
+| Sponsor | Stage | Next Action | Owner | Target Date | Notes |
+|---------|-------|-------------|-------|-------------|-------|
+| Microsoft | Research Complete | Register for Ability Summit 2026 (May 19-20, Redmond); draft warm outreach to Jenny Lay-Flurrie (CAO) | Sponsorships Director | Apr 2026 | Entry: Lay-Flurrie → Spelhaug (Elevate). Ability Summit is the immediate warm-entry opportunity |
+| Google | Research Complete | Map warm intro path via Understood.org partnership or Google.org Accelerator application; draft outreach to Eve Andersson (Sr Dir, Products for All) | Sponsorships Director | Apr 2026 | Entry: Google.org / Accessibility team. AI Opportunity Fund + Impact Challenge are budget lines |
+| Anthropic | Research Complete | Apply for Claude for Nonprofits; identify warm intro via PAI or AI governance events (May 20, Seattle) | Sponsorships Director | Apr 2026 | Entry: Sarah Heck (Head of External Affairs) → Daniela Amodei. "AI-AA is built on Claude — most natural dog-fooding partnership" |
+| OpenAI | Research Complete | Apply for OpenAI for Nonprofits; contact Mike Buckley (Be My Eyes CEO) for warm intro to Anna Makanju (VP Global Impact) | Sponsorships Director | May 2026 | Entry: Be My Eyes → Anna Makanju → Chris Lehane (Global Affairs). No formal accessibility program — AI-AA fills the gap |
+| Meta | Research Complete | Contact Mike Buckley (Be My Eyes) for warm intro to Maxine Williams (VP Accessibility); monitor AI Glasses Impact Grant cycle | Sponsorships Director | Jun 2026 | Entry: Be My Eyes → Maxine Williams → Freddy Abnousi (VP Health Tech). Glasses are "accessibility tools by coincidence" — we make it by law |
 
 ## KB Sections
 
-- [[Corporate Sponsorship Acquistion]] — *The full outreach playbook*
+- [[Corporate Sponsorship Acquisition]] — *The full outreach playbook*
 - [[Pitch Materials]] — *Executive summaries, sponsor decks, proposals*
 - [[Sponsor Profiles]] — *Per-sponsor research, alignment analysis, outreach history*
+- [[Warm Introduction Mapping]] — *Conference calendar, per-sponsor warm intro paths, bridge contacts*
 - [[Grant Opportunities]] — *Foundation and government grant prospects*
 - [[Impact Reporting]] — *Templates and published reports for sponsors*

@@ -1,14 +1,14 @@
 ---
 title: User Stories
 created: 2026-04-05T00:00:00Z
-modified: 2026-04-05T00:00:00Z
+modified: 2026-04-06T00:00:00Z
 tags: [research, user-stories, evidence, disability, accessibility]
 order: 1
 ---
 
 # User Stories
 
-**Owner:** Research Director | **Target:** 15+ documented stories by Q3 2026
+**Owner:** Research Director | **Target:** 15+ documented stories by Q3 2026 | **Status: 15/15 core stories + 3 supplementary**
 
 Documented experiences of real people who rely on AI to comprehend written information. These stories are the human evidence that powers AI-AA's legal arguments, sponsor pitches, and public narrative.
 
@@ -204,6 +204,100 @@ Each user story should capture:
 
 ---
 
+### Story 12: Dyslexic Student — AI Chatbot as IEP Comprehension Tool
+
+| Field | Detail |
+|-------|--------|
+| **Who** | Makenzie Gilkison, 14, suburban Indianapolis, Indiana, with dyslexia (can sound out words but the process is so draining that comprehension suffers) |
+| **Setting** | Education — Franklin Township Community School Corporation |
+| **What she needed** | To read and comprehend school materials at grade level despite dyslexia making the decoding process exhaust her cognitive resources |
+| **How AI helped** | Uses a customized AI-powered chatbot, a word prediction program, and other AI tools that read for her. Her school district rolled out AI chatbots for special education students in high school in September 2024. She was named to the National Junior Honor Society. |
+| **What happened when blocked** | "I just assumed I was stupid." Before AI tools: "I would have just probably given up if I didn't have them." |
+| **Quote** | "I just assumed I was stupid" (about early years without AI). "I would have just probably given up if I didn't have them." |
+| **Source** | Associated Press, December 2024 (syndicated via Washington Times, VOA, Star Tribune): [AI is a game changer for students with disabilities](https://www.washingtontimes.com/news/2024/dec/26/ai-deemed-game-changer-students-disabilities-schoo/) |
+| **Consent status** | Public — named in AP wire story with family participation. Mother Nadine Gilkison is the district's technology integration supervisor. |
+
+---
+
+### Story 13: Son Using Claude Code for Mother's Disability Benefits Appeal
+
+| Field | Detail |
+|-------|--------|
+| **Who** | "Nunc" (pseudonym), a software engineer whose mother has severe spinal degeneration with osteoporotic vertebral fractures (L2, L3, L4) after 45 years of physically demanding work and multiple surgeries |
+| **Setting** | Government — disability benefits appeal (European pension and disability insurance agency) |
+| **What he needed** | To cross-reference 50+ scanned medical documents spanning 25+ years — including handwritten doctor's notes from 1998, CT/MRI scans, hospital discharge papers — against government disability regulations to identify errors in the commission's rejection of his mother's claim |
+| **How AI helped** | Used **Claude Code** (Anthropic) to OCR and analyze medical files, cross-reference dates and diagnoses, fetch official disability regulations from government websites, and build legal arguments mapping specific diagnoses to regulation paragraphs. Claude identified that multiple vertebral segments should sum to 50%+ disability (the benefits threshold), not the 30% initially recognized. Produced 11 iterative versions of a 230-line legal appeal with 30+ specific medical citations. |
+| **What happened when blocked** | The family was facing a rejected disability claim with no ability to parse decades of complex medical records against dense regulatory language. The commission's characterization of the condition as "congenital" was contradicted by imaging from 2000 that showed no pathological changes — a fact buried in the 50+ documents. |
+| **Quote** | "Here's how a programming tool became my most powerful ally in a deeply personal, completely non-technical challenge." |
+| **Source** | DEV Community, 2026: [I Used Claude Code to Write a Legal Appeal for My Mother's Disability Benefits](https://dev.to/nunc/i-used-claude-code-to-write-a-legal-appeal-for-my-mothers-disability-benefits-40f4) |
+| **Consent status** | Public — self-published under pseudonym. Mother's identity anonymized. |
+
+---
+
+### Story 14: Blind User — Ray-Ban Meta AI Glasses for Environmental Comprehension
+
+| Field | Detail |
+|-------|--------|
+| **Who** | Emeline Lakrout, 27, legally blind since age 8, New York City. U.S. National Paraclimbing Team member and NYC Marathon runner. |
+| **Setting** | Daily life — transit, restaurants, navigation |
+| **What she needed** | To read menus, subway signs, street corner signage, and other text-based environmental information independently |
+| **How AI helped** | Uses **Ray-Ban Meta AI glasses** with voice prompts ("Hey Meta, look and read this"). OCR reads and speaks text aloud — restaurant menus, subway signs, street identifiers. |
+| **What happened when blocked** | Before the glasses, accessing text-based information in daily life required more time and energy, limiting independence and increasing fatigue. |
+| **Quote** | "The glasses make my life easier. They make things faster and they make me able to do more in the day because it's just quicker and easier to do things and I feel less tired at the end of the day." |
+| **Source** | CBS News, 2025: [Meta's AI glasses could mean more independence for the blind community](https://www.cbsnews.com/news/meta-ai-glasses-blind-community/) |
+| **Consent status** | Public — named in CBS News feature with video segment |
+
+---
+
+### Story 15: Dyslexic Student — Microsoft Immersive Reader Transforms Academic Achievement
+
+| Field | Detail |
+|-------|--------|
+| **Who** | Elle-Mae (Elle) Taylor, university student in the UK, diagnosed with dyslexia during her first year at university |
+| **Setting** | Education — secondary school through university |
+| **What she needed** | To read and write essays, check emails for errors, and comprehend academic texts at the pace required for academic success |
+| **How AI helped** | Uses **Microsoft Immersive Reader** — page color, line focus, Read Aloud (text-to-speech), and Dictation features. Transformed essay quality and academic performance. Now a Microsoft intern who still uses Immersive Reader daily. |
+| **What happened when blocked** | Before Immersive Reader, educators told her to focus on sports and performing arts instead of academics. She had "messy handwriting and trouble with things like expressing her thoughts clearly in writing exams." |
+| **Quote** | "What Immersive Reader did was give me the ability to be on the same level as everyone else." / "I came out of A-Levels getting the highest mark you can get." |
+| **Source** | Microsoft Education Blog, June 2022: [How Immersive Reader Helped a Student Succeed in School and Life](https://www.microsoft.com/en-us/education/blog/2022/06/how-immersive-reader-helped-a-student-succeed-in-school-and-life/) |
+| **Consent status** | Public — named in Microsoft case study |
+
+---
+
+## Additional Stories (Beyond Target — For Cross-Team Use)
+
+### Supplementary Story A: Parents Using AI to Understand Child's IEP
+
+| Field | Detail |
+|-------|--------|
+| **Who** | Rosa Mendoza (Spanish-speaking parent, daughter with hearing loss, balance problems, and developmental delay at Glen Park Elementary, San Francisco); Shan Hong (parent who discovered 127-minute discrepancy between documented and actual services in her son's IEP) |
+| **Setting** | Education — San Francisco Unified School District |
+| **How AI helped** | Used **AiEP**, a free AI tool built by Innovate Public Schools and Northeastern University's Burnes Center for Social Change (funded by Chan Zuckerberg Foundation). AiEP translates IEPs into Spanish, Mandarin, Cantonese, and Vietnamese, then simplifies jargon into understandable summaries and generates personalized meeting prep checklists. About 200 SF families are testing it. |
+| **Source** | The Frisc (San Francisco), 2025: [This AI Software Translates Special Education Plans for SF Parents](https://thefrisc.com/this-ai-software-translates-special-education-plans-for-sf-parents/) |
+| **Consent status** | Public — named in press coverage |
+
+### Supplementary Story B: Family Uses Claude to Reduce $195K Hospital Bill to $33K
+
+| Field | Detail |
+|-------|--------|
+| **Who** | Anonymous user ("nthmonkey" on Threads), family of a man who died of a heart attack after 4 hours of ICU care with lapsed insurance |
+| **Setting** | Healthcare — medical billing |
+| **How AI helped** | Used **Claude** (Anthropic, $20/month subscription) to analyze the itemized bill. Claude identified ~$100,000 in duplicative "layered" charges, procedures marked as mutually exclusive, services marked "inpatient only" despite no admission, and regulatory coding violations. Drafted formal appeal letters. Bill reduced from $195,000 to $33,000 (83% reduction). |
+| **Source** | Tom's Hardware, October 2025: [Grieving family uses AI chatbot to cut hospital bill from $195,000 to $33,000](https://www.tomshardware.com/tech-industry/artificial-intelligence/grieving-family-uses-ai-chatbot-to-cut-hospital-bill-from-usd195-000-to-usd33-000-family-says-claude-highlighted-duplicative-charges-improper-coding-and-other-violations). Note: story is not independently verified. |
+| **Consent status** | Public — pseudonymous, self-posted to Threads |
+
+### Supplementary Story C: Epic MyChart Fragments Records, Blocking Disability Benefits Access
+
+| Field | Detail |
+|-------|--------|
+| **Who** | Larry Miller (diabetes complications, died while disability appeal pending — father unable to access medical records); John Hodges (multiple heart attacks, 2+ years gathering records, experienced homelessness and lost custody of daughter during process) |
+| **Setting** | Healthcare / Government — patient portal barriers affecting disability benefits claims |
+| **What happened** | Epic's MyChart architecture fragments records across provider-specific portals with separate logins. Two-factor authentication is "difficult or impossible" for many disabled people. Third-party tools (including AI) are restricted from aggregating records. |
+| **Source** | AADJ v. Epic Systems, filed March 9, 2026, US District Court for the Western District of Texas. Covered by [Becker's Hospital Review](https://www.beckershospitalreview.com/healthcare-information-technology/ehrs/epic-sued-over-claims-mychart-fragments-patient-medical-records/) |
+| **Consent status** | Public — named plaintiffs in federal lawsuit |
+
+---
+
 ## Stories by Sector (Summary)
 
 ### Healthcare
@@ -212,6 +306,8 @@ Each user story should capture:
 |---|-----|---------------|--------|
 | 6 | ADHD adult | Medical test results | ADDitude Magazine reader testimonial |
 | 9 | Blind/low-vision users | Medical documents, product labels | Be My Eyes / OpenAI / CNN |
+| B | Anonymous family | Hospital bill (CPT codes, regulatory compliance) | Tom's Hardware / Threads 2025 |
+| C | Larry Miller, John Hodges | Patient portal records for disability claims | AADJ v. Epic lawsuit 2026 |
 
 **Key statistic:** 40 million users turn to ChatGPT daily for health questions (Axios, January 2026). Three of every five US adults have sought medical advice from ChatGPT or another AI service (Boston Globe, February 2026).
 
@@ -223,6 +319,9 @@ Each user story should capture:
 |---|-----|---------------|--------|
 | 5 | Autistic writer | Research, educational content | Thinking Autism Guide |
 | 10 | 13 ADHD adults (research study) | Multi-type comprehension tasks | ACM 2025 peer-reviewed study |
+| 12 | Makenzie Gilkison, dyslexic student | School materials / AI chatbot | AP wire story 2024 |
+| 15 | Elle-Mae Taylor, dyslexic student | Academic essays, emails | Microsoft Education Blog 2022 |
+| A | Rosa Mendoza, Shan Hong (parents) | IEP documents (50+ pages) | The Frisc 2025 |
 
 **Key finding:** An Inside Higher Ed opinion piece argues: "If a tool helps level the playing field for students with disabilities or other disadvantages, ignoring it is not neutrality — it's negligence." Blanket AI bans "risk disproportionately harming students with disabilities who rely on text-to-speech and other AI-enabled supports." ([Inside Higher Ed, November 2025](https://www.insidehighered.com/opinion/views/2025/11/26/case-ai-accommodation-opinion))
 
@@ -230,7 +329,9 @@ Each user story should capture:
 
 ### Government
 
-*No individual stories documented yet from published sources.*
+| # | Who | Document Type | Source |
+|---|-----|---------------|--------|
+| 13 | "Nunc" (son), mother with spinal degeneration | Disability benefits appeal (50+ medical docs vs. regulations) | DEV Community 2026 |
 
 **Key context:** The National Academy of Social Insurance released a Phase One Report from its Task Force on Artificial Intelligence, Emerging Technology, and Disability Benefits (April 2025), noting that AI's "black box" nature presents "obvious and serious problems if a tool operates in government benefit determinations" — but this addresses AI used by agencies, not AI used by applicants to comprehend benefits paperwork. ([NASI Report](https://www.nasi.org/wp-content/uploads/2025/04/Phase-One-Report-Task-Force-on-Artificial-Intelligence-Emerging-Technology-and-Disability-Benefits.pdf))
 
@@ -341,11 +442,11 @@ In 2024, over 4,000 lawsuits were filed in federal and state courts by individua
 
 ### High-Priority Story Collection Needs
 
-1. **Government benefits navigation** — No published accounts found of specific individuals using AI to comprehend SSA, Medicaid, or VA application paperwork. This is the strongest gap and highest priority for original story collection.
-2. **Healthcare comprehension with blocking** — Need stories of patients who were specifically prevented from using AI tools on patient portal content and experienced harm as a result.
-3. **Students with IEPs/504 plans** — Need specific stories of students whose AI comprehension tools were blocked by school AI policies and who experienced educational harm.
-4. **Elderly users** — Very few published accounts of elderly people specifically using AI for document comprehension. Critical population for the narrative.
-5. **Employees navigating benefits enrollment** — No published accounts found of employees with disabilities using AI to comprehend workplace benefits documents.
+1. ~~**Government benefits navigation**~~ — **PARTIALLY FILLED** (Story 13: Claude Code for disability benefits appeal). Still need a U.S.-based SSA/Medicaid/VA story with a named individual.
+2. ~~**Healthcare comprehension with blocking**~~ — **FILLED** (Supplementary C: AADJ v. Epic lawsuit documents real harm from fragmented patient portals — Larry Miller died, John Hodges became homeless).
+3. ~~**Students with IEPs/504 plans**~~ — **FILLED** (Story 12: Makenzie Gilkison; Supplementary A: Rosa Mendoza and Shan Hong).
+4. **Elderly users** — **STILL OPEN.** Very few published accounts of elderly people specifically using AI for document comprehension. ElliQ companion robot stories exist but are not document-comprehension focused. Critical population for the narrative — requires original story collection.
+5. **Employees navigating benefits enrollment** — **STILL OPEN.** No published accounts found of employees with disabilities using AI to comprehend workplace benefits documents.
 
 ### Methodological Notes
 

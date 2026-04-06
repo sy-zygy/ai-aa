@@ -17,10 +17,10 @@ Per-sponsor research, alignment analysis, outreach history, and current status. 
 | Sponsor | Stage | Profile | Priority |
 |---------|-------|---------|----------|
 | Microsoft | Research | [[Microsoft]] | #1 |
-| Google | Research | Google (not started) | #2 |
-| Anthropic | Research | Anthropic (not started) | #3 |
-| OpenAI | Research | OpenAI (not started) | #4 |
-| Meta | Research | Meta (not started) | #5 |
+| Google | Research | [[Google]] | #2 |
+| Anthropic | Research | [[Anthropic]] | #3 |
+| OpenAI | Research | [[OpenAI]] | #4 |
+| Meta | Research | [[Meta]] | #5 |
 
 ## Tier 2: Strategic Supporters ($50K-$250K/year)
 

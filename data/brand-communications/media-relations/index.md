@@ -41,9 +41,9 @@ See [[Press Kit]] for full materials.
 | Mission summary | 1-page overview of AI-AA for journalists | **Drafted** |
 | Key facts sheet | Core statistics, legal references, scope | **Drafted** |
 | FAQ | Anticipated journalist questions with answers | **Drafted** |
-| Founder bio | Background, motivation, contact info | Not started |
+| Founder bio | Background, motivation, contact info | **Placeholder drafted** — awaiting CEO details |
 | High-res logo | Multiple formats (SVG, PNG, dark/light) | Not started |
-| Backgrounder | The legal argument in 2 pages | Not started (waiting on Policy doctrine memo) |
+| Backgrounder | The legal argument in 2 pages | **Draft v0 complete** (from doctrine memo exec summary) |
 | Spokesperson prep | Key messages, bridge phrases, anticipated hard questions | **Drafted** |
 | Story bank | Pre-approved user stories with consent for media use | Not started (waiting on Research) |
 

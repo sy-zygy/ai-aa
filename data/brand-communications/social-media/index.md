@@ -17,14 +17,53 @@ order: 2
 - **Cadence:** 3-5 posts/week
 - **Content mix:** Long-form thought leadership (40%), policy updates (25%), milestone celebrations (20%), engagement/amplification (15%)
 - **Tone:** Professional, evidence-based, ROI-aware for sponsors
-- **Account status:** Not created
+- **Account status:** NOT CREATED — blocked, needs human action (see below)
+
+**LinkedIn setup plan:**
+- Account type: LinkedIn Company Page ("AI Access Alliance")
+- Tagline: "Everyone deserves to understand."
+- Description: "AI Access Alliance is a disability-rights initiative building the legal and policy infrastructure to ensure AI comprehension tools are recognized as accessibility accommodations under existing law."
+- Industry: Non-profit Organization Management
+- Company size: 1-10
+- Website: [TBD — link to AI-AA website when ready]
+- Logo: [Pending — needs design]
+- Banner: [Pending — needs design]
+- Initial admin: CEO (or designated human operator)
 
 ### X/Twitter
 - **Audience:** General public, disability advocates, journalists, activists, tech community
 - **Cadence:** 5-7 posts/week
 - **Content mix:** Human stories/threads (35%), news reactions (25%), policy explainers (20%), coalition amplification (20%)
 - **Tone:** Human, urgent, shareable, thread-friendly
-- **Account status:** Not created
+- **Account status:** NOT CREATED — blocked, needs human action (see below)
+
+**X/Twitter setup plan:**
+- Handle: @AIAccessAlliance (or @AI_AccessAlliance if taken)
+- Display name: AI Access Alliance
+- Bio: "Everyone deserves to understand. | Building the legal & policy infrastructure so AI comprehension tools are recognized as accessibility rights. | A disability-rights initiative."
+- Location: United States
+- Website: [TBD]
+- Profile image: [Pending — needs logo]
+- Banner: [Pending — needs design]
+- Pinned tweet: Launch thread (L2)
+
+### Account Creation Blocker
+
+**Status: BLOCKED — requires human action.**
+
+AI agents cannot create social media accounts. This requires a human operator to:
+1. Create a LinkedIn Company Page using a personal LinkedIn account as admin
+2. Create an X/Twitter account (requires phone number verification)
+3. Grant posting access to designated team members or scheduling tools
+
+**What's needed to unblock:**
+- A human (CEO or Operations Director) to spend ~30 minutes creating both accounts
+- An organizational email address for account registration (does this exist?)
+- A phone number for X/Twitter verification
+- Logo/profile image (can use a text placeholder initially — update later)
+- Decision on who has admin/posting access
+
+**Once accounts exist, we can immediately begin posting.** 22 reviewed posts are ready. The content calendar is mapped. The blocker is purely operational — account creation.
 
 ## Content Templates
 

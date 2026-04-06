@@ -126,6 +126,37 @@ A: "They should listen to people with disabilities — that's our operating prin
 
 ---
 
+## Founder Bio
+
+**Gabriel Guest** is the founder and CEO of AI Access Alliance. [PENDING CEO REVIEW — details needed: professional background, what led to founding AI-AA, relevant prior experience in accessibility/tech/policy, personal connection to the mission if any.]
+
+*Draft placeholder — CEO to provide biographical details for completion. Key elements needed:*
+- *Professional background and relevant experience*
+- *What motivated founding AI-AA (origin story)*
+- *Any personal connection to accessibility or disability rights*
+- *Prior work in tech, policy, or advocacy*
+- *Education (optional)*
+
+---
+
+## Backgrounder — Draft v0 (from Doctrine Memo Executive Summary)
+
+**AI Comprehension Tools as Auxiliary Aids: The Legal Argument**
+
+The Americans with Disabilities Act requires covered entities — including healthcare providers, educational institutions, government agencies, and employers — to provide "auxiliary aids and services" to ensure effective communication with people who have disabilities. This category was deliberately designed to be technology-neutral and to evolve over time.
+
+For three decades, this evolution has been consistent: TTY devices in the 1990s, screen readers in the 2000s, captioned video and accessible websites in the 2010s. Each generation of technology was recognized under the same legal principle without requiring new legislation.
+
+AI comprehension tools — software that helps users summarize, explain, define, and translate complex text into plain language — are the next step in this progression. For people with cognitive disabilities, learning disabilities, and neurological conditions, these tools serve the same function as a screen reader does for a blind user: they make information that already belongs to the person actually accessible to them.
+
+**The policy ask:** AI Access Alliance is calling on federal agencies (DOJ, HHS, ED) to issue guidance confirming that user-authorized AI comprehension tools can qualify as auxiliary aids under the ADA, Section 504, and Section 1557. This is an interpretation of existing law, not a request for new legislation.
+
+**The stakes:** Institutions are already blocking these tools — hospitals preventing copy-paste on patient portals, universities implementing blanket AI bans without disability exemptions, government benefits systems producing documents too complex for the populations they serve. Each of these actions may constitute a barrier to effective communication under existing law.
+
+*Full doctrine memo (v1.0) expected June 2026. This backgrounder will be updated with additional evidence and citations as the memo develops.*
+
+---
+
 ## Asset Checklist
 
 | Asset | Status |
@@ -134,7 +165,7 @@ A: "They should listen to people with disabilities — that's our operating prin
 | Key facts sheet (above) | **Drafted** |
 | FAQ (above) | **Drafted** |
 | Spokesperson prep (above) | **Drafted** |
-| Founder bio | Not started |
+| Founder bio | **Placeholder drafted** — awaiting CEO details |
 | High-res logo (SVG, PNG, dark/light) | Not started |
-| Backgrounder (2-page legal argument) | Not started — depends on Policy doctrine memo |
+| Backgrounder (2-page legal argument) | **Draft v0 complete** (from doctrine memo exec summary) |
 | Story bank (pre-approved user stories for media) | Not started — depends on Research user stories |

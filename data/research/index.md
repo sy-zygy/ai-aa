@@ -1,7 +1,7 @@
 ---
 title: Research & Evidence
 created: 2026-04-05T00:00:00Z
-modified: 2026-04-05T00:00:00Z
+modified: 2026-04-06T00:00:00Z
 tags: [research, evidence, user-stories, case-studies, advisory-council, accessibility]
 order: 3
 ---
@@ -62,7 +62,7 @@ Real experiences of people who rely on AI to comprehend written information. Eac
 - Elderly users navigating complex digital systems
 - Non-native speakers with learning disabilities
 
-**Target:** 15+ documented stories by Q3 2026
+**Target:** 15+ documented stories by Q3 2026 | **Status:** 15/15 core + 3 supplementary
 
 ### 2. Sector Case Studies
 
@@ -146,8 +146,9 @@ Understanding and documenting the opposition to inform our arguments:
 
 ## KB Sections
 
-- [[User Stories]] — *Documented experiences of people using AI for comprehension*
+- [[User Stories]] — *15 documented stories + 3 supplementary (target met)*
 - [[Sector Case Studies]] — *Healthcare, education, government, legal, employment*
-- [[Advisory Council]] — *Expert advisory group candidates, profiles, and recruitment status*
-- [[Harm Documentation]] — *Systematic record of harms from blocked AI comprehension access*
+- [[Advisory Council]] — *12 candidates identified across all 6 categories (0 recruited)*
+- [[Harm Documentation]] — *2 documented cases (AADJ v. Epic, Medicaid unwinding)*
+- [[Evidence Data for Doctrine Memo]] — *Reading-level data, AI accuracy, auxiliary aid error rates — keyed to memo sections*
 - [[Reliability Research]] — *AI accuracy, safety research, and safeguard frameworks*

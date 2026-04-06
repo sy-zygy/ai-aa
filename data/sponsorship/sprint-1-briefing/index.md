@@ -93,12 +93,12 @@ As you build sponsor profiles and pitch materials, you'll need inputs from other
 
 ## Success Criteria for Sprint 1
 
-- [ ] All 5 Tier 1 sponsor profiles created with substantive research
-- [ ] Corporate Sponsorship Acquisition playbook page built
-- [ ] Sponsor Deck outline created
-- [ ] Warm introduction paths identified for top 3 targets
-- [ ] Pipeline tracker updated with real next actions (not just "identify warm contacts" for everyone)
-- [ ] Grant Opportunities page with initial research
+- [x] All 5 Tier 1 sponsor profiles created with substantive research *(completed 2026-04-05)*
+- [x] Corporate Sponsorship Acquisition playbook page built *(completed 2026-04-05)*
+- [x] Sponsor Deck outline created *(completed 2026-04-05, v0.2 content draft)*
+- [x] Warm introduction paths identified for top 3 targets *(completed 2026-04-05)*
+- [x] Pipeline tracker updated with real next actions *(completed 2026-04-05)*
+- [x] Grant Opportunities page with initial research *(completed 2026-04-05)*
 
 ## Timeline
 

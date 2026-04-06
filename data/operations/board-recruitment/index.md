@@ -1,7 +1,7 @@
 ---
 title: Board Recruitment
 created: '2026-04-05T00:00:00.000Z'
-modified: '2026-04-05T23:41:06.639Z'
+modified: '2026-04-06T00:00:00.000Z'
 tags:
   - operations
   - board
@@ -39,16 +39,33 @@ order: 4
 
 ## Pipeline
 
-*No candidates in pipeline yet.*
-
 | Stage | Candidates |
 |-------|-----------|
-| **Identified** | — |
+| **Identified** | [[Michael Ashley Stein]] (Harvard), [[Colin Killick]] (ASAN), [[Nicole Bohn]] (DREDF) |
 | **Researched** | — |
-| **Vetted** | — |
+| **Vetted** | [[Maria Town]] (AAPD) — COI: Low risk, [[Haben Girma]] (Independent) — COI: Manageable, [[Ariana Aboulafia]] (CDT) — COI: Low risk |
 | **Approached** | — |
 | **Interested** | — |
 | **Committed** | — |
+
+### Pipeline Summary
+
+| Candidate | Seat Category | Lived Experience | AI/Tech Knowledge | Priority |
+|-----------|--------------|-----------------|-------------------|----------|
+| Maria Town | Disability Rights | Yes (CP) | Moderate (AAPD-CDT AI report) | High |
+| Ariana Aboulafia | Legal-Policy / Tech | Yes | High (AI + disability lead) | High |
+| Haben Girma | Disability Rights | Yes (Deafblind) | Moderate (advocacy) | High |
+| Michael Ashley Stein | Legal/Policy | Yes | Low | High |
+| Colin Killick | Disability Rights (ND) | Likely (verify) | Low | Medium-High |
+| Nicole Bohn | Legal/Policy + Governance | Unknown (verify) | Low | Medium-High |
+
+### Gap Analysis
+
+This initial slate covers disability rights leaders (Town, Girma, Killick), legal/policy experts (Stein, Aboulafia, Bohn), and has some accessibility technology overlap (Aboulafia, Girma). Remaining gaps:
+- **Dedicated accessibility technology practitioner** — AT professional, accessibility engineer, or UX researcher with hands-on technical experience
+- **Nonprofit financial governance expert** — CPA, auditor, or finance professional with disability-rights alignment and 501(c)(3) compliance experience
+
+Next research wave should target these two gaps.
 
 ## Candidate Sources
 
