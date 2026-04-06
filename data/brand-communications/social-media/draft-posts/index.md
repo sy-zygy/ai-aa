@@ -396,12 +396,189 @@ Social media posts drafted and ready for publishing once accounts are live. Orga
 
 ---
 
+## Human Story Posts (From Documented User Stories)
+
+These posts are based on real, publicly documented user stories from the Research team. All individuals named below have self-published or consented to press coverage under their own names.
+
+---
+
+### H1 — X/Twitter: Hadrien's Story (Dyslexia + Professional Writing)
+
+> **1/** Meet Hadrien Chatelet. He's a branding consultant. He has dyslexia.
+>
+> Before AI, writing a single client email could take him an entire day. Not because his ideas were bad — but because the mechanics of written language fought him at every step.
+>
+> **2/** Then he found ChatGPT.
+>
+> Now he drafts emails, writes website copy, and produces strategic documents for clients — at the same pace as his peers.
+>
+> "I am a dyslexic, and ChatGPT has changed my life."
+>
+> **3/** Hadrien says AI has given him "the confidence to stand alongside his peers and clients."
+>
+> He's not using AI to cheat. He's using it to translate his ideas into professional written form — something most people do effortlessly but that dyslexia makes agonizing.
+>
+> **4/** This is what AI comprehension access looks like in practice: a tool that lets someone participate equally in professional life.
+>
+> And this is what's at stake when institutions block AI tools without considering who depends on them.
+>
+> Everyone deserves to understand.
+
+**Pillar:** 1 + 2 | **Audience:** General public, employers, sponsors | **CTA:** Follow + story submission | **Source:** LinkedIn article (public, self-published)
+
+---
+
+### H2 — LinkedIn: Ben Whittle's Story (Dyslexia + Small Business)
+
+> **A pool installer in rural England was losing clients because of his dyslexia.**
+>
+> Ben Whittle runs Ashridge Pools. He's good at his job. But every time a new client sent an email, he worried his response would "mess up" the relationship. Dyslexia made professional correspondence a minefield.
+>
+> Then a client who happened to be a tech consultant built him a simple AI-powered email tool. It took 15 minutes.
+>
+> The tool reads incoming emails, helps Ben draft responses, and handles the grammar and professional polish that dyslexia makes difficult.
+>
+> The result? Ashridge Pools landed its first major contract — worth approximately $260,000.
+>
+> This isn't about AI replacing human skills. It's about AI removing a barrier that had nothing to do with Ben's actual expertise. He was always a great pool installer. Now his emails match.
+>
+> When we talk about AI as an accessibility tool, this is what we mean. Not abstract technology. A real person, doing real work, with a real barrier removed.
+>
+> AI Access Alliance exists to ensure that tools like the one Ben depends on are recognized and protected as accessibility accommodations — not blocked or banned.
+>
+> Everyone deserves to understand.
+
+**Pillar:** 1 + 3 | **Audience:** Sponsors, employers, small business | **CTA:** Follow | **Source:** Washington Post, BuzzFeed News, Euronews (public, named coverage)
+
+---
+
+### H3 — X/Twitter: Pete Cann's Story (Autism + ADHD + Executive Function)
+
+> **1/** Pete Cann is autistic and has ADHD. He describes the daily reality of executive function challenges most people never think about:
+>
+> "Emails can sit unsent because replies feel too complex to tackle."
+>
+> He once delayed filling out a single form for 18 months.
+>
+> **2/** Not because he's lazy. Not because he doesn't care. Because his brain processes written tasks differently — and without support, even simple forms become paralyzing.
+>
+> **3/** ChatGPT changed that. Pete uses it as a personal assistant: drafting communications, breaking down complex tasks, organizing thoughts.
+>
+> The memory function learns his work style, so he's not starting from scratch every time.
+>
+> **4/** "Even on the free tier, ChatGPT is a useful accessibility tool that helps me function, stay organized, and move forward."
+>
+> Free. Accessible. Life-changing. And currently — unprotected.
+>
+> **5/** For Pete and millions like him, AI isn't a productivity hack. It's the difference between participating in professional life and being locked out by paperwork.
+>
+> @AIAccessAlliance is working to make sure these tools are recognized as the accessibility aids they are.
+
+**Pillar:** 2 + 1 | **Audience:** Neurodivergent community, general public, advocates | **CTA:** Follow | **Source:** Personal blog (public, self-published)
+
+---
+
+### H4 — LinkedIn: Hayley Staunton's Story (Dyslexia + C-Suite)
+
+> **"Now I'm rewarded for my creativity, not my spelling."**
+>
+> Hayley Staunton is Chief Marketing Officer at a property-tech startup. She has dyslexia.
+>
+> For years, her professional output was judged by spelling and grammar rather than the quality of her ideas. In a role that demands constant written communication — strategy documents, presentations, emails — dyslexia created a persistent gap between what she knew and what she could put on paper.
+>
+> ChatGPT closed that gap.
+>
+> Now Hayley focuses on strategic and creative thinking — the actual work of a CMO. The mechanics of written communication, the part that had nothing to do with her talent, no longer hold her back.
+>
+> This is what's lost when institutions ban AI tools without considering accessibility: not just convenience, but careers. People like Hayley don't need AI to think for them. They need it to express what they're already thinking.
+>
+> AI Access Alliance is building the legal and policy framework to ensure that AI comprehension and communication tools are recognized as accessibility accommodations — so that the next Hayley doesn't have to wait years for a tool that already exists.
+>
+> Everyone deserves to understand.
+
+**Pillar:** 1 + 2 | **Audience:** Sponsors, corporate professionals, HR | **CTA:** Follow | **Source:** Euronews (public, named interview)
+
+---
+
+### H5 — X/Twitter: The "Life Raft" Study (ADHD Research)
+
+> **1/** A peer-reviewed study asked 13 adults with ADHD to track their ChatGPT use for 7 days.
+>
+> The title of the paper says it all:
+>
+> "A little bit of a life raft."
+>
+> **2/** Participants described using AI to:
+> — Bridge communication gaps between neurotypical and neurodivergent thinking
+> — Break down tasks that executive function made overwhelming
+> — Draft communications they couldn't start on their own
+> — Regulate emotions when frustration threatened to derail work
+>
+> **3/** This wasn't a tool they were assigned. It was a tool they found and adopted themselves — because it addressed needs that nothing else did.
+>
+> The researchers noted: "adopted by, rather than designed for, the ADHD community."
+>
+> **4/** When a peer-reviewed study describes an AI tool as "a life raft" for people with ADHD — and institutions are banning that tool without disability exemptions — something is wrong.
+>
+> The evidence is building. The question is whether policy will follow.
+>
+> @AIAccessAlliance is making sure it does.
+
+**Pillar:** 2 + 4 | **Audience:** Researchers, advocates, policymakers | **CTA:** Follow | **Source:** ACM 2025 conference paper (peer-reviewed)
+
+---
+
+### H6 — LinkedIn: Be My AI — Blind and Low-Vision Users
+
+> **The National Federation of the Blind called it "one of the most exciting technological assistance solutions we have ever evaluated."**
+>
+> Be My AI, built on GPT-4, gives blind and low-vision users something no previous assistive technology could: the ability to have a conversation about visual content.
+>
+> A user navigated an entire railway system using AI-generated map descriptions and step-by-step directions. Others use it to read product labels, comprehend medical documents, and understand environmental signage.
+>
+> Microsoft deployed it across their accessibility support channels. The results: 90% successful resolution rate, queries solved in 4 minutes (down from 12), and 4.85 out of 5.0 user satisfaction.
+>
+> 250 million people globally are blind or have low vision. As NFB President Mark Riccobono put it: "Every company, non-profit, academic institution, and public sector organization has both a moral and business imperative to better serve our community."
+>
+> This is the same argument AI Access Alliance makes for cognitive comprehension tools. When AI demonstrably helps people with disabilities access information, institutions have an obligation to recognize it — not block it.
+>
+> The legal principle is the same. The population in need is larger. The tools already work.
+>
+> Everyone deserves to understand.
+
+**Pillar:** 1 + 3 | **Audience:** Sponsors, policymakers, tech industry | **CTA:** Follow + learn more | **Source:** OpenAI case study, CNN, NFB (public, organizational accounts)
+
+---
+
+### H7 — X/Twitter: Lynn White's Story (Legal Comprehension)
+
+> **1/** Lynn White was facing eviction from her trailer park in Long Beach, California.
+>
+> She'd already lost a jury trial. She believed she had legal protections under Covid-era rules. But understanding court procedures well enough to file an appeal? That required legal knowledge she didn't have.
+>
+> **2/** She couldn't afford another lawyer. So she turned to ChatGPT.
+>
+> The AI identified potential procedural errors in the judge's decisions, explained what legal actions she could take, and helped her draft responses to the court.
+>
+> **3/** Lynn is "one of several litigants NBC spoke to who represented themselves with the help of AI and came out on top."
+>
+> A paralegal told NBC: "It really started to accelerate around spring 2025. I've seen more pro se litigants in the last year than probably my entire career."
+>
+> **4/** AI didn't replace a lawyer. It gave Lynn the ability to *understand* her own legal situation — something the system assumes everyone can do but millions cannot.
+>
+> That's comprehension access. That's what @AIAccessAlliance is working to protect.
+
+**Pillar:** 2 + 3 | **Audience:** General public, legal community, advocates | **CTA:** Follow | **Source:** NBC News 2025 (public, named)
+
+---
+
 ## Content Notes
 
-- All posts avoid naming real individuals (pending user stories from Research)
+- Human story posts (H1-H7) use real, publicly documented individuals with public consent
+- All prior posts (L, E, P, S, T series) avoid naming real individuals and use hypothetical scenarios
 - Statistics cited (26% literacy, 61M disability) are from NAAL/CDC — sources to be confirmed before publishing
 - Scenario posts use composite/hypothetical examples clearly framed as scenarios
 - Thought leadership posts (T1-T5) focus on framing and education that doesn't require user stories
 - All posts follow [[Brand & Voice Guide]] voice principles
 - Legal claims to be reviewed by Policy Director before publishing
-- **Draft inventory:** 15 posts drafted, 0 published
+- **Draft inventory:** 22 posts drafted, 0 published

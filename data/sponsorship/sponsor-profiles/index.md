@@ -8,7 +8,7 @@ order: 2
 
 # Sponsor Profiles
 
-**Owner:** Development Director | **Updated:** 2026-04-05
+**Owner:** Sponsorships Director | **Updated:** 2026-04-06
 
 Per-sponsor research, alignment analysis, outreach history, and current status. Each profile is the single source of truth for that sponsor relationship.
 

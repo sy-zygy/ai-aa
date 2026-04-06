@@ -1,7 +1,7 @@
 ---
-title: Corporate Sponsorship Acquistion
+title: Corporate Sponsorship Acquisition
 created: '2026-04-05T21:45:13.543Z'
-modified: '2026-04-05T22:32:52.021Z'
+modified: '2026-04-06T00:59:02.491Z'
 tags: []
 ---
 # AI Access Alliance — Sponsor Outreach Playbook

@@ -8,7 +8,7 @@ order: 1
 
 # Pitch Materials
 
-**Owner:** Development Director | **Status:** In Development | **Updated:** 2026-04-05
+**Owner:** Sponsorships Director | **Status:** In Development | **Updated:** 2026-04-06
 
 All sponsor-facing documents. Each piece is designed for a specific moment in the outreach sequence — from first contact to close.
 

@@ -8,9 +8,9 @@ order: 4
 
 # Sponsorship & Funding
 
-**Owner:** Development Director | **Status:** Active | **Updated:** 2026-04-05
+**Owner:** Sponsorships Director | **Status:** Active | **Updated:** 2026-04-06
 
-The Development department is AI-AA's revenue engine. Without funding, the doctrine memo gathers dust, the coalition never forms, and the mission dies. This department turns AI-AA's compelling mission into committed dollars — and ensures sponsors understand they are funding a disability-rights initiative, not buying influence over it.
+The Sponsorships department is AI-AA's revenue engine. Without funding, the doctrine memo gathers dust, the coalition never forms, and the mission dies. This department turns AI-AA's compelling mission into committed dollars — and ensures sponsors understand they are funding a disability-rights initiative, not buying influence over it.
 
 ## Department Scope
 
@@ -136,11 +136,11 @@ If this firewall is ever perceived as compromised, AI-AA's credibility collapses
 
 | Sponsor | Stage | Next Action | Owner | Notes |
 |---------|-------|-------------|-------|-------|
-| Microsoft | Research | Identify warm contacts | Development Director | AI for Accessibility team is entry point |
-| Google | Research | Identify warm contacts | Development Director | Google.org AI Opportunity Fund |
-| Anthropic | Research | Identify warm contacts | Development Director | Policy team / CEO office |
-| OpenAI | Research | Identify warm contacts | Development Director | Nonprofits program |
-| Meta | Research | Identify warm contacts | Development Director | AI Glasses Impact Grants |
+| Microsoft | Research | Identify warm contacts | Sponsorships Director | AI for Accessibility team is entry point |
+| Google | Research | Identify warm contacts | Sponsorships Director | Google.org AI Opportunity Fund |
+| Anthropic | Research | Identify warm contacts | Sponsorships Director | Policy team / CEO office |
+| OpenAI | Research | Identify warm contacts | Sponsorships Director | Nonprofits program |
+| Meta | Research | Identify warm contacts | Sponsorships Director | AI Glasses Impact Grants |
 
 ## KB Sections
 

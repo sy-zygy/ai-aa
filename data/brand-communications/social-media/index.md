@@ -94,7 +94,8 @@ See [[Draft Posts]] for all drafted social media posts ready for review and sche
 - 2 scenario posts (X, no real person required) — ready for review
 - 3 thought leadership posts (2 LinkedIn, 1 X thread) — ready for review
 - 2 framing posts (1 X thread, 1 LinkedIn) — ready for review
-- **Total: 15 posts drafted, 0 published**
+- 7 human story posts (4 X threads, 3 LinkedIn) — ready for review, based on Research team's documented user stories
+- **Total: 22 posts drafted, 0 published**
 
 ## Metrics to Track
 

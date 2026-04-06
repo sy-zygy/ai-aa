@@ -1,14 +1,14 @@
 ---
 title: Strategy & Roadmap
 created: 2026-04-05T00:00:00Z
-modified: 2026-04-05T00:00:00Z
+modified: 2026-04-06T00:00:00Z
 tags: [strategy, roadmap, milestones, leadership]
 order: 1
 ---
 
 # Strategy & Roadmap
 
-**Owner:** CEO | **Status:** Active | **Updated:** 2026-04-05
+**Owner:** CEO | **Status:** Active | **Updated:** 2026-04-06
 
 This is AI Access Alliance's strategic hub. It defines where we're going, how we get there, and how we measure progress. Everything in this section flows from the [[AI Access Alliance Overview]] charter.
 
@@ -29,7 +29,7 @@ This means: by end of year one, at least one federal agency has issued guidance,
 | # | Milestone | Owner | Target | Status |
 |---|-----------|-------|--------|--------|
 | 1 | Publish core doctrine memo | Policy Director | Q2 2026 | Not started |
-| 2 | Secure 3-5 founding corporate sponsors | Development Director | Q3 2026 | Outreach planning |
+| 2 | Secure 3-5 founding corporate sponsors | Sponsorships Director | Q3 2026 | **Sprint 1 active** — building profiles, playbook, deck |
 | 3 | Recruit advisory council (7-12 members) | Operations Director + Research Director | Q2-Q3 2026 | Not started |
 | 4 | Launch public presence (website + social) | Communications Director | Q2 2026 | Website v0.1 exists |
 | 5 | Publish evidence base (15+ user stories, 5 case studies) | Research Director | Q3 2026 | Not started |
@@ -66,7 +66,7 @@ Each department owns a section of the KB and a set of deliverables that feed the
 |------------|-------|------------|---------------------|
 | [[Legal & Policy]] | Policy Director | `/legal-policy/` | The legal and doctrinal foundation — the "why this is already the law" argument |
 | [[Research & Evidence]] | Research Director | `/research/` | The empirical proof — human stories, harm documentation, expert validation |
-| [[Sponsorship & Funding]] | Development Director | `/sponsorship/` | The funding engine — corporate sponsors, grants, donor pipeline |
+| [[Sponsorship & Funding]] | Sponsorships Director | `/sponsorship/` | The funding engine — corporate sponsors, pitch materials, sponsor pipeline |
 | [[Brand & Communications]] | Communications Director | `/brand-communications/` | The public voice — narrative, social media, coalition comms, media relations |
 | [[Operations]] | Operations Director | `/operations/` | The organizational backbone — 501(c)(3), governance, board, advisory council |
 
@@ -104,3 +104,4 @@ Major strategic decisions are recorded here for institutional memory.
 | 2026-04-05 | Prioritize corporate sponsors over grants | Faster path to meaningful funding; sponsor alignment is natural given their existing accessibility programs |
 | 2026-04-05 | AI-first team of 6 agents | Lean, fast, no overhead — matches a zero-budget startup. Human founder retains decision authority. |
 | 2026-04-05 | All 5 directors formally launched | Green light for all departments to begin work with autonomy. Directors prioritize their own workstreams as domain experts. CEO provides mission alignment and cross-team coordination, not micromanagement. |
+| 2026-04-06 | Sponsorships Director activated with Sprint 1 briefing | Director has strong KB foundation (hub, exec summary, profiles template) but no operational content yet. Sprint 1 priorities: Tier 1 sponsor profiles, acquisition playbook, sponsor deck, warm intro mapping. Target: outreach-ready by mid-April. |

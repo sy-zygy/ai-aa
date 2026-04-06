@@ -92,7 +92,7 @@ The KB is organized into department-owned sections. Each department director man
 | [[Strategy & Roadmap]] | CEO | Year-one milestones, strategic priorities, multi-year vision, decision log |
 | [[Legal & Policy]] | Policy Director | Core doctrine memo, guidance petitions, model policies, trust & safety guardrails, legal research |
 | [[Research & Evidence]] | Research Director | [[User Stories]], [[Sector Case Studies]], [[Advisory Council]], [[Harm Documentation]], reliability research |
-| [[Sponsorship & Funding]] | Development Director | [[Corporate Sponsorship Acquistion]], pitch materials, sponsor profiles, grant opportunities, pipeline |
+| [[Sponsorship & Funding]] | Sponsorships Director | [[Corporate Sponsorship Acquistion]], pitch materials, sponsor profiles, pipeline |
 | [[Brand & Communications]] | Communications Director | [[Brand & Voice Guide]], [[Content Strategy]], [[Social Media]], [[Media Relations]], [[Coalition Communications]] |
 | [[Operations]] | Operations Director | [[Agent Team]], [[Governance]], [[Non-Profit Formation]], [[Board Recruitment]], budget & finance |
 | [[Website]] | Communications Director | The AI-AA website |

@@ -40,12 +40,13 @@ All content maps to one of four messaging pillars (from [[Brand & Voice Guide]])
 |-------------|-------------|--------|
 | Organizational launch posts (who we are, why now) | 5 | **5 drafted** |
 | Educational/explainer posts (auxiliary aids, ADA basics) | 5 | **5 drafted** (added T5 "What we mean by comprehension" + T2 "Universal design") |
-| Human story drafts | 10 | Waiting on Research |
+| Human story drafts | 10 | **7 drafted** (H1-H7 — Hadrien, Ben, Pete, Hayley, ADHD study, Be My AI, Lynn White) |
 | Policy explainer threads | 5 | **2 drafted** |
 | Thought leadership / framing posts | 5 | **3 drafted** (T1, T3, T4 — evolution, blocking, rights framing) |
 | Sector spotlight outlines | 3 | Not started |
 | Press kit | 1 | **Mission, key facts, FAQ, spokesperson prep drafted** |
 | Website launch content | 1 | Website v0.1 exists |
+| Long-form content pieces | 3 | **1 drafted** ("When AI Is the Only Interpreter in the Room") |
 
 ### Launch Week Content Plan (Week 1 after accounts go live)
 
