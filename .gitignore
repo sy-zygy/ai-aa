@@ -43,6 +43,7 @@ next-env.d.ts
 
 # data dir has its own git repo for content versioning
 data/.git/
+data/.git.bak/
 
 # user data (created at runtime)
 data/.agents/.config/
@@ -54,7 +55,7 @@ data/.agents/.config.json
 data/.agents/ceo/
 data/.agents/editor/
 data/.agents/content-marketer/
-data/.agents/*/
+data/.agents/
 !data/.agents/.library/
 data/.chat/
 data/.missions/
@@ -64,12 +65,6 @@ data/.cabinet.db-shm
 data/.cabinet.db-wal
 
 # user KB content (ship only getting-started template)
-data/marketing/
-data/operations/
-data/product/
-data/research/
-data/people/
-data/presentations/
 
 # claude code
 .claude/

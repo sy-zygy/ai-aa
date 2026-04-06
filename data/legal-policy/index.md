@@ -63,7 +63,7 @@ The legal argument rests on four established principles:
 
 | # | Deliverable | Description | Target | Status |
 |---|-------------|-------------|--------|--------|
-| 1 | **Core Doctrine Memo** | White paper establishing the legal argument. 15-25 pages with executive summary. Rigorous enough for lawyers, clear enough for policymakers. | Q2 2026 | Not started |
+| 1 | **Core Doctrine Memo** | White paper establishing the legal argument. 15-25 pages with executive summary. Rigorous enough for lawyers, clear enough for policymakers. | Q2 2026 | **Draft v0.1 complete** |
 | 2 | **Guidance Petition — DOJ** | Formal request to DOJ Civil Rights Division for guidance on AI comprehension tools as auxiliary aids under ADA Title II/III | Q4 2026 | Not started |
 | 3 | **Guidance Petition — HHS** | Request to HHS OCR for guidance under Section 1557 (healthcare effective communication) | Q4 2026 | Not started |
 | 4 | **Guidance Petition — ED** | Request to Dept of Education OCR for guidance under Section 504 (education) | Q4 2026 | Not started |
@@ -115,11 +115,11 @@ The legal argument rests on four established principles:
 
 ## KB Sections
 
-- [[Core Doctrine Memo]] — *The foundational legal argument (in progress)*
-- [[Guidance Petitions]] — *Formal requests to DOJ, HHS, ED*
-- [[Model Policies]] — *Template policies for covered entities*
-- [[Legal Research]] — *Case law, regulatory analysis, statutory interpretation*
-- [[Trust & Safety Guardrails]] — *Framework for legitimate vs. unauthorized AI access*
+- [[Core Doctrine Memo]] — *Draft v0.1 complete. Foundational legal argument establishing AI comprehension tools as auxiliary aids.*
+- [[Guidance Petitions]] — *Planning stage. Depends on doctrine memo v1.0 and evidence base.*
+- [[Model Policies]] — *Planning stage. Template policies for covered entities.*
+- [[Legal Research]] — *Active. Statutory authorities, regulations, agency guidance compiled.*
+- [[Trust & Safety Guardrails]] — *Draft principles established. Framework for legitimate vs. unauthorized AI access.*
 
 ## Key References
 
