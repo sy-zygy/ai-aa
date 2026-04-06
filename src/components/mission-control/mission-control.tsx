@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect, useCallback } from "react";
-import { Gauge, Plus, RefreshCw, Zap, MessageSquare, Loader2, BookOpen, Power, Pause, PlayCircle, FolderOpen, Upload, ChevronsUpDown } from "lucide-react";
+import { Gauge, Plus, RefreshCw, Zap, MessageSquare, Loader2, BookOpen, Power, Pause, PlayCircle, FolderOpen, Upload, ChevronsUpDown, Mail } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import { useAppStore } from "@/stores/app-store";
@@ -15,6 +15,7 @@ import { CreateAgentDialog } from "./create-agent-dialog";
 import { AgentDetailPanel } from "./agent-detail-panel";
 import { GoalBar } from "./goal-bar";
 import { WorkspaceGallery } from "./workspace-gallery";
+import { MessageQueue } from "./message-queue";
 import type { GoalMetric } from "@/types/agents";
 
 interface AgentSummary {
@@ -54,6 +55,8 @@ export function MissionControl() {
   const [confirmStart, setConfirmStart] = useState(false);
   const [companyName, setCompanyName] = useState("");
   const [showGallery, setShowGallery] = useState(false);
+  const [showMessages, setShowMessages] = useState(false);
+  const [pendingMsgCount, setPendingMsgCount] = useState(0);
   const [gridExpanded, setGridExpanded] = useState(false);
   const setSection = useAppStore((s) => s.setSection);
   const selectPage = useTreeStore((s) => s.selectPage);
@@ -95,7 +98,7 @@ export function MissionControl() {
       }
       if (alertsRes.ok) {
         const data = await alertsRes.json();
-        setAlertCount((data.messages || []).length);
+        setAlertCount(data.undismissedCount ?? (data.messages || []).length);
       }
 
       // Fetch task counts per agent
@@ -120,6 +123,15 @@ export function MissionControl() {
         setSchedulerRunning(schedData.status === "running");
         setScheduledCount(schedData.scheduledAgents?.length || 0);
       }
+
+      // Fetch pending message count
+      try {
+        const msgRes = await fetch("/api/agents/messages");
+        if (msgRes.ok) {
+          const msgData = await msgRes.json();
+          setPendingMsgCount((msgData.messages || []).length);
+        }
+      } catch { /* ignore */ }
 
       // Fetch last actions from #general channel
       const generalRes = await fetch("/api/agents/slack?channel=general&limit=50");
@@ -225,6 +237,13 @@ export function MissionControl() {
       clearInterval(interval);
       es?.close();
     };
+  }, [loadAgents]);
+
+  // Refresh alert count when alerts are dismissed
+  useEffect(() => {
+    const handler = () => loadAgents();
+    window.addEventListener("cabinet:alerts-changed", handler);
+    return () => window.removeEventListener("cabinet:alerts-changed", handler);
   }, [loadAgents]);
 
   // Listen for Cmd+N create agent shortcut
@@ -474,10 +493,24 @@ Choose an appropriate department. Pick a descriptive emoji. Make the body a comp
             variant="ghost"
             size="sm"
             className="h-7 text-[12px] gap-1.5 hidden sm:flex"
-            onClick={() => setShowGallery(!showGallery)}
+            onClick={() => { setShowGallery(!showGallery); setShowMessages(false); }}
           >
             <FolderOpen className="h-3 w-3" />
             <span className="hidden md:inline">Gallery</span>
+          </Button>
+          <Button
+            variant="ghost"
+            size="sm"
+            className="h-7 text-[12px] gap-1.5 hidden sm:flex"
+            onClick={() => { setShowMessages(!showMessages); setShowGallery(false); }}
+          >
+            <Mail className="h-3 w-3" />
+            <span className="hidden md:inline">Messages</span>
+            {pendingMsgCount > 0 && (
+              <span className="text-[10px] bg-primary/10 text-primary px-1.5 rounded-full tabular-nums">
+                {pendingMsgCount}
+              </span>
+            )}
           </Button>
           <Button
             variant="ghost"
@@ -551,9 +584,11 @@ Choose an appropriate department. Pick a descriptive emoji. Make the body a comp
         </div>
       )}
 
-      {/* Main content area (agent grid + slack OR gallery) */}
+      {/* Main content area (agent grid + slack OR gallery OR messages) */}
       <div className="flex-1 flex flex-col overflow-hidden min-h-0">
-        {showGallery ? (
+        {showMessages ? (
+          <MessageQueue onClose={() => setShowMessages(false)} />
+        ) : showGallery ? (
           <WorkspaceGallery onClose={() => setShowGallery(false)} />
         ) : (
         <>

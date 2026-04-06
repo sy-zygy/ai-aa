@@ -1,5 +1,17 @@
 # Progress
 
+[2026-04-05] Added alert dismiss/acknowledge feature. Alerts in the #alerts Slack channel can now be individually dismissed (hover → Dismiss button) or bulk-dismissed (Dismiss All). Dismissed alerts appear muted with "dismissed" badge. PulseStrip count now only reflects undismissed alerts. State persisted in /data/.agents/.slack/.dismissed-alerts.json.
+
+[2026-04-05] Removed Chat (Discord), Contribute (GitHub), and Stars buttons from the status bar. Cleaned up related dead code (SVG icons, constants, star-fetching logic).
+
+[2026-04-05] Added "Messages" tab to Mission Control showing all pending inter-agent messages. New API endpoint GET /api/agents/messages scans all inbox directories. Read-only view with from/to/timestamp, expandable message bodies, auto-refresh every 15s, and badge count in the header button.
+
+[2026-04-05] Replaced the Cabinet logo+text in the sidebar with the AI:AA styled text logo from the website v0.1.0 (bold "AI:AA" with gold accent colon). Updated header fallback text to match.
+
+[2026-04-06] Fixed root cause of heartbeat failures — `readInbox` in persona-manager.ts crashed because gray-matter parses ISO timestamps as Date objects, but the sort function called `localeCompare` (a string method) on them. Also handled `date:` vs `timestamp:` frontmatter key inconsistency in agent inbox messages. This bug caused 500 errors on all `/api/agents/personas/[slug]` endpoints, which in turn caused all heartbeat triggers (both scheduled and manual) to fail silently.
+
+[2026-04-05] Fixed agent conversation transcript formatting — completed sessions now use a `TerminalReplay` component that renders transcripts in a read-only xterm.js instance, identical to the live terminal view. Writes transcript in 64KB chunks to avoid UI freezes on large files (some transcripts are 2.8MB / 150K+ lines). Replaced the previous ansi-to-html approach which lost formatting and froze the browser.
+
 [2026-04-03] Rebuilt the agents experience around durable filesystem-backed conversations. Added a shared conversation store (`data/.agents/.conversations/*`), moved manual sessions/jobs/heartbeats onto the daemon PTY runtime, added conversations APIs, and replaced the old agent list/detail split with a three-pane agents workspace focused on live and replayable Claude sessions. Also added `scripts/launch-chrome-debug.sh` plus `npm run debug:chrome` for CDP-based Chrome debugging on port 9222.
 
 [2026-04-03] Major agent system refactor — removed "Plays" concept entirely: deleted play-manager.ts, trigger-engine.ts, api/plays/ routes, playbook-catalog.tsx, webhook/[slug] and triggers API routes. Unified all Claude invocations to use PTY via the cabinet daemon (heartbeat.ts runHeartbeat, daemon executeJob). Cleaned up all play references from 15+ components/types/API routes. Build passes clean with no play routes.
@@ -87,3 +99,5 @@
 [2026-04-05] Fixed double-menu bug in AI-AA website (data/website/v0.1.0/index.html): the bare `nav` CSS selector was applying fixed positioning to both the header `<nav id="nav">` and the footer `<nav class="footer-links">`, causing the footer nav to appear as an unstyled menu at the top. Changed selectors to `#nav` to scope styles to the header nav only.
 
 [2026-04-05] Wired up the Mission Control view as a new section type. Added "mission-control" to SectionType, imported MissionControl in app-shell, and added a Gauge-icon sidebar button under the Team section. Existing Agents workspace remains untouched.
+
+[2026-04-05] Fixed agent heartbeats ending prematurely before directors could complete work. Root cause: daemon PTY timeout was 600s (10 min) and conversation waiter deadline was 15 min — both too short for complex agent work requiring 15-30 min. Increased daemon timeout to 1800s (30 min), waiter deadline to 35 min, and default job timeout to 1800s. Re-enabled Sponsorships Director agent that was auto-paused after 3 consecutive timeout-induced failures.

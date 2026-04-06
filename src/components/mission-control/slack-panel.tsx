@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useRef, useEffect, useCallback } from "react";
-import { Send, GripHorizontal, Hash, Plus, MessageCircle, ArrowLeft } from "lucide-react";
+import { Send, GripHorizontal, Hash, Plus, MessageCircle, ArrowLeft, CheckCircle2 } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import type { SlackMessage } from "@/types/agents";
@@ -176,15 +176,52 @@ export function SlackPanel({ height: initialHeight = 200, onOpenFile }: SlackPan
     return () => window.removeEventListener("cabinet:agent-responding", handler);
   }, []);
 
+  const [dismissedIds, setDismissedIds] = useState<Set<string>>(new Set());
+
   const loadMessages = useCallback(async () => {
     try {
       const res = await fetch(`/api/agents/slack?channel=${activeChannel}&limit=50`);
       if (res.ok) {
         const data = await res.json();
         setMessages(data.messages || []);
+        if (activeChannel === "alerts") {
+          const ids = new Set<string>();
+          for (const m of data.messages || []) {
+            if (m.dismissed) ids.add(m.id);
+          }
+          setDismissedIds(ids);
+        }
       }
     } catch { /* ignore */ }
   }, [activeChannel]);
+
+  const handleDismiss = async (messageId: string) => {
+    setDismissedIds((prev) => new Set([...prev, messageId]));
+    try {
+      await fetch("/api/agents/alerts", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ action: "dismiss", messageId }),
+      });
+      window.dispatchEvent(new CustomEvent("cabinet:alerts-changed"));
+    } catch { /* ignore */ }
+  };
+
+  const handleDismissAll = async () => {
+    const undismissedIds = messages
+      .filter((m) => !m.thread && !dismissedIds.has(m.id))
+      .map((m) => m.id);
+    if (undismissedIds.length === 0) return;
+    setDismissedIds((prev) => new Set([...prev, ...undismissedIds]));
+    try {
+      await fetch("/api/agents/alerts", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ action: "dismiss-all", messageIds: undismissedIds }),
+      });
+      window.dispatchEvent(new CustomEvent("cabinet:alerts-changed"));
+    } catch { /* ignore */ }
+  };
 
   const [channelCounts, setChannelCounts] = useState<Record<string, number>>({});
 
@@ -213,7 +250,9 @@ export function SlackPanel({ height: initialHeight = 200, onOpenFile }: SlackPan
         const res = await fetch(`/api/agents/slack?channel=${ch}&limit=100`);
         if (res.ok) {
           const data = await res.json();
-          counts[ch] = (data.messages || []).length;
+          counts[ch] = ch === "alerts" && data.undismissedCount != null
+            ? data.undismissedCount
+            : (data.messages || []).length;
         }
       } catch { /* ignore */ }
     }
@@ -415,6 +454,14 @@ export function SlackPanel({ height: initialHeight = 200, onOpenFile }: SlackPan
             <Plus className="h-3 w-3" />
           </button>
         )}
+        {activeChannel === "alerts" && messages.some((m) => !m.thread && !dismissedIds.has(m.id)) && (
+          <button
+            onClick={handleDismissAll}
+            className="text-[10px] px-2 py-0.5 ml-auto text-muted-foreground/50 hover:text-foreground transition-colors shrink-0 rounded hover:bg-muted/30"
+          >
+            Dismiss All
+          </button>
+        )}
       </div>
 
       {/* Messages */}
@@ -466,8 +513,9 @@ export function SlackPanel({ height: initialHeight = 200, onOpenFile }: SlackPan
 
           return visibleMessages.map((msg) => {
             const replyCount = replyCounts.get(msg.id) || 0;
+            const isDismissed = activeChannel === "alerts" && dismissedIds.has(msg.id);
             return (
-              <div key={msg.id} className="group">
+              <div key={msg.id} className={cn("group", isDismissed && "opacity-50")}>
                 <div className="flex items-start gap-2">
                   <span className="text-[11px] text-muted-foreground/50 mt-0.5 w-10 text-right shrink-0 tabular-nums">
                     {formatTime(msg.timestamp)}
@@ -489,11 +537,12 @@ export function SlackPanel({ height: initialHeight = 200, onOpenFile }: SlackPan
                       {msg.type !== "message" && (
                         <span className={cn(
                           "text-[9px] px-1 py-0.5 rounded-full",
+                          isDismissed ? "bg-muted text-muted-foreground/60" :
                           msg.type === "alert" ? "bg-red-500/10 text-red-500" :
                           msg.type === "report" ? "bg-blue-500/10 text-blue-500" :
                           "bg-muted text-muted-foreground/60"
                         )}>
-                          {msg.type}
+                          {isDismissed ? "dismissed" : msg.type}
                         </span>
                       )}
                     </div>
@@ -502,20 +551,32 @@ export function SlackPanel({ height: initialHeight = 200, onOpenFile }: SlackPan
                     </p>
                     {/* Thread reply button — only on top-level messages, not inside a thread view */}
                     {!threadId && (
-                      <button
-                        onClick={() => setThreadId(msg.id)}
-                        className={cn(
-                          "flex items-center gap-1 mt-1 text-[10px] transition-colors",
-                          replyCount > 0
-                            ? "text-primary hover:text-primary/80"
-                            : "text-muted-foreground/40 hover:text-muted-foreground opacity-0 group-hover:opacity-100"
+                      <div className="flex items-center gap-2 mt-1">
+                        <button
+                          onClick={() => setThreadId(msg.id)}
+                          className={cn(
+                            "flex items-center gap-1 text-[10px] transition-colors",
+                            replyCount > 0
+                              ? "text-primary hover:text-primary/80"
+                              : "text-muted-foreground/40 hover:text-muted-foreground opacity-0 group-hover:opacity-100"
+                          )}
+                        >
+                          <MessageCircle className="h-3 w-3" />
+                          {replyCount > 0
+                            ? `${replyCount} ${replyCount === 1 ? "reply" : "replies"}`
+                            : "Reply"}
+                        </button>
+                        {activeChannel === "alerts" && !isDismissed && (
+                          <button
+                            onClick={(e) => { e.stopPropagation(); handleDismiss(msg.id); }}
+                            className="flex items-center gap-1 text-[10px] text-muted-foreground/40 hover:text-green-500 opacity-0 group-hover:opacity-100 transition-colors"
+                            title="Dismiss alert"
+                          >
+                            <CheckCircle2 className="h-3 w-3" />
+                            Dismiss
+                          </button>
                         )}
-                      >
-                        <MessageCircle className="h-3 w-3" />
-                        {replyCount > 0
-                          ? `${replyCount} ${replyCount === 1 ? "reply" : "replies"}`
-                          : "Reply"}
-                      </button>
+                      </div>
                     )}
                   </div>
                 </div>

@@ -24,6 +24,7 @@ export interface SlackMessage {
   timestamp: string;
   thread?: string;      // parent message ID (for thread replies)
   replyCount?: number;  // number of thread replies (computed on read)
+  dismissed?: boolean;  // whether this alert has been acknowledged
 }
 
 export interface AgentTask {

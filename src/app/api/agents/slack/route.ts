@@ -5,6 +5,7 @@ import {
   getRecentMessages,
   listChannels,
 } from "@/lib/agents/slack-manager";
+import { getDismissedAlertIds } from "@/lib/agents/alert-dismiss";
 import { sendMessage, listPersonas } from "@/lib/agents/persona-manager";
 import { sendNotification, shouldNotify } from "@/lib/agents/notification-service";
 import { runQuickResponse } from "@/lib/agents/heartbeat";
@@ -38,6 +39,12 @@ export async function GET(req: NextRequest) {
   // Get messages for specific channel or recent across all
   if (channel) {
     const messages = await getMessages(channel, limit);
+    if (channel === "alerts") {
+      const dismissed = await getDismissedAlertIds();
+      const annotated = messages.map((m) => ({ ...m, dismissed: dismissed.has(m.id) }));
+      const undismissedCount = annotated.filter((m) => !m.dismissed).length;
+      return NextResponse.json({ messages: annotated, undismissedCount });
+    }
     return NextResponse.json({ messages });
   }
 
