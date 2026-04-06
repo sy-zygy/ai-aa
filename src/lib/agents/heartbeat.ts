@@ -351,25 +351,30 @@ export async function runHeartbeat(slug: string): Promise<string | null> {
       trigger: "heartbeat",
       prompt,
       cwd,
-      timeoutSeconds: 600,
+      timeoutSeconds: 1800,
       onComplete: async (completion) => {
-        if (completion.status === "failed" && !completion.output) {
-          await postMessage({
-            channel: "alerts", agent: slug, emoji: persona.emoji, displayName: persona.name,
-            type: "alert",
-            content: `Heartbeat timed out or failed for ${slug}. @human`,
-            mentions: ["human"], kbRefs: [],
-          });
-        }
+        try {
+          if (completion.status === "failed" && !completion.output) {
+            await postMessage({
+              channel: "alerts", agent: slug, emoji: persona.emoji, displayName: persona.name,
+              type: "alert",
+              content: `Heartbeat timed out or failed for ${slug}. @human`,
+              mentions: ["human"], kbRefs: [],
+            });
+          }
 
-        await processHeartbeatOutput(
-          slug,
-          completion.output,
-          completion.status,
-          persona,
-          inbox,
-          startTime
-        );
+          await processHeartbeatOutput(
+            slug,
+            completion.output,
+            completion.status,
+            persona,
+            inbox,
+            startTime
+          );
+        } catch (err) {
+          console.error(`[heartbeat] processHeartbeatOutput failed for ${slug}:`, err);
+          markHeartbeatComplete(slug);
+        }
       },
     });
 

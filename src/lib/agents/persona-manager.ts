@@ -323,15 +323,31 @@ export async function readInbox(slug: string): Promise<Array<{ from: string; tim
     if (!entry.name.endsWith(".md")) continue;
     const raw = await readFileContent(path.join(inboxDir, entry.name));
     const { data, content } = matter(raw);
+    const rawTs = data.timestamp ?? data.date ?? "";
+    const ts = rawTs instanceof Date ? rawTs.toISOString() : String(rawTs);
     messages.push({
       from: (data.from as string) || "unknown",
-      timestamp: (data.timestamp as string) || "",
+      timestamp: ts,
       message: content.trim(),
       filename: entry.name,
     });
   }
 
-  return messages.sort((a, b) => b.timestamp.localeCompare(a.timestamp));
+  return messages.sort((a, b) => (b.timestamp || "").localeCompare(a.timestamp || ""));
+}
+
+export async function readAllInboxes(): Promise<Array<{ from: string; to: string; timestamp: string; message: string }>> {
+  await ensureDirectory(MESSAGES_DIR);
+  const dirs = await listDirectory(MESSAGES_DIR);
+  const all: Array<{ from: string; to: string; timestamp: string; message: string }>  = [];
+  for (const dir of dirs) {
+    if (!dir.isDirectory) continue;
+    const msgs = await readInbox(dir.name);
+    for (const m of msgs) {
+      all.push({ from: m.from, to: dir.name, timestamp: m.timestamp, message: m.message });
+    }
+  }
+  return all.sort((a, b) => (b.timestamp || "").localeCompare(a.timestamp || ""));
 }
 
 export async function clearInbox(slug: string): Promise<void> {

@@ -186,7 +186,9 @@ export async function startConversationRun(
   }
 
   if (input.onComplete) {
-    void waitForConversationCompletion(meta.id, input.onComplete);
+    waitForConversationCompletion(meta.id, input.onComplete).catch((err) => {
+      console.error(`[conversation-runner] waitForConversationCompletion failed for ${meta.id}:`, err);
+    });
   }
 
   return meta;
@@ -196,46 +198,52 @@ export async function waitForConversationCompletion(
   conversationId: string,
   onComplete?: (completion: ConversationCompletion) => Promise<void> | void
 ): Promise<ConversationCompletion> {
-  const deadline = Date.now() + 15 * 60 * 1000;
+  const deadline = Date.now() + 35 * 60 * 1000;
+  let completionHandled = false;
 
   while (Date.now() < deadline) {
     await new Promise((resolve) => setTimeout(resolve, 3000));
 
+    let data: { status: string; output: string };
     try {
-      const data = await getDaemonSessionOutput(conversationId);
-      if (data.status === "running") {
-        continue;
-      }
-
-      const normalizedStatus = data.status === "completed" ? "completed" : "failed";
-      const currentMeta = await readConversationMeta(conversationId);
-      const finalMeta =
-        currentMeta?.status === "running"
-          ? await finalizeConversation(conversationId, {
-              status: normalizedStatus,
-              output: data.output,
-              exitCode: normalizedStatus === "completed" ? 0 : 1,
-            })
-          : currentMeta;
-
-      if (!finalMeta) {
-        throw new Error(`Conversation ${conversationId} disappeared during completion`);
-      }
-
-      const completion = {
-        meta: finalMeta,
-        output: data.output,
-        status: normalizedStatus,
-      } satisfies ConversationCompletion;
-
-      if (onComplete) {
-        await onComplete(completion);
-      }
-
-      return completion;
+      data = await getDaemonSessionOutput(conversationId);
     } catch {
       // Retry until timeout. The daemon can briefly 404 while cleaning up.
+      continue;
     }
+
+    if (data.status === "running") {
+      continue;
+    }
+
+    // Session finished — finalize and notify (errors propagate, not swallowed)
+    const normalizedStatus = data.status === "completed" ? "completed" : "failed";
+    const currentMeta = await readConversationMeta(conversationId);
+    const finalMeta =
+      currentMeta?.status === "running"
+        ? await finalizeConversation(conversationId, {
+            status: normalizedStatus,
+            output: data.output,
+            exitCode: normalizedStatus === "completed" ? 0 : 1,
+          })
+        : currentMeta;
+
+    if (!finalMeta) {
+      throw new Error(`Conversation ${conversationId} disappeared during completion`);
+    }
+
+    const completion = {
+      meta: finalMeta,
+      output: data.output,
+      status: normalizedStatus,
+    } satisfies ConversationCompletion;
+
+    if (onComplete && !completionHandled) {
+      completionHandled = true;
+      await onComplete(completion);
+    }
+
+    return completion;
   }
 
   const finalMeta = await finalizeConversation(conversationId, {
@@ -254,7 +262,8 @@ export async function waitForConversationCompletion(
     status: "failed",
   } satisfies ConversationCompletion;
 
-  if (onComplete) {
+  if (onComplete && !completionHandled) {
+    completionHandled = true;
     await onComplete(completion);
   }
 
@@ -324,7 +333,7 @@ export async function startJobConversation(job: JobConfig): Promise<JobRun> {
     jobId: job.id,
     jobName: job.name,
     cwd,
-    timeoutSeconds: job.timeout || 600,
+    timeoutSeconds: job.timeout || 1800,
     onComplete: async (completion) => {
       if (completion.status === "completed") {
         await processPostActions(job.on_complete, job);

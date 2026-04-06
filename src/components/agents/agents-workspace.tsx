@@ -20,6 +20,7 @@ import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { WebTerminal } from "@/components/terminal/web-terminal";
+import { TerminalReplay } from "@/components/agents/terminal-replay";
 import { useTreeStore } from "@/stores/tree-store";
 import { useAppStore } from "@/stores/app-store";
 import type { TreeNode } from "@/types";
@@ -949,14 +950,12 @@ export function AgentsWorkspace({
                   }}
                 />
               ) : selectedConversation ? (
-                <ScrollArea className="h-full bg-[#0a0a0a]">
-                  <pre className="min-h-full whitespace-pre-wrap p-5 font-mono text-[12px] leading-relaxed text-neutral-200">
-                    {replacePastedTextNotice(
-                      selectedConversation.transcript || "No transcript captured.",
-                      selectedConversationMeta.title
-                    )}
-                  </pre>
-                </ScrollArea>
+                <TerminalReplay
+                  transcript={replacePastedTextNotice(
+                    selectedConversation.transcript || "No transcript captured.",
+                    selectedConversationMeta.title
+                  )}
+                />
               ) : (
                 <div className="flex h-full items-center justify-center text-sm text-muted-foreground">
                   Loading conversation...
@@ -1478,7 +1477,7 @@ export function AgentsWorkspace({
             </ScrollArea>
             {settingsPersona ? (
               <div className="sticky bottom-0 shrink-0 bg-transparent px-5 pt-10 pb-4">
-                {renderComposerPanel(settingsAgentSlug)}
+                {renderComposerPanel(settingsAgentSlug!)}
               </div>
             ) : null}
           </div>
