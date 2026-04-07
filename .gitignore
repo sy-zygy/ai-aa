@@ -41,33 +41,35 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
-# data dir has its own git repo for content versioning
+# --- data/ (business state) ---
+# Track everything in data/ EXCEPT the items below.
+
+# Inner git repo (auto-created on first run by git-service.ts)
 data/.git/
 data/.git.bak/
 
-# user data (created at runtime)
-data/.agents/.config/
-data/.agents/.history/
-data/.agents/.memory/
-data/.agents/.messages/
-data/.agents/.slack/
-data/.agents/.config.json
-data/.agents/ceo/
-data/.agents/editor/
-data/.agents/content-marketer/
-data/.agents/
-!data/.agents/.library/
-data/.chat/
-data/.missions/
-data/.playbooks/
+# Agent conversation transcripts (bulky, ephemeral — outputs live in KB/Slack/memory)
+data/.agents/.conversations/
+
+# Runtime process state
+data/.agents/.runtime/
+
+# Per-user UI state
+data/.agents/.slack/.dismissed-alerts.json
+
+# SQLite runtime DB (legacy chat system)
 data/.cabinet.db
 data/.cabinet.db-shm
 data/.cabinet.db-wal
 
-# user KB content (ship only getting-started template)
+# Legacy chat (replaced by Agent Slack)
+data/.chat/
+
+# Job execution logs (runtime, not definitions)
+data/.jobs/.history/
+
+# Build artifacts
+data/.agents/.library/.next/
 
 # claude code
 .claude/
-
-# stray build artifacts
-data/.agents/.library/.next/

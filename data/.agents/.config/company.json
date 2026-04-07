@@ -1,0 +1,11 @@
+{
+  "exists": true,
+  "company": {
+    "name": "AI Access Alliance (AI-AA)",
+    "description": "An new advocacy group to establish the norm that people should not lose meaningful access to digital information, services, or participation because they rely on AI systems to understand, navigate, or mediate information.",
+    "goals": "Build the website, get corporate sponsorship from large AI companies, define the ideal organization for our mission",
+    "teamSize": "Just me",
+    "priority": "Create a website that will allow us to attract corporate sponsorship and volunteers"
+  },
+  "setupDate": "2026-04-05T21:38:58.967Z"
+}
