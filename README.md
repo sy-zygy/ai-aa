@@ -12,7 +12,7 @@ These tools summarize, explain, reformat, and answer questions about text. For m
 
 At the same time, institutions are increasingly blocking AI tools from accessing their content — anti-bot measures on patient portals, blanket AI bans in schools, CAPTCHAs on government benefits sites. These measures are usually aimed at scraping and fraud, but they also cut off people who depend on AI to read.
 
-## Our Argument
+## Our Position
 
 The law already covers this. The ADA, Section 504, and Section 1557 require covered entities to provide auxiliary aids and services for effective communication. The statutory definition is explicitly non-exhaustive and technology-neutral — designed to evolve as new tools emerge. Screen readers were once novel technology too.
 
