@@ -1,5 +1,7 @@
 # Progress
 
+[2026-04-07] Rewrote README.md to reflect AI Access Alliance's mission and the organization-as-code concept. Replaced the generic Cabinet open-source product README with sections covering the accessibility problem, legal argument, year-one goal, how the org-as-code model works, and repo structure.
+
 [2026-04-07] Added "Interactive Mode" toggle in Settings > Heartbeats. When enabled (default), heartbeats launch Claude Code TUI for review and follow-ups. When disabled, heartbeats run headless via the -p flag (non-interactive). Threaded `args` through daemon-client and conversation-runner so heartbeat.ts can switch between interactive and non-interactive spawning.
 
 [2026-04-07] Added "Heartbeat Timeout" toggle in Settings > Heartbeats. When disabled, heartbeat sessions no longer get killed after 30 minutes — they run until manually closed. Moved Scheduling Defaults section from the Integrations tab into a new dedicated Heartbeats tab. Both the PTY-level kill timer and the completion waiter deadline are disabled when the toggle is off.
