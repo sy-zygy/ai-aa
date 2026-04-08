@@ -10,13 +10,20 @@ order: 1
 
 Long-form content pieces for the AI-AA blog, LinkedIn articles, and op-ed submissions. Each article advances the growth flywheel and draws from Research team evidence.
 
-## Published
+## Published (Website v0.2.0)
 
-*None published yet.*
+All four drafted articles have been packaged and published to the website v0.2.0 at `/data/website/v0.2.0/`:
+
+1. **Why AI Access Alliance Exists** — `articles/why-ai-access-alliance-exists.html`
+2. **When AI Is the Only Interpreter in the Room** — `articles/when-ai-is-the-only-interpreter.html` (featured)
+3. **Healthcare: When Patients Can't Understand Their Own Care** — `articles/healthcare-sector-spotlight.html`
+4. **Education: The Blanket Ban Problem** — `articles/education-sector-spotlight.html`
+
+The articles listing page is at `articles/index.html`. The homepage (`index.html`) has been updated with an "Articles" nav link and a "Latest Articles" section.
 
 ## Drafted
 
-### 1. When AI Is the Only Interpreter in the Room
+### 1. When AI Is the Only Interpreter in the Room (Feature Article)
 
 **Type:** Feature article / blog post (1,200 words)
 **Target channel:** AI-AA blog, LinkedIn article, op-ed submission
@@ -88,3 +95,48 @@ Everyone deserves to understand.
 - NAAL literacy statistics, CDC disability prevalence
 - Inside Higher Ed (November 2025)
 - WebProNews (December 2025), AbilityNet, Smashing Magazine (November 2025)
+
+---
+
+### 2. Sector Spotlight: Healthcare — When Patients Can't Understand Their Own Care
+
+**Type:** Sector spotlight / blog post (~1,400 words)
+**Target channel:** AI-AA blog, LinkedIn article
+**Pillar:** 2 (People are already being harmed) + 4 (Legally grounded)
+**Status:** Draft complete — needs Policy review of legal claims
+
+See [[Healthcare Sector Spotlight]] for full draft.
+
+Covers: the health literacy crisis, patient portal blocking of AI tools, the Section 1557/Title III/Section 504 obligations, specific use cases (discharge summaries, lab results, medication schedules), and the universal-design argument for broader health literacy impact.
+
+---
+
+### 3. Sector Spotlight: Education — The Blanket Ban Problem
+
+**Type:** Sector spotlight / blog post (~1,200 words)
+**Target channel:** AI-AA blog, LinkedIn article
+**Pillar:** 2 (People are already being harmed) + 4 (Legally grounded)
+**Status:** Draft complete — needs Policy review of legal claims
+
+See [[Education Sector Spotlight]] for full draft.
+
+Covers: blanket university AI bans and their impact on students with disabilities, Section 504 individualized-assessment requirement, the distinction between AI-for-comprehension and AI-for-generation, the "Life Raft" ADHD study, OCR enforcement principles, and model policy recommendations.
+
+---
+
+### 4. Launch Blog Post: Why AI Access Alliance Exists
+
+**Type:** Launch blog post (~800 words)
+**Target channel:** AI-AA website blog, LinkedIn article (cross-post)
+**Pillar:** All four
+**Status:** Draft complete — needs Policy review of legal claims
+**Purpose:** First public-facing long-form piece. Should be live before April 14 sponsor outreach. Provides a substantive "about us" piece that sponsors will find when they Google AI Access Alliance.
+
+See [[Launch Blog Post]] for full draft.
+
+Covers: the comprehension gap (statistics + human examples), the blocking problem (hospitals, universities, government), the legal argument (auxiliary aids evolution), what AI-AA does (four workstreams), and why the timing matters.
+
+---
+
+**Total articles drafted: 4 (1 feature article, 2 sector spotlights, 1 launch blog post)**
+**Total articles published: 4 (website v0.2.0)**

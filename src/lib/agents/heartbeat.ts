@@ -1,4 +1,5 @@
 import path from "path";
+import fs from "fs/promises";
 import { DATA_DIR } from "@/lib/storage/path-utils";
 import {
   readPersona,
@@ -19,6 +20,24 @@ import { getGoalState, updateGoal } from "./goal-manager";
 import { startConversationRun } from "./conversation-runner";
 import { reloadDaemonSchedules } from "./daemon-client";
 import { getDaemonUrl, getOrCreateDaemonToken } from "./daemon-auth";
+
+const INTEGRATIONS_CONFIG = path.join(DATA_DIR, ".agents", ".config", "integrations.json");
+
+async function getHeartbeatSchedulingConfig(): Promise<{
+  heartbeat_timeout: boolean;
+  heartbeat_interactive: boolean;
+}> {
+  try {
+    const raw = await fs.readFile(INTEGRATIONS_CONFIG, "utf-8");
+    const config = JSON.parse(raw);
+    return {
+      heartbeat_timeout: config?.scheduling?.heartbeat_timeout !== false,
+      heartbeat_interactive: config?.scheduling?.heartbeat_interactive !== false,
+    };
+  } catch {
+    return { heartbeat_timeout: true, heartbeat_interactive: true };
+  }
+}
 
 interface HeartbeatContext {
   prompt: string;
@@ -345,13 +364,18 @@ export async function runHeartbeat(slug: string): Promise<string | null> {
   markHeartbeatRunning(slug);
 
   try {
+    const schedulingConfig = await getHeartbeatSchedulingConfig();
+
     const meta = await startConversationRun({
       agentSlug: slug,
       title: `${persona.name} heartbeat`,
       trigger: "heartbeat",
       prompt,
+      args: schedulingConfig.heartbeat_interactive
+        ? undefined
+        : ["--dangerously-skip-permissions", "-p", prompt, "--output-format", "text"],
       cwd,
-      timeoutSeconds: 1800,
+      timeoutSeconds: schedulingConfig.heartbeat_timeout ? 1800 : 0,
       onComplete: async (completion) => {
         try {
           if (completion.status === "failed" && !completion.output) {

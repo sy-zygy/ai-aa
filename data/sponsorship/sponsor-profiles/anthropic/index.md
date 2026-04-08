@@ -8,8 +8,8 @@ order: 3
 
 # Anthropic — Sponsor Research Profile
 
-**Tier:** 1 (Founding Sponsor) | **Stage:** Research | **Priority:** #3
-**Last Updated:** 2026-04-06
+**Tier:** 1 (Founding Sponsor) | **Stage:** Outreach Ready | **Priority:** #3
+**Last Updated:** 2026-04-07
 
 ---
 
@@ -249,12 +249,13 @@ These Claude capabilities already serve as de facto auxiliary aids:
 
 ## 13. Current Status
 
-- **Pipeline stage:** Research (complete)
-- **Next action:** Apply for Claude for Nonprofits program as initial relationship touchpoint; identify warm intro via PAI or AI governance events (May 2026)
-- **Priority contacts:** Sarah Heck (Policy), Daniela Amodei (President)
-- **Target timeline:** Initial contact by May-June 2026; formal pitch by July 2026
+- **Pipeline stage:** Outreach Drafted
+- **Next action:** CEO review and send Heck email by Apr 14; submit Claude for Nonprofits application by Apr 14; send Jack Clark email (separate advisory track)
+- **Priority contacts:** Sarah Heck (Policy), Daniela Amodei (President), Jack Clark (Anthropic Institute)
+- **Target timeline:** Email sent Apr 14; first conversation by May 2026; AI Governance Summit May 20 (Seattle)
 - **Estimated ask:** $500K-$1M/year as Founding Sponsor
 - **Unique angle:** AI-AA is built on Claude — the most natural "dog-fooding" partnership in our portfolio
+- **Outreach materials:** See [[Anthropic Outreach]] for draft emails, Claude for Nonprofits application strategy, and timeline
 
 ---
 

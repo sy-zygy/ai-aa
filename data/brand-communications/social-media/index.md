@@ -1,7 +1,7 @@
 ---
 title: Social Media
 created: 2026-04-05T00:00:00Z
-modified: 2026-04-05T00:00:00Z
+modified: 2026-04-07T00:00:00Z
 tags: [communications, social-media, linkedin, twitter]
 order: 2
 ---
@@ -127,14 +127,27 @@ This is what AI Access Alliance is working to establish. [Link to doctrine summa
 See [[Draft Posts]] for all drafted social media posts ready for review and scheduling.
 
 **Current inventory:**
-- 2 launch posts (LinkedIn + X thread) — ready for review
-- 3 educational/explainer posts (1 LinkedIn, 1 X thread, 1 LinkedIn data-driven) — ready for review
-- 2 policy explainer posts (1 X thread, 1 LinkedIn scenario) — ready for review
-- 2 scenario posts (X, no real person required) — ready for review
-- 3 thought leadership posts (2 LinkedIn, 1 X thread) — ready for review
-- 2 framing posts (1 X thread, 1 LinkedIn) — ready for review
-- 7 human story posts (4 X threads, 3 LinkedIn) — ready for review, based on Research team's documented user stories
-- **Total: 22 posts drafted, 0 published**
+- 2 launch posts (LinkedIn + X thread) — **legally cleared, ready to publish**
+- 3 educational/explainer posts (1 LinkedIn, 1 X thread, 1 LinkedIn data-driven) — **legally cleared**
+- 2 policy explainer posts (1 X thread, 1 LinkedIn scenario) — **legally cleared**
+- 2 scenario posts (X, no real person required) — **legally cleared**
+- 3 thought leadership posts (2 LinkedIn, 1 X thread) — **legally cleared** (T3 tweet 5 edit applied 2026-04-07 per Policy)
+- 2 framing posts (1 X thread, 1 LinkedIn) — **legally cleared**
+- 7 human story posts (4 X threads, 3 LinkedIn) — **legally cleared**, based on Research team's documented user stories
+- 8 week 3-4 cadence posts (3 LinkedIn, 5 X — healthcare spotlight teasers, education spotlight teasers, engagement, progress update, forward-looking)
+- **Total: 30 posts drafted, 0 published. 22 launch-bank posts legally cleared and ready to post.**
+
+### Launch Readiness (Updated 2026-04-07)
+
+**Content: READY.** All 30 posts drafted. 22 legally cleared. T3 tweet 5 minor edit applied.
+
+**Accounts: BLOCKED on human action.** CEO or Operations must create LinkedIn Company Page + X/Twitter account. Estimated: 30 minutes. This is the sole blocker for the April 10 launch target.
+
+**Launch sequence once accounts exist:**
+1. Day 1: Publish L1 (LinkedIn intro) + L2 (X launch thread). Pin both.
+2. Day 2: Publish E1 (LinkedIn auxiliary aids) + E2 (X auxiliary aids thread).
+3. Day 3-5: Continue Week 1 calendar per content strategy.
+4. Publish launch blog post as LinkedIn article within first week.
 
 ## Metrics to Track
 

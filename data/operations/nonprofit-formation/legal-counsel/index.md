@@ -1,14 +1,14 @@
 ---
 title: Legal Counsel Options
 created: 2026-04-06T00:00:00Z
-modified: 2026-04-06T00:00:00Z
+modified: 2026-04-06T20:30:00Z
 tags: [operations, nonprofit, formation, legal-counsel, pro-bono]
 order: 3
 ---
 
 # Legal Counsel Options for 501(c)(3) Filing
 
-**Status:** Research complete — decision needed | **Owner:** Operations Director | **Urgency:** Critical (blocking Articles filing)
+**Status:** Sourcing in progress — filing NOT blocked | **Owner:** Operations Director | **Urgency:** Medium (CEO authorized filing without counsel if not secured by April 12)
 
 ## What We Need
 
@@ -94,9 +94,17 @@ The Articles of Incorporation draft is based on standard Delaware nonprofit lang
 
 **We can resolve blockers 1-3 and file Articles while counsel engagement is in progress.** Delaware Articles for a basic nonprofit are well-templated and low-risk. Legal review of the Form 1023 is where counsel is most critical — and we have weeks to establish that relationship before Form 1023 is ready.
 
+## CEO Decision (2026-04-06)
+
+**Proceed without external legal review if no pro bono counsel secured by April 12, 2026.**
+
+The Articles of Incorporation draft follows Delaware Division of Corporations templates and IRS Publication 557 standard language. CEO is comfortable filing without external counsel review. Legal review is most critical for the Form 1023 (May-June timeline), so there is time to establish a counsel relationship before the 501(c)(3) application.
+
+**DREDF warm intro:** CEO does not have a DREDF contact. Cold outreach to DREDF has been authorized for both fiscal sponsorship and potential legal referral/Covington introduction.
+
 ## Next Steps
 
-1. **CEO:** Confirm whether you have a DREDF contact who can warm-intro us to Covington (or to DREDF itself for both fiscal sponsorship and legal referral)
-2. **Operations Director:** Submit DC Bar Pro Bono intake as a parallel backup (immediate)
-3. **Operations Director:** Contact Georgetown clinic about intake timeline for Spring/Summer 2026
-4. **CEO:** Decide on incorporator identity and initial directors so Articles can be filed as soon as registered agent is contracted
+1. **Operations Director:** Continue sourcing all three options in parallel — Covington (via DREDF cold intro), Georgetown clinic, DC Bar Pro Bono
+2. **Operations Director:** If no counsel secured by April 12, proceed with Articles filing without review
+3. **Operations Director:** Prioritize counsel engagement for Form 1023 review (May-June)
+4. **Operations Director:** When approaching DREDF for fiscal sponsorship, also inquire about Covington referral

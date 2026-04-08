@@ -67,7 +67,7 @@ const GENERAL_AGENT: AgentSummary = {
   name: "General",
   slug: "general",
   emoji: "🤖",
-  role: "Manual Cabinet assistant",
+  role: "Manual AI-AA assistant",
   active: true,
   runningCount: 0,
   department: "general",
@@ -248,7 +248,12 @@ export function AgentsWorkspace({
   );
 
   async function refreshAgents() {
-    const response = await fetch("/api/agents/personas");
+    let response: Response;
+    try {
+      response = await fetch("/api/agents/personas");
+    } catch {
+      return;
+    }
     if (!response.ok) return;
     const data = await response.json();
     const personas = (data.personas || []) as AgentSummary[];
@@ -281,7 +286,12 @@ export function AgentsWorkspace({
     if (status) params.set("status", status);
     params.set("limit", "200");
 
-    const response = await fetch(`/api/agents/conversations?${params.toString()}`);
+    let response: Response;
+    try {
+      response = await fetch(`/api/agents/conversations?${params.toString()}`);
+    } catch {
+      return;
+    }
     if (response.ok) {
       const data = await response.json();
       setConversations((data.conversations || []) as ConversationMeta[]);
@@ -1188,7 +1198,7 @@ export function AgentsWorkspace({
                               setNewAgentDraft({ ...newAgentDraft, body: event.target.value })
                             }
                             className="min-h-[220px] w-full rounded-lg border border-border bg-background px-3 py-2 text-[13px] text-foreground"
-                            placeholder="Define how this agent should work inside Cabinet and the KB."
+                            placeholder="Define how this agent should work inside AI-AA and the KB."
                           />
                         </label>
                       </div>

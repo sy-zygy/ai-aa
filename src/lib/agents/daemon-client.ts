@@ -3,6 +3,7 @@ import { getDaemonUrl, getOrCreateDaemonToken } from "./daemon-auth";
 interface CreateDaemonSessionInput {
   id: string;
   prompt: string;
+  args?: string[];
   cwd?: string;
   timeoutSeconds?: number;
 }

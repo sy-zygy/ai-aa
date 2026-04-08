@@ -1,7 +1,7 @@
 ---
 title: Draft Posts
 created: 2026-04-05T00:00:00Z
-modified: 2026-04-05T00:00:00Z
+modified: 2026-04-07T00:00:00Z
 tags: [communications, social-media, drafts, launch]
 order: 1
 ---
@@ -326,9 +326,9 @@ Social media posts drafted and ready for publishing once accounts are live. Orga
 >
 > VA letters. SSA notices. Medicaid applications. Written for lawyers, sent to everyone.
 >
-> **5/** For someone with a cognitive disability, TBI, or severe dyslexia, being blocked from using an AI comprehension tool is like being told they can't use a screen reader.
+> **5/** For someone with a cognitive disability, TBI, or severe dyslexia, being blocked from using an AI comprehension tool may be like being told they can't use a screen reader — same legal principle, different tool.
 >
-> Same principle. Same law. Different tool.
+> That's the argument. And existing law supports it.
 >
 > **6/** @AIAccessAlliance is documenting these barriers and building the legal framework to address them.
 >
@@ -572,6 +572,207 @@ These posts are based on real, publicly documented user stories from the Researc
 
 ---
 
+## Week 3-4 Posts (New Content for Ongoing Cadence)
+
+These posts fill the Week 3-4 calendar slots that require new content beyond the pre-launch inventory.
+
+---
+
+### W3-1 — LinkedIn: Healthcare Sector Spotlight Teaser
+
+> **A patient leaves the hospital with discharge instructions written at a college reading level.**
+>
+> She has a cognitive disability. She reads at a 5th-grade level. She lives alone.
+>
+> The instructions describe medication timing, wound care, warning signs that need emergency attention, and three follow-up appointments with different specialists.
+>
+> She opens her phone to paste the text into an AI tool that can explain it in plain language.
+>
+> The hospital's patient portal blocks copy-paste.
+>
+> This is happening right now, in hospitals across the country. Not because anyone decided to create an accessibility barrier — but because IT security measures don't distinguish between a data scraper and a patient trying to understand her own care.
+>
+> Our new sector spotlight on healthcare and AI comprehension access: [link]
+>
+> The legal obligations are clear. Section 1557 of the ACA, Title III of the ADA, and Section 504 all require effective communication with patients who have disabilities. Blocking the comprehension tool a patient depends on may violate those obligations.
+>
+> Everyone deserves to understand.
+
+**Pillar:** 2 + 4 | **Audience:** Healthcare professionals, policymakers, sponsors | **CTA:** Read sector spotlight
+
+---
+
+### W3-2 — X/Twitter: Healthcare Spotlight Thread
+
+> **1/** New from @AIAccessAlliance: a deep dive into AI comprehension access in healthcare.
+>
+> The stakes here are not abstract. They're clinical.
+>
+> **2/** The average hospital discharge summary: college reading level.
+> The average American adult: 8th-grade reading level.
+> 26% of adults: below 6th grade.
+>
+> For 15.8 million Americans with cognitive disabilities, this gap is a safety hazard.
+>
+> **3/** Patients who don't understand discharge instructions are significantly more likely to be readmitted. Medication non-adherence — often driven by comprehension failures — contributes to 125,000 deaths/year.
+>
+> AI can close this gap. Hospitals are blocking it.
+>
+> **4/** Patient portals are deploying anti-scraping and copy-paste restrictions. Security measures that don't distinguish between a bot and a patient trying to understand her own lab results.
+>
+> **5/** The law is clear: Section 1557, Title III, Section 504 all require effective communication.
+>
+> Blocking a patient's comprehension tool may violate that obligation. Not intentionally — but the effect is the same.
+>
+> Read the full spotlight: [link]
+
+**Pillar:** 2 + 4 | **Audience:** General public, healthcare, advocates | **CTA:** Read spotlight
+
+---
+
+### W3-3 — X/Twitter: News Reaction Template
+
+> [To be drafted in response to relevant AI/disability news of the week. Slot reserved for reactive content.]
+>
+> **Format:** 2-3 tweets connecting the news to AI-AA's mission. Lead with the news hook, bridge to the comprehension-access principle, close with our position.
+
+**Pillar:** Varies | **Audience:** General public | **CTA:** Follow
+
+---
+
+### W3-4 — X/Twitter: Community Engagement
+
+> We're building something and we want to hear from you.
+>
+> If you use AI to understand documents — medical records, legal notices, school materials, benefits letters — we want to know:
+>
+> What would happen if that tool were taken away?
+>
+> Reply or DM us. Your experience matters. Your story could help protect AI comprehension access for millions.
+
+**Pillar:** 2 | **Audience:** Disability community, general public | **CTA:** Story submission
+
+---
+
+### W4-1 — LinkedIn: Month One Progress Update
+
+> **One month in. Here's where AI Access Alliance stands.**
+>
+> When we launched, we made a simple claim: AI-mediated comprehension is an accessibility right, not a tech feature. The ADA already provides the framework. What's missing is recognition.
+>
+> In our first month, we've:
+>
+> - Published the legal argument for why AI comprehension tools are auxiliary aids under existing law
+> - Documented real stories of people who depend on AI to understand medical records, legal documents, benefits letters, and school materials
+> - Released sector spotlights on healthcare and education — the two settings where the stakes are highest
+> - Begun building a coalition of disability-rights organizations, legal experts, and accessibility practitioners who share this position
+>
+> We're a small organization with a specific ask. We're not lobbying for new legislation. We're asking institutions to apply existing law to modern tools.
+>
+> The response so far tells us something important: people recognize this problem because they've lived it. The stories in our inbox aren't from advocates or activists. They're from patients, students, tenants, and veterans who found AI on their own because nothing else worked.
+>
+> That's not a market. That's a need.
+>
+> Month two: coalition statement, model institutional policies, and federal agency engagement.
+>
+> Everyone deserves to understand.
+
+**Pillar:** All four | **Audience:** All | **CTA:** Follow
+
+---
+
+### W4-2 — X/Twitter: Education Spotlight Thread
+
+> **1/** Universities are banning AI.
+>
+> Not targeted restrictions. Blanket bans. No exceptions. No accommodation process.
+>
+> For students with disabilities, this may be illegal. A thread.
+>
+> **2/** Under Section 504, universities receiving federal funding must provide individualized disability accommodations.
+>
+> "Individualized" is the key word. Blanket policies that categorically deny accommodations are presumptively non-compliant.
+>
+> **3/** A student with dyslexia who uses AI to define jargon in a textbook isn't cheating. She's accessing the content — the same thing a text-to-speech tool does.
+>
+> A student with ADHD who uses AI to break a 40-page reading into structured summaries isn't bypassing the assignment. He's organizing information his executive function requires.
+>
+> **4/** The distinction matters: AI-for-comprehension is an accessibility tool. AI-for-generation is an academic integrity question.
+>
+> Most university AI policies don't make this distinction. They should.
+>
+> **5/** Read our full education sector spotlight: [link]
+>
+> If you're a student who's been denied AI as a disability accommodation, we want to hear from you.
+>
+> @AIAccessAlliance
+
+**Pillar:** 2 + 4 | **Audience:** Students, educators, advocates, policymakers | **CTA:** Story submission + read spotlight
+
+---
+
+### W4-3 — LinkedIn: Education Sector Spotlight Teaser
+
+> **The blanket ban problem.**
+>
+> Universities across the country are prohibiting AI tools without considering a basic legal obligation: disability accommodations must be evaluated individually.
+>
+> Under Section 504, a blanket policy that categorically denies a category of accommodation is presumptively non-compliant. And AI comprehension tools — tools that help students with dyslexia, ADHD, TBI, and other conditions understand course materials — are exactly the kind of accommodation that requires individualized assessment.
+>
+> The peer-reviewed "Life Raft" study found that adults with ADHD described ChatGPT as "adopted by, rather than designed for, the ADHD community." They found it because they needed it. When universities ban it without exemption, students lose a tool that nothing else replaces.
+>
+> Our new education sector spotlight explores the legal obligations, the human cost, and what universities should do instead.
+>
+> Read it: [link]
+>
+> Everyone deserves to understand.
+
+**Pillar:** 2 + 4 | **Audience:** Educators, policymakers, sponsors | **CTA:** Read spotlight
+
+---
+
+### W4-4 — X/Twitter: Weekly Engagement + CTA
+
+> What does "AI access" look like in your life?
+>
+> We've heard from:
+> - A veteran decoding benefits letters
+> - A student with dyslexia parsing academic texts
+> - A patient trying to understand discharge instructions
+> - A small business owner whose emails finally match his expertise
+>
+> Every story strengthens the case that AI comprehension tools are accessibility aids — not shortcuts, not cheating, not optional.
+>
+> If you have a story, we want to hear it. Reply, DM, or visit [link].
+
+**Pillar:** 2 | **Audience:** General public, disability community | **CTA:** Story submission
+
+---
+
+### W4-5 — LinkedIn: Looking Ahead
+
+> **What's next for AI Access Alliance.**
+>
+> We've spent our first month building the foundation: the legal argument, the evidence base, the content that explains why this matters.
+>
+> Now we're moving into three areas:
+>
+> **1. Coalition building.** A cross-sector sign-on statement affirming that AI-mediated comprehension is a legitimate auxiliary aid. We're approaching disability-rights organizations, legal-aid groups, accessibility practitioners, and academic institutions. If your organization is aligned, reach out.
+>
+> **2. Model institutional policies.** Practical guidance for healthcare systems, universities, government agencies, and employers. Not abstract principles — specific, implementable policy language that balances security concerns with comprehension access obligations.
+>
+> **3. Federal engagement.** Building toward agency guidance that recognizes AI comprehension tools as a category of auxiliary aid under the ADA. The legal path is through the DOJ, HHS, and ED — agencies that already enforce the statutes we're invoking.
+>
+> The legal framework exists. The human need is documented. The tools already work.
+>
+> The gap is institutional recognition. That's what we're building.
+>
+> Everyone deserves to understand.
+
+**Pillar:** 1 + 4 | **Audience:** Sponsors, policymakers, coalition targets | **CTA:** Partnership inquiry
+
+---
+
 ## Content Notes
 
 - Human story posts (H1-H7) use real, publicly documented individuals with public consent
@@ -579,6 +780,7 @@ These posts are based on real, publicly documented user stories from the Researc
 - Statistics cited (26% literacy, 61M disability) are from NAAL/CDC — sources to be confirmed before publishing
 - Scenario posts use composite/hypothetical examples clearly framed as scenarios
 - Thought leadership posts (T1-T5) focus on framing and education that doesn't require user stories
+- Week 3-4 posts (W3, W4 series) fill ongoing cadence calendar slots
 - All posts follow [[Brand & Voice Guide]] voice principles
 - Legal claims to be reviewed by Policy Director before publishing
-- **Draft inventory:** 22 posts drafted, 0 published
+- **Draft inventory:** 30 posts drafted, 0 published (22 launch bank + 8 Week 3-4 posts)

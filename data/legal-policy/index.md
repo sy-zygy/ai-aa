@@ -1,7 +1,7 @@
 ---
 title: Legal & Policy
 created: '2026-04-05T00:00:00.000Z'
-modified: '2026-04-06T03:40:18.722Z'
+modified: '2026-04-07T18:00:00.000Z'
 tags:
   - legal
   - policy
@@ -13,7 +13,7 @@ order: 2
 ---
 # Legal & Policy
 
-**Owner:** Policy Director | **Status:** Active | **Updated:** 2026-04-05 (12:00 UTC)
+**Owner:** Policy Director | **Status:** Active | **Updated:** 2026-04-06
 
 The Legal & Policy department is the intellectual engine of AI Access Alliance. Everything AI-AA does — sponsor pitches, public messaging, coalition building, guidance petitions — rests on the legal and policy foundation this department produces.
 
@@ -77,7 +77,7 @@ The legal argument rests on four established principles:
 
 ### Legal & Policy Workstream
 
-<table class="border-collapse w-full" style="min-width: 125px;"><colgroup><col style="min-width: 25px;"><col style="min-width: 25px;"><col style="min-width: 25px;"><col style="min-width: 25px;"><col style="min-width: 25px;"></colgroup><tbody><tr><th colspan="1" rowspan="1"><p>#</p></th><th colspan="1" rowspan="1"><p>Deliverable</p></th><th colspan="1" rowspan="1"><p>Description</p></th><th colspan="1" rowspan="1"><p>Target</p></th><th colspan="1" rowspan="1"><p>Status</p></th></tr><tr><td colspan="1" rowspan="1"><p>1</p></td><td colspan="1" rowspan="1"><p><strong>Core Doctrine Memo</strong></p></td><td colspan="1" rowspan="1"><p>White paper establishing the legal argument. 15-25 pages with executive summary. Rigorous enough for lawyers, clear enough for policymakers.</p></td><td colspan="1" rowspan="1"><p>Q2 2026</p></td><td colspan="1" rowspan="1"><p><strong>Draft v0.3 complete</strong></p></td></tr><tr><td colspan="1" rowspan="1"><p>2</p></td><td colspan="1" rowspan="1"><p><strong>Guidance Petition — DOJ</strong></p></td><td colspan="1" rowspan="1"><p>Formal request to DOJ Civil Rights Division for guidance on AI comprehension tools as auxiliary aids under ADA Title II/III</p></td><td colspan="1" rowspan="1"><p>Q4 2026</p></td><td colspan="1" rowspan="1"><p>Not started</p></td></tr><tr><td colspan="1" rowspan="1"><p>3</p></td><td colspan="1" rowspan="1"><p><strong>Guidance Petition — HHS</strong></p></td><td colspan="1" rowspan="1"><p>Request to HHS OCR for guidance under Section 1557 (healthcare effective communication)</p></td><td colspan="1" rowspan="1"><p>Q4 2026</p></td><td colspan="1" rowspan="1"><p>Not started</p></td></tr><tr><td colspan="1" rowspan="1"><p>4</p></td><td colspan="1" rowspan="1"><p><strong>Guidance Petition — ED</strong></p></td><td colspan="1" rowspan="1"><p>Request to Dept of Education OCR for guidance under Section 504 (education)</p></td><td colspan="1" rowspan="1"><p>Q4 2026</p></td><td colspan="1" rowspan="1"><p>Not started</p></td></tr><tr><td colspan="1" rowspan="1"><p>5</p></td><td colspan="1" rowspan="1"><p><strong>Model ADA/504 Framing Memo</strong></p></td><td colspan="1" rowspan="1"><p>Template for organizations framing AI accessibility policies under existing legal obligations</p></td><td colspan="1" rowspan="1"><p>Q3 2026</p></td><td colspan="1" rowspan="1"><p>Not started</p></td></tr></tbody></table>
+<table class="border-collapse w-full" style="min-width: 125px;"><colgroup><col style="min-width: 25px;"><col style="min-width: 25px;"><col style="min-width: 25px;"><col style="min-width: 25px;"><col style="min-width: 25px;"></colgroup><tbody><tr><th colspan="1" rowspan="1"><p>#</p></th><th colspan="1" rowspan="1"><p>Deliverable</p></th><th colspan="1" rowspan="1"><p>Description</p></th><th colspan="1" rowspan="1"><p>Target</p></th><th colspan="1" rowspan="1"><p>Status</p></th></tr><tr><td colspan="1" rowspan="1"><p>1</p></td><td colspan="1" rowspan="1"><p><strong>Core Doctrine Memo</strong></p></td><td colspan="1" rowspan="1"><p>White paper establishing the legal argument. 15-25 pages with executive summary. Rigorous enough for lawyers, clear enough for policymakers.</p></td><td colspan="1" rowspan="1"><p>Q2 2026</p></td><td colspan="1" rowspan="1"><p><strong>Draft v0.4 complete</strong></p></td></tr><tr><td colspan="1" rowspan="1"><p>2</p></td><td colspan="1" rowspan="1"><p><strong>Guidance Petition — DOJ</strong></p></td><td colspan="1" rowspan="1"><p>Formal request to DOJ Civil Rights Division for guidance on AI comprehension tools as auxiliary aids under ADA Title II/III</p></td><td colspan="1" rowspan="1"><p>Q4 2026</p></td><td colspan="1" rowspan="1"><p>Not started</p></td></tr><tr><td colspan="1" rowspan="1"><p>3</p></td><td colspan="1" rowspan="1"><p><strong>Guidance Petition — HHS</strong></p></td><td colspan="1" rowspan="1"><p>Request to HHS OCR for guidance under Section 1557 (healthcare effective communication)</p></td><td colspan="1" rowspan="1"><p>Q4 2026</p></td><td colspan="1" rowspan="1"><p>Not started</p></td></tr><tr><td colspan="1" rowspan="1"><p>4</p></td><td colspan="1" rowspan="1"><p><strong>Guidance Petition — ED</strong></p></td><td colspan="1" rowspan="1"><p>Request to Dept of Education OCR for guidance under Section 504 (education)</p></td><td colspan="1" rowspan="1"><p>Q4 2026</p></td><td colspan="1" rowspan="1"><p>Not started</p></td></tr><tr><td colspan="1" rowspan="1"><p>5</p></td><td colspan="1" rowspan="1"><p><strong>Model ADA/504 Framing Memo</strong></p></td><td colspan="1" rowspan="1"><p>Template for organizations framing AI accessibility policies under existing legal obligations</p></td><td colspan="1" rowspan="1"><p>Q3 2026</p></td><td colspan="1" rowspan="1"><p>Not started</p></td></tr></tbody></table>
 
 ### Corporate Standards Workstream
 
@@ -119,7 +119,7 @@ The legal argument rests on four established principles:
 
 ## KB Sections
 
--   [Core Doctrine Memo](#page:core-doctrine-memo) — *Draft v0.3 complete. Sector evidence and legal authority integration. Added prevalence data, reading-level gap citations, case law (Alexander v. Choate, Liese, Olmstead), interpreter/CART error rates. Targeting v0.5 mid-May, v1.0 end of Q2 2026.*
+-   [Core Doctrine Memo](#page:core-doctrine-memo) — *Draft v0.4 complete (2026-04-07). Full Research evidence package integrated: 5 user stories with anchor cases (AADJ v. Epic, Jane Doe v. UMich), readability data tables, AI accuracy benchmarks, auxiliary aid error rate comparisons, Real Time v. PointClickCare landmark precedent, three-way legal convergence analysis. New sections: Scope & Limitations (I-A), Employment sector (IV.D). Targeting v0.5 mid-May, v1.0 end of Q2 2026.*
     
 -   [Guidance Petitions](#page:guidance-petitions) — *Planning stage. Depends on doctrine memo v1.0 and evidence base.*
     
@@ -128,6 +128,10 @@ The legal argument rests on four established principles:
 -   [Legal Research](#page:legal-research) — *Active. Statutory authorities, regulations, agency guidance compiled.*
     
 -   [Trust & Safety Guardrails](#page:trust-safety-guardrails) — *Draft principles established. Framework for legitimate vs. unauthorized AI access.*
+
+-   [Communications Handoff](#page:comms-handoff) — *2026-04-06. Plain-English framing (2 paragraphs) + legal accuracy review of all 22 draft social posts. Delivered to Comms.*
+
+-   [COI Policy Review](#page:coi-review) — *2026-04-06. Policy Director review of Operations' Conflict of Interest Policy v0.1, focusing on recusal procedures. 7 recommendations delivered.*
     
 
 ## Key References

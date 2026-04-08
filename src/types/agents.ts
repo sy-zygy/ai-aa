@@ -1,4 +1,4 @@
-// Types for the Cabinet Agents system
+// Types for the AI-AA Agents system
 
 export interface GoalMetric {
   metric: string;       // e.g., "reddit_replies"

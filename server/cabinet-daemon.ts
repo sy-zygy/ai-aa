@@ -170,7 +170,11 @@ function submitInitialPrompt(session: PtySession): void {
     delete session.initialPromptTimer;
   }
 
+  // Use bracketed paste mode so newlines in the prompt are inserted literally
+  // instead of being interpreted as Enter (submit) by Claude CLI's TUI input.
+  session.pty.write("\x1b[200~");
   session.pty.write(session.initialPrompt);
+  session.pty.write("\x1b[201~");
   session.pty.write("\r");
 }
 

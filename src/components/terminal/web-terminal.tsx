@@ -199,7 +199,7 @@ export function WebTerminal({
               if (disposed) return;
               setError("Connection failed. Is the daemon running?");
               terminal?.write(
-                "\r\n\x1b[31mConnection error.\x1b[0m Run \x1b[33mnpm run dev:all\x1b[0m to start Cabinet locally.\r\n"
+                "\r\n\x1b[31mConnection error.\x1b[0m Run \x1b[33mnpm run dev:all\x1b[0m to start AI-AA locally.\r\n"
               );
             };
 
@@ -212,7 +212,7 @@ export function WebTerminal({
           } catch {
             setError("Connection failed. Is the daemon running?");
             terminal?.write(
-              "\r\n\x1b[31mConnection error.\x1b[0m Run \x1b[33mnpm run dev:all\x1b[0m to start Cabinet locally.\r\n"
+              "\r\n\x1b[31mConnection error.\x1b[0m Run \x1b[33mnpm run dev:all\x1b[0m to start AI-AA locally.\r\n"
             );
           }
         })();

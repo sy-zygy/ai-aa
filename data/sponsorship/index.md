@@ -10,6 +10,8 @@ order: 4
 
 **Owner:** Sponsorships Director | **Status:** Active | **Updated:** 2026-04-06
 
+> **Sprint status:** Pitch deck COMPLETE (v1.0). Microsoft and Anthropic outreach emails DRAFTED — awaiting CEO review. Sponsor agreement template with governance firewall CONFIRMED (Operations delivered Sections 4-9 non-negotiable). Fiscal sponsorship via DREDF approved by CEO.
+
 The Sponsorships department is AI-AA's revenue engine. Without funding, the doctrine memo gathers dust, the coalition never forms, and the mission dies. This department turns AI-AA's compelling mission into committed dollars — and ensures sponsors understand they are funding a disability-rights initiative, not buying influence over it.
 
 ## Department Scope
@@ -136,9 +138,9 @@ If this firewall is ever perceived as compromised, AI-AA's credibility collapses
 
 | Sponsor | Stage | Next Action | Owner | Target Date | Notes |
 |---------|-------|-------------|-------|-------------|-------|
-| Microsoft | Research Complete | Register for Ability Summit 2026 (May 19-20, Redmond); draft warm outreach to Jenny Lay-Flurrie (CAO) | Sponsorships Director | Apr 2026 | Entry: Lay-Flurrie → Spelhaug (Elevate). Ability Summit is the immediate warm-entry opportunity |
+| Microsoft | **Outreach Drafted** | CEO review → send Lay-Flurrie email by Apr 14; register for Ability Summit (May 19-20) | CEO | Apr 14, 2026 | Emails drafted. See [[Microsoft Outreach]]. Entry: Lay-Flurrie → Spelhaug (Elevate). Ability Summit is the forcing function. |
 | Google | Research Complete | Map warm intro path via Understood.org partnership or Google.org Accelerator application; draft outreach to Eve Andersson (Sr Dir, Products for All) | Sponsorships Director | Apr 2026 | Entry: Google.org / Accessibility team. AI Opportunity Fund + Impact Challenge are budget lines |
-| Anthropic | Research Complete | Apply for Claude for Nonprofits; identify warm intro via PAI or AI governance events (May 20, Seattle) | Sponsorships Director | Apr 2026 | Entry: Sarah Heck (Head of External Affairs) → Daniela Amodei. "AI-AA is built on Claude — most natural dog-fooding partnership" |
+| Anthropic | **Outreach Drafted** | CEO review → send Heck email by Apr 14; submit Claude for Nonprofits app by Apr 14 | CEO + Sponsorships Director | Apr 14, 2026 | Emails drafted (Heck, Amodei, Jack Clark). See [[Anthropic Outreach]]. Claude for Nonprofits app = warm entry. AI Governance Summit May 20 Seattle. |
 | OpenAI | Research Complete | Apply for OpenAI for Nonprofits; contact Mike Buckley (Be My Eyes CEO) for warm intro to Anna Makanju (VP Global Impact) | Sponsorships Director | May 2026 | Entry: Be My Eyes → Anna Makanju → Chris Lehane (Global Affairs). No formal accessibility program — AI-AA fills the gap |
 | Meta | Research Complete | Contact Mike Buckley (Be My Eyes) for warm intro to Maxine Williams (VP Accessibility); monitor AI Glasses Impact Grant cycle | Sponsorships Director | Jun 2026 | Entry: Be My Eyes → Maxine Williams → Freddy Abnousi (VP Health Tech). Glasses are "accessibility tools by coincidence" — we make it by law |
 
@@ -146,7 +148,9 @@ If this firewall is ever perceived as compromised, AI-AA's credibility collapses
 
 - [[Corporate Sponsorship Acquisition]] — *The full outreach playbook*
 - [[Pitch Materials]] — *Executive summaries, sponsor decks, proposals*
+- [[Sponsor Pitch Deck]] — *Presentation-ready 13-slide deck with per-sponsor customization*
 - [[Sponsor Profiles]] — *Per-sponsor research, alignment analysis, outreach history*
+- [[Sponsor Outreach]] — *Draft outreach emails and contact strategies per target*
 - [[Warm Introduction Mapping]] — *Conference calendar, per-sponsor warm intro paths, bridge contacts*
 - [[Grant Opportunities]] — *Foundation and government grant prospects*
 - [[Impact Reporting]] — *Templates and published reports for sponsors*

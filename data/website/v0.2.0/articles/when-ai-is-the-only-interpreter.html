@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>When AI Is the Only Interpreter in the Room — AI Access Alliance</title>
+<meta name="description" content="How AI became an accessibility right for millions of people with disabilities who depend on it to understand essential information.">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --primary: #1E3A5F;
+  --primary-light: #2a4f7a;
+  --accent: #D4A017;
+  --accent-dark: #b8890f;
+  --accent-light: #fdf6e3;
+  --neutral: #4A4A4A;
+  --neutral-light: #6b6b6b;
+  --bg: #FAFAF7;
+  --green: #2D6A4F;
+  --green-light: #e8f5ee;
+  --white: #ffffff;
+}
+
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; font-size: 18px; }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  color: var(--primary);
+  background: var(--bg);
+  line-height: 1.7;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+.skip-link {
+  position: absolute; left: -9999px; top: 0;
+  background: var(--primary); color: var(--white);
+  padding: 0.75rem 1.5rem; z-index: 200;
+  font-weight: 600; text-decoration: none;
+  border-radius: 0 0 8px 0;
+}
+.skip-link:focus { left: 0; }
+*:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+.sr-only {
+  position: absolute; width: 1px; height: 1px;
+  overflow: hidden; clip: rect(0,0,0,0);
+  white-space: nowrap; border: 0;
+}
+
+#nav {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+  background: rgba(250,250,247,0.92);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(30,58,95,0.06);
+  transition: box-shadow 0.3s;
+}
+#nav.scrolled { box-shadow: 0 2px 24px rgba(30,58,95,0.08); }
+#nav .container {
+  display: flex; align-items: center; justify-content: space-between;
+  height: 68px; max-width: 1100px; margin: 0 auto; padding: 0 2rem;
+}
+.nav-logo {
+  font-weight: 800; font-size: 1.15rem; color: var(--primary);
+  text-decoration: none; letter-spacing: -0.02em;
+}
+.nav-logo span { color: var(--accent); }
+.nav-links { display: flex; gap: 1.75rem; align-items: center; }
+.nav-links a {
+  text-decoration: none; color: var(--neutral);
+  font-size: 0.83rem; font-weight: 500; transition: color 0.2s;
+}
+.nav-links a:hover, .nav-links a:focus { color: var(--primary); }
+.nav-links a.active { color: var(--primary); font-weight: 700; }
+.nav-cta {
+  background: var(--accent) !important; color: var(--primary) !important;
+  padding: 0.5rem 1.25rem; border-radius: 6px;
+  font-weight: 700 !important; transition: background 0.2s !important;
+}
+.nav-cta:hover, .nav-cta:focus { background: var(--accent-dark) !important; }
+.mobile-toggle { display: none; background: none; border: none; cursor: pointer; color: var(--primary); }
+
+.article-header {
+  padding-top: calc(68px + 4rem);
+  padding-bottom: 3rem;
+  background: var(--white);
+  border-bottom: 1px solid rgba(30,58,95,0.06);
+}
+.article-header .container {
+  max-width: 740px; margin: 0 auto; padding: 0 2rem;
+}
+.article-meta {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.67rem; text-transform: uppercase;
+  letter-spacing: 0.12em; color: var(--green);
+  font-weight: 500; margin-bottom: 1.25rem;
+  display: flex; gap: 1.5rem; flex-wrap: wrap;
+}
+.article-header h1 {
+  font-size: clamp(1.8rem, 4vw, 2.6rem);
+  font-weight: 800; line-height: 1.2; letter-spacing: -0.02em;
+  margin-bottom: 1.25rem;
+}
+.article-header .subtitle {
+  font-size: 1.1rem; color: var(--neutral); line-height: 1.7;
+  max-width: 620px;
+}
+
+.article-body { padding: 3.5rem 0 5rem; }
+.article-body .container {
+  max-width: 740px; margin: 0 auto; padding: 0 2rem;
+}
+.article-body h2 {
+  font-size: 1.4rem; font-weight: 800; margin-top: 2.5rem;
+  margin-bottom: 1rem; line-height: 1.3; letter-spacing: -0.01em;
+}
+.article-body p {
+  font-size: 1rem; color: var(--neutral); line-height: 1.8;
+  margin-bottom: 1.25rem;
+}
+.article-body p strong { color: var(--primary); }
+.article-body blockquote {
+  border-left: 3px solid var(--accent);
+  margin: 2rem 0; padding: 1rem 1.5rem;
+  background: var(--accent-light); border-radius: 0 8px 8px 0;
+}
+.article-body blockquote p {
+  color: var(--primary); font-weight: 500; font-style: italic;
+  margin-bottom: 0;
+}
+.article-body .sources {
+  margin-top: 3rem; padding-top: 2rem;
+  border-top: 1px solid rgba(30,58,95,0.08);
+}
+.article-body .sources h3 {
+  font-size: 0.88rem; font-weight: 700; margin-bottom: 1rem;
+  color: var(--primary);
+}
+.article-body .sources ul {
+  list-style: none; padding: 0;
+}
+.article-body .sources li {
+  font-size: 0.82rem; color: var(--neutral-light); line-height: 1.6;
+  padding: 0.3rem 0;
+}
+
+.article-cta {
+  padding: 3.5rem 0;
+  background: var(--primary);
+  color: var(--white);
+  text-align: center;
+}
+.article-cta .container {
+  max-width: 600px; margin: 0 auto; padding: 0 2rem;
+}
+.article-cta p {
+  font-size: 1.1rem; line-height: 1.6; margin-bottom: 1.5rem;
+  color: rgba(250,250,247,0.8);
+}
+.article-cta .tagline {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.72rem; text-transform: uppercase;
+  letter-spacing: 0.12em; color: var(--accent);
+  font-weight: 500; margin-bottom: 1rem;
+}
+.btn {
+  display: inline-flex; align-items: center; gap: 0.5rem;
+  padding: 0.85rem 1.75rem; border-radius: 8px;
+  font-weight: 700; font-size: 0.9rem; text-decoration: none;
+  transition: all 0.25s; cursor: pointer; border: none;
+  font-family: inherit;
+}
+.btn-primary { background: var(--accent); color: var(--primary); }
+.btn-primary:hover, .btn-primary:focus { background: var(--accent-dark); transform: translateY(-1px); box-shadow: 0 4px 16px rgba(212,160,23,0.3); }
+
+.back-link {
+  display: inline-flex; align-items: center; gap: 0.5rem;
+  font-size: 0.83rem; font-weight: 600; color: var(--primary);
+  text-decoration: none; margin-bottom: 2rem;
+  transition: color 0.2s;
+}
+.back-link:hover { color: var(--accent-dark); }
+.back-link svg { width: 16px; height: 16px; }
+
+footer {
+  padding: 3rem 0;
+  border-top: 1px solid rgba(30,58,95,0.06);
+  background: var(--bg);
+}
+footer .container {
+  display: flex; justify-content: space-between; align-items: center;
+  flex-wrap: wrap; gap: 1rem;
+  max-width: 1100px; margin: 0 auto; padding: 0 2rem;
+}
+.footer-brand { font-weight: 800; font-size: 1rem; color: var(--primary); }
+.footer-brand span { color: var(--accent); }
+footer p { font-size: 0.78rem; color: var(--neutral-light); }
+.footer-links { display: flex; gap: 1.5rem; }
+.footer-links a {
+  font-size: 0.78rem; color: var(--neutral); text-decoration: none;
+  transition: color 0.2s;
+}
+.footer-links a:hover, .footer-links a:focus { color: var(--primary); }
+
+@media (max-width: 900px) {
+  .nav-links { display: none; flex-direction: column; position: absolute; top: 68px; left: 0; right: 0; background: var(--bg); padding: 1.5rem 2rem; border-bottom: 1px solid rgba(30,58,95,0.08); gap: 1rem; }
+  .nav-links.open { display: flex; }
+  .mobile-toggle { display: block; }
+}
+@media (max-width: 600px) {
+  html { font-size: 16px; }
+  .article-header h1 { font-size: 1.6rem; }
+}
+</style>
+</head>
+<body>
+
+<a href="#main" class="skip-link">Skip to main content</a>
+
+<nav id="nav" role="navigation" aria-label="Main navigation">
+  <div class="container">
+    <a href="../index.html" class="nav-logo" aria-label="AI Access Alliance home">AI<span>:</span>AA</a>
+    <div class="nav-links" id="nav-menu" role="menubar">
+      <a href="../index.html#stories" role="menuitem">Stories</a>
+      <a href="../index.html#mission" role="menuitem">Mission</a>
+      <a href="index.html" role="menuitem" class="active">Articles</a>
+      <a href="../index.html#who" role="menuitem">About</a>
+      <a href="../index.html#join" class="nav-cta" role="menuitem">Get Involved</a>
+    </div>
+    <button class="mobile-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-menu" id="menu-toggle">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+    </button>
+  </div>
+</nav>
+
+<main id="main">
+
+<header class="article-header">
+  <div class="container">
+    <a href="index.html" class="back-link">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+      All Articles
+    </a>
+    <div class="article-meta">
+      <span>Feature</span>
+      <span>April 2026</span>
+      <span>6 min read</span>
+    </div>
+    <h1>When AI Is the Only Interpreter in the Room</h1>
+    <p class="subtitle">How technology became an accessibility right for millions of people who depend on AI to understand essential information.</p>
+  </div>
+</header>
+
+<article class="article-body">
+  <div class="container">
+
+    <p>When Hadrien Chatelet writes an email to a client, he uses ChatGPT. Not because he's cutting corners — because he has dyslexia, and without AI, a single email can consume an entire day.</p>
+
+    <p>"I am a dyslexic, and ChatGPT has changed my life," Chatelet wrote on LinkedIn in 2023. The branding consultant, diagnosed in adulthood, spent years developing workarounds for the gap between his professional expertise and his ability to express it in writing. AI closed that gap. He now describes having "the confidence to stand alongside his peers and clients" for the first time.</p>
+
+    <p>Chatelet is not alone. He's part of a growing population — far larger than most institutions realize — of people who depend on AI not as a productivity tool but as an accessibility one.</p>
+
+    <h2>The comprehension gap is enormous</h2>
+
+    <p>Twenty-six percent of American adults read below a sixth-grade level. The average hospital discharge summary is written at a college reading level. VA benefits letters are drafted in bureaucratic language that assumes legal literacy. University course materials are dense with academic jargon. Tax forms, lease agreements, insurance explanations of benefits — the documents that govern daily life are written for people who already understand them.</p>
+
+    <p>For the 61 million Americans living with a disability — and particularly for those with cognitive, learning, and neurological conditions — this comprehension gap isn't an inconvenience. It's a barrier to participation in society.</p>
+
+    <h2>AI is already closing that gap, one person at a time</h2>
+
+    <p><strong>Ben Whittle,</strong> a pool installer in rural England with dyslexia, worried that his written communications would cost him clients. A tech-savvy customer built him a simple AI email tool in 15 minutes. With that tool, Ashridge Pools landed its first major contract — worth approximately $260,000. The barrier had never been Ben's skill at building pools. It was always the emails.</p>
+
+    <p><strong>Pete Cann,</strong> an autistic adult with ADHD, describes executive function challenges that make routine written tasks paralyzing: "Emails can sit unsent because replies feel too complex to tackle." He once delayed a single form for 18 months. ChatGPT, even on the free tier, gave him what he calls "a useful accessibility tool that helps me function, stay organized, and move forward."</p>
+
+    <p><strong>Hayley Staunton,</strong> a Chief Marketing Officer with dyslexia, spent years having her professional output judged by spelling and grammar rather than the quality of her strategic thinking. With AI: "Now I'm rewarded for my creativity, not my spelling."</p>
+
+    <p>A peer-reviewed study published at the ACM's Australian HCI conference in 2025 followed 13 adults with ADHD over seven days as they used ChatGPT. The researchers titled their paper with a phrase that one participant used to describe what the tool meant to them: <strong>"A little bit of a life raft."</strong></p>
+
+    <p>These are not edge cases. They are the leading indicators of a shift that is already happening. Millions of people have discovered, on their own, that AI tools can bridge the gap between the information they receive and the information they can actually use.</p>
+
+    <h2>Institutions are fighting this shift — often without realizing who they're hurting</h2>
+
+    <p>Hospitals deploy patient portals that prevent copy-paste, blocking patients from using AI to understand their own discharge instructions. Universities implement blanket AI bans without disability exemptions, cutting off students who use AI as a comprehension aid. Government agencies produce benefits paperwork so complex that the people it's meant to serve cannot navigate it — and offer no AI-compatible alternative.</p>
+
+    <p>Anti-scraping tools designed to block bots also break screen readers and AI comprehension tools. CAPTCHAs that escalate in difficulty when they detect assistive technology mean that "users who most need accessibility support face the hardest verification tasks." Websites are deploying anti-bot measures that "break screen readers," rendering content inaccessible to the very users who need the most help.</p>
+
+    <blockquote>
+      <p>"If a tool helps level the playing field for students with disabilities or other disadvantages, ignoring it is not neutrality — it's negligence."</p>
+    </blockquote>
+    <p style="font-size: 0.82rem; color: var(--neutral-light); margin-top: -0.75rem;">— Inside Higher Ed, November 2025</p>
+
+    <h2>The legal framework already exists</h2>
+
+    <p>The Americans with Disabilities Act requires covered entities to provide "auxiliary aids and services" for effective communication. This category was deliberately designed to evolve with technology. In 1990, auxiliary aids meant TTY devices. In 2000, screen readers. In 2010, captioned video and accessible websites.</p>
+
+    <p>In 2026, an AI tool that helps someone understand their own medical records, benefits letter, or lease agreement is the next logical step in the same progression. The legal principle hasn't changed: people with disabilities have the right to understand information that affects their lives. Only the tools have changed.</p>
+
+    <p>No new legislation is required. The Department of Justice has repeatedly confirmed that effective-communication obligations extend to digital platforms and modern technology. What's missing is specific guidance recognizing AI comprehension tools as a category of auxiliary aid — and institutional policies that reflect that recognition.</p>
+
+    <h2>That's what AI Access Alliance was created to build</h2>
+
+    <p>We are assembling the legal doctrine, human evidence, and cross-sector coalition needed to make this recognition real. Our work is governed by disability community advisors and grounded in existing law. We are narrowly focused on one use case: using AI to understand information that already belongs to you.</p>
+
+    <p>Not AI agents acting on your behalf. Not AI generating content. Not AI taking tests. Just comprehension — the most basic, most defensible, most human use case for this technology.</p>
+
+    <p>When Pete Cann uses ChatGPT to draft an email his executive function won't let him start, he's exercising the same right as someone using a screen reader to access a website. When a patient pastes discharge instructions into an AI to get a plain-language explanation, she's exercising the same right as someone who requests a sign language interpreter at a doctor's appointment.</p>
+
+    <p>The principle is the same. The tool is new. The law was built to accommodate exactly this kind of evolution.</p>
+
+    <div class="sources">
+      <h3>Sources</h3>
+      <ul>
+        <li>Hadrien Chatelet, LinkedIn (2023)</li>
+        <li>Ben Whittle, Washington Post (2022)</li>
+        <li>Pete Cann, personal blog (2024)</li>
+        <li>Hayley Staunton, Euronews (2023)</li>
+        <li>"A little bit of a life raft," ACM OzCHI 2025</li>
+        <li>NAAL literacy statistics; CDC disability prevalence data</li>
+        <li>Inside Higher Ed (November 2025)</li>
+        <li>WebProNews (December 2025); AbilityNet; Smashing Magazine (November 2025)</li>
+      </ul>
+    </div>
+
+  </div>
+</article>
+
+<section class="article-cta" aria-label="Call to action">
+  <div class="container">
+    <p class="tagline">Everyone deserves to understand</p>
+    <p>AI Access Alliance is a disability-rights initiative building the legal, policy, and public infrastructure to ensure AI comprehension tools are recognized as accessibility accommodations under existing law.</p>
+    <a href="../index.html#join" class="btn btn-primary">Get Involved</a>
+  </div>
+</section>
+
+</main>
+
+<footer role="contentinfo">
+  <div class="container">
+    <div>
+      <div class="footer-brand">AI<span>:</span>AA</div>
+      <p>AI Access Alliance &copy; 2026. All rights reserved.</p>
+    </div>
+    <nav class="footer-links" aria-label="Footer navigation">
+      <a href="../index.html#stories">Stories</a>
+      <a href="../index.html#mission">Mission</a>
+      <a href="index.html">Articles</a>
+      <a href="../index.html#who">About</a>
+      <a href="../index.html#join">Get Involved</a>
+    </nav>
+  </div>
+</footer>
+
+<script>
+window.addEventListener('scroll', () => {
+  document.getElementById('nav').classList.toggle('scrolled', window.scrollY > 20);
+});
+const menuToggle = document.getElementById('menu-toggle');
+const navMenu = document.getElementById('nav-menu');
+menuToggle.addEventListener('click', () => {
+  const isOpen = navMenu.classList.toggle('open');
+  menuToggle.setAttribute('aria-expanded', isOpen);
+  menuToggle.setAttribute('aria-label', isOpen ? 'Close menu' : 'Open menu');
+});
+navMenu.querySelectorAll('a').forEach(link => {
+  link.addEventListener('click', () => {
+    navMenu.classList.remove('open');
+    menuToggle.setAttribute('aria-expanded', 'false');
+    menuToggle.setAttribute('aria-label', 'Open menu');
+  });
+});
+</script>
+</body>
+</html>

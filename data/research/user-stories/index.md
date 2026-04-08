@@ -1,14 +1,14 @@
 ---
 title: User Stories
 created: 2026-04-05T00:00:00Z
-modified: 2026-04-06T00:00:00Z
+modified: 2026-04-07T18:00:00Z
 tags: [research, user-stories, evidence, disability, accessibility]
 order: 1
 ---
 
 # User Stories
 
-**Owner:** Research Director | **Target:** 15+ documented stories by Q3 2026 | **Status: 15/15 core stories + 3 supplementary**
+**Owner:** Research Director | **Target:** 15+ documented stories by Q3 2026 | **Status: 20/15 core stories + 3 supplementary**
 
 Documented experiences of real people who rely on AI to comprehend written information. These stories are the human evidence that powers AI-AA's legal arguments, sponsor pitches, and public narrative.
 
@@ -264,6 +264,89 @@ Each user story should capture:
 
 ---
 
+### Story 16: Senior Director with ADHD — Workplace Document and Communication Comprehension
+
+| Field | Detail |
+|-------|--------|
+| **Who** | Tara DeZao, senior director of product marketing at Pega, diagnosed with ADHD as an adult |
+| **Setting** | Employment / corporate workplace |
+| **What she needed** | To process workplace communications (Slack messages, Teams notifications, emails, strategy documents) without losing focus on her primary tasks — a core ADHD challenge where incoming written requests derail executive function |
+| **How AI helped** | Uses AI agents to receive and process incoming requests while she remains focused on her primary work. The AI handles written tasks that would otherwise completely knock her off her thought process. |
+| **What happened when blocked** | Before AI: "I've white-knuckled my way through the business world." Incoming written requests over Slack or Teams would completely derail her thought process, forcing her to choose between responding (losing focus) or ignoring (missing information). |
+| **Quote** | "I've white-knuckled my way through the business world, but these tools help so much." On AI's ability to handle incoming requests: it "has been a godsend." |
+| **Source** | CNBC, November 2025: [People with ADHD, autism, dyslexia say AI agents are helping them succeed at work](https://www.cnbc.com/2025/11/08/adhd-autism-dyslexia-jobs-careers-ai-agents-success.html) |
+| **Consent status** | Public — named in CNBC feature interview |
+
+**Supporting data:** An EY survey of 300 employees with disabilities or neurodivergence across 17 organizations found that **68% said AI tools (specifically Microsoft Copilot) reduced work anxieties** and **71% said it gave them hope**. 85% of neurodivergent respondents said Copilot can create a more inclusive workplace. Neurodivergent employees were 25% more satisfied with AI assistants than neurotypical peers (UK Department for Business and Trade, Copilot trial of 1,000 licenses, October 2024 - March 2025). Sources: [Microsoft Source](https://news.microsoft.com/source/features/ai/how-ai-helps-neurodivergent-professionals-showcase-their-strengths/); [UK DBT Digital Trade Blog](https://digitaltrade.blog.gov.uk/2025/05/19/flying-with-co-pilot-how-ai-is-helping-neurodiverse-staff-thrive-in-dbt/)
+
+---
+
+### Story 17: Students with Disabilities Disproportionately Disciplined for AI Use (Systematic Pattern)
+
+| Field | Detail |
+|-------|--------|
+| **Who** | Students with IEPs and/or Section 504 plans across U.S. K-12 and higher education |
+| **Setting** | Education — schools and universities with blanket AI bans |
+| **What they needed** | AI comprehension tools to read, summarize, and understand course materials, assignments, and communications at grade level despite learning disabilities, ADHD, dyslexia, or cognitive disabilities |
+| **How AI helped** | Students with IEPs/504 plans are more likely to use generative AI than their peers — because they need it. 72% of students with disabilities reported using generative AI. |
+| **What happened when blocked** | Students with disabilities face **disproportionate discipline** for AI use. Parents of students with disabilities are more likely to report their children have been disciplined for AI use. AI detection tools (Turnitin, GPTZero) disproportionately flag non-standard writing patterns — the same patterns produced by dyslexia, ESL status, and cognitive disabilities. **1 in 5 students** said they or someone they know was accused of using AI to cheat without proof. 79% of parents of students with disabilities expressed concern about privacy and data security in school AI enforcement. |
+| **Quote** | "If a tool helps level the playing field for students with disabilities or other disadvantages, ignoring it is not neutrality — it's negligence." ([Inside Higher Ed, November 2025](https://www.insidehighered.com/opinion/views/2025/11/26/case-ai-accommodation-opinion)) |
+| **Source** | CDT, "Up in the Air: Educators Juggling the Potential of Generative AI with Detection, Discipline, and Distrust," 2024-2025. [CDT Report](https://cdt.org/insights/report-up-in-the-air-educators-juggling-the-potential-of-generative-ai-with-detection-discipline-and-distrust/); K-12 Dive, [Heightened AI use in special education brings elevated risks](https://www.k12dive.com/news/artificial-intelligence-special-education-Section-504-benefits-risks-privacy-IDEA-IEP/804535/); CDT, [AI detectors disproportionately affect English learners](https://cdt.org/insights/brief-late-applications-disproportionate-effects-of-generative-ai-detectors-on-english-learners/) |
+| **Consent status** | Public — aggregated survey data, no individual identification |
+
+**Note:** This is a systematic pattern story, not an individual case. However, named individuals have now been found — see Stories 18 and 19 below.
+
+---
+
+### Story 18: Autistic Student — AI Detector False Positive Due to Neurodivergent Writing Style
+
+| Field | Detail |
+|-------|--------|
+| **Who** | Moira Olmsted, college student with autism spectrum disorder, Central Methodist University |
+| **Setting** | Education — online courses (studying to become a teacher) |
+| **What she needed** | To submit written assignments without her natural autistic writing style being misidentified as AI-generated |
+| **How AI helped** | N/A — she was punished for NOT using AI. Her natural writing style triggered an AI detector. |
+| **What happened when blocked** | Weeks into the fall 2023 semester, she submitted a reading summary. Her instructor ran it through an AI detection tool, which flagged it as likely AI-generated. Her "formulaic" writing style — structured, literal, and repetitive — is characteristic of her autism but resembles AI output. She received a **zero on the assignment and a disciplinary warning**. She was told that "the next time the software identified her work as plagiarized, there would be no second review." Grade was eventually restored, but the warning stood. She now **screen-records herself writing every assignment** and runs her own work through AI checkers preemptively — a burden no neurotypical student bears. |
+| **Quote** | Described her writing style as "formulaic" — a direct result of her neurodivergence that AI detectors misidentify as machine-generated. |
+| **Source** | Bloomberg Businessweek, October 2024: [Do AI Detectors Work? Students Face False Cheating Accusations](https://www.bloomberg.com/news/features/2024-10-18/do-ai-detectors-work-students-face-false-cheating-accusations); also [Boing Boing](https://boingboing.net/2024/10/21/students-fight-false-accusations-from-ai-detection-snake-oil.html); [ODSC](https://opendatascience.com/ai-detectors-wrongly-accuse-students-of-cheating-sparking-controversy/) |
+| **Consent status** | Public — named in Bloomberg reporting |
+
+**Critical finding:** A 2025 peer-reviewed study (Chambers & Kelley, *AIED 2025* proceedings, Springer) confirmed that **autistic writing is flagged at statistically significantly higher rates** by AI detection models. Corpus of ~60,000 Reddit posts found "significantly more texts from the likely-autistic subcorpus were flagged as AI-generated." [Springer](https://link.springer.com/chapter/10.1007/978-3-031-98420-4_7)
+
+---
+
+### Story 19: Autistic Student — Falsely Accused Twice by Two Professors
+
+| Field | Detail |
+|-------|--------|
+| **Who** | Annika Nelson, student with autism spectrum disorder, Western Washington University |
+| **Setting** | Education — university courses |
+| **What she needed** | To submit written work without her autistic communication style being treated as evidence of AI use |
+| **How AI helped** | N/A — accused of AI use due to writing style, not actual AI use. |
+| **What happened when blocked** | Falsely accused **twice** by two different professors. (1) Communications theory professor accused her of AI use on a 300-word assignment because her writing sounded too "clinical." When required to rewrite during office hours and the rewritten version had the same structure and style, the professor apologized and gave full credit. (2) Latin American studies professor accused her because she included information not covered in class (learned in a previous course). Resolved by showing notes. She now **deliberately makes her writing "more casual and less structured"** and adds footnotes documenting sources — effectively **masking her autistic writing style** to avoid future accusations. |
+| **Quote** | Described having to consciously mask her natural autistic writing patterns to avoid AI detection false positives. |
+| **Source** | The Front (WWU student newspaper), December 2024: [WWU AI article](https://www.thefrontonline.com/article/2024/12/wwu-ai) |
+| **Consent status** | Public — named in student newspaper reporting |
+
+---
+
+### Story 20: Employee with ADHD — AI for Workplace Document Comprehension (Closest to Gap 1)
+
+| Field | Detail |
+|-------|--------|
+| **Who** | Christina Philippe, Senior Digital Strategist at Ogilvy (Berlin), with ADHD |
+| **Setting** | Employment — corporate workplace |
+| **What she needed** | To comprehend a client project "full of tech-heavy lingo" and to draft communications to her landlord (delayed for weeks due to ADHD executive function paralysis) |
+| **How AI helped** | Used ChatGPT to understand technical documents: "I had no idea what it actually meant. I knew if I was going to get this project finished, I had to get into all the meanings of this." Also used AI to break through ADHD-driven paralysis on personal correspondence. |
+| **What happened when blocked** | Without AI, complex workplace documents remained incomprehensible and personal administrative tasks went unaddressed for weeks. |
+| **Quote** | "I had no idea what it actually meant. I knew if I was going to get this project finished, I had to get into all the meanings of this." |
+| **Source** | Fortune, November 2023: [A.I. can be a 'game changer' for neurodivergent employees](https://fortune.com/2023/11/28/a-i-can-be-a-game-changer-for-neurodivergent-employees/) |
+| **Consent status** | Public — named in Fortune interview |
+
+**Note re evidence gap:** This story addresses workplace document comprehension but not specifically HR/benefits enrollment. The closest systematic evidence for the benefits gap: **74% of disabled employees who request workplace accommodations are denied at least once, with assistive software among the most commonly denied categories** (Deloitte Disability Inclusion @ Work 2024, 10,000 respondents, 20 countries). [Deloitte](https://www.deloitte.com/global/en/about/press-room/deloittes-first-disability-inclusion-work-2024.html)
+
+---
+
 ## Additional Stories (Beyond Target — For Cross-Team Use)
 
 ### Supplementary Story A: Parents Using AI to Understand Child's IEP
@@ -322,6 +405,7 @@ Each user story should capture:
 | 12 | Makenzie Gilkison, dyslexic student | School materials / AI chatbot | AP wire story 2024 |
 | 15 | Elle-Mae Taylor, dyslexic student | Academic essays, emails | Microsoft Education Blog 2022 |
 | A | Rosa Mendoza, Shan Hong (parents) | IEP documents (50+ pages) | The Frisc 2025 |
+| 17 | Students with IEPs/504 plans (systematic pattern) | Course materials, assignments, communications | CDT 2024-2025 |
 
 **Key finding:** An Inside Higher Ed opinion piece argues: "If a tool helps level the playing field for students with disabilities or other disadvantages, ignoring it is not neutrality — it's negligence." Blanket AI bans "risk disproportionately harming students with disabilities who rely on text-to-speech and other AI-enabled supports." ([Inside Higher Ed, November 2025](https://www.insidehighered.com/opinion/views/2025/11/26/case-ai-accommodation-opinion))
 
@@ -357,6 +441,7 @@ Each user story should capture:
 | 3 | Hayley Staunton, dyslexic CMO | Corporate communications | Euronews 2023 |
 | 4 | Pete Cann, autistic/ADHD professional | Emails, forms, task management | Personal blog 2024 |
 | 11 | Anonymous autistic/ADHD person | Social and professional communications | ADDitude Magazine |
+| 16 | Tara DeZao, senior director with ADHD | Workplace communications, Slack/Teams, strategy docs | CNBC 2025 |
 
 ---
 
@@ -445,8 +530,9 @@ In 2024, over 4,000 lawsuits were filed in federal and state courts by individua
 1. ~~**Government benefits navigation**~~ — **PARTIALLY FILLED** (Story 13: Claude Code for disability benefits appeal). Still need a U.S.-based SSA/Medicaid/VA story with a named individual.
 2. ~~**Healthcare comprehension with blocking**~~ — **FILLED** (Supplementary C: AADJ v. Epic lawsuit documents real harm from fragmented patient portals — Larry Miller died, John Hodges became homeless).
 3. ~~**Students with IEPs/504 plans**~~ — **FILLED** (Story 12: Makenzie Gilkison; Supplementary A: Rosa Mendoza and Shan Hong).
-4. **Elderly users** — **STILL OPEN.** Very few published accounts of elderly people specifically using AI for document comprehension. ElliQ companion robot stories exist but are not document-comprehension focused. Critical population for the narrative — requires original story collection.
-5. **Employees navigating benefits enrollment** — **STILL OPEN.** No published accounts found of employees with disabilities using AI to comprehend workplace benefits documents.
+4. ~~**Named student harmed by AI ban/detector**~~ — **FILLED** (April 2026). Stories 18-19: Moira Olmsted (autism, Central Methodist, Bloomberg) and Annika Nelson (autism, WWU). Plus: Chambers & Kelley 2025 peer-reviewed study confirms autistic writing is flagged at higher rates by AI detectors.
+5. **Elderly users** — **STILL OPEN.** Very few published accounts of elderly people specifically using AI for document comprehension. ElliQ companion robot stories exist but are not document-comprehension focused. Critical population for the narrative — requires original story collection.
+6. **Employees navigating benefits enrollment** — **PARTIALLY FILLED.** Stories 16 (DeZao, CNBC) and 20 (Philippe, Fortune) cover ADHD employees using AI for workplace document comprehension. Deloitte 2024 data shows 74% of disabled employees denied accommodations at least once. Still need a specific HR benefits enrollment story — this remains a high-value original story collection target.
 
 ### Methodological Notes
 

@@ -1,8 +1,8 @@
 ---
 title: Evidence Data for Doctrine Memo
 created: 2026-04-06T00:00:00Z
-modified: 2026-04-06T00:00:00Z
-tags: [research, evidence, data, reading-levels, ai-accuracy, doctrine-memo, policy]
+modified: 2026-04-06T07:00:00Z
+tags: [research, evidence, data, reading-levels, ai-accuracy, doctrine-memo, policy, workplace-ai, ai-detectors]
 order: 5
 ---
 
@@ -121,7 +121,42 @@ ASAN's objection is about AI being used by *organizations to produce* plain lang
 
 ---
 
-## VII. Evidence Gaps Still Open
+## VII. Workplace AI as Accommodation — Neurodivergent Employees
+
+### EY/Microsoft Copilot Study (2025)
+- Survey of 300 employees with disabilities or neurodivergence across 17 organizations worldwide.
+- **68%** said Copilot reduced work anxieties. **71%** said it gave them hope. **85%** said Copilot can create a more inclusive workplace. **76%** said it helped them thrive at work.
+- Copilot helped with initiating tasks, organizing thoughts, spotting mistakes and improving accuracy — particularly useful for employees with dyslexia reviewing documents and those with ADHD managing email and meeting summaries.
+- *Source:* Microsoft Source, 2025. [Microsoft](https://news.microsoft.com/source/features/ai/how-ai-helps-neurodivergent-professionals-showcase-their-strengths/)
+
+### UK Department for Business and Trade — Copilot Trial (October 2024 - March 2025)
+- 1,000 Copilot licenses issued, 300 participants evaluated.
+- **Neurodiverse employees were 25% more satisfied** with AI assistants and were more likely to recommend the tool than neurotypical respondents.
+- Participants who focused on written tasks (reviewing, summarizing, drafting) tended to be most satisfied.
+- *Source:* UK DBT Digital Trade Blog, May 2025. [DBT](https://digitaltrade.blog.gov.uk/2025/05/19/flying-with-co-pilot-how-ai-is-helping-neurodiverse-staff-thrive-in-dbt/)
+
+**For legal use:** "In a controlled UK government trial of 1,000 employees, neurodivergent workers were 25% more satisfied with AI assistants than their neurotypical peers. An EY study of 300 disabled/neurodivergent employees found 85% said AI tools create a more inclusive workplace and 68% said they reduced work anxiety. These are not anecdotes — they are organizational-scale evidence that AI tools function as de facto accommodations."
+
+---
+
+## VIII. AI Detectors Disproportionately Harm Students with Disabilities
+
+### CDT Research (2024-2025)
+- Students with IEPs/504 plans are more likely to use generative AI than peers (72% vs. general student population).
+- Students with disabilities are more likely to have been disciplined for AI use.
+- **1 in 5 students** said they or someone they know was accused of using AI to cheat without proof or it was later concluded the student did not inappropriately use AI.
+- AI detectors are more likely to falsely flag non-standard writing patterns — the same patterns produced by dyslexia, learning disabilities, and ESL status.
+- *Source:* CDT, "Up in the Air," 2024-2025. [CDT Report](https://cdt.org/insights/report-up-in-the-air-educators-juggling-the-potential-of-generative-ai-with-detection-discipline-and-distrust/); CDT, "Late Applications," 2024. [CDT Brief](https://cdt.org/insights/brief-late-applications-disproportionate-effects-of-generative-ai-detectors-on-english-learners/)
+
+### Stanford AI Detector Bias Study
+- AI detectors are "very likely to falsely flag the writing of non-native English speakers as AI-generated" with significant disparity between non-native and native speakers.
+- *Source:* Referenced in CDT brief. [EdWeek](https://www.edweek.org/technology/more-teachers-are-using-ai-detection-tools-heres-why-that-might-be-a-problem/2024/04)
+
+**For legal use:** "Students with disabilities are caught in a vicious cycle: they are more likely to use AI tools because they need them for comprehension, and more likely to be punished for that use by AI detection systems that disproportionately flag non-standard writing patterns. 1 in 5 students report being falsely accused of AI cheating. Blanket AI bans in schools, enforced by biased detection tools, function as de facto denial of accommodations for students with disabilities."
+
+---
+
+## IX. Evidence Gaps Still Open
 
 | Priority | Evidence Need | Status |
 |----------|-------------|--------|

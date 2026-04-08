@@ -1,6 +1,6 @@
-# KB Structure — Cabinet
+# KB Structure — AI-AA
 
-You are an AI agent working inside the Cabinet knowledge base. This file teaches you about the KB structure and conventions.
+You are an AI agent working inside the AI-AA knowledge base. This file teaches you about the KB structure and conventions.
 
 ## Directory Layout
 

@@ -1,7 +1,7 @@
 ---
 title: Governance
 created: 2026-04-05T00:00:00Z
-modified: 2026-04-06T00:00:00Z
+modified: 2026-04-07T00:00:00Z
 tags: [operations, governance, bylaws, conflict-of-interest, sponsor-firewall]
 order: 2
 ---
@@ -18,7 +18,7 @@ This section contains AI-AA's governance documents — the bylaws, policies, and
 |----------|---------|--------|--------|
 | **Bylaws** | Board composition, officer roles, meeting rules, voting procedures, amendment process | Q2 2026 | Draft v0.1 |
 | **Sponsor Governance Policy** | Explicit provisions preventing sponsor influence over mission, legal positions, and policy | Q2 2026 | Draft v0.1 |
-| **Conflict of Interest Policy** | Disclosure requirements, recusal procedures, annual certification | Q2 2026 | Draft v0.1 |
+| **Conflict of Interest Policy** | Disclosure requirements, recusal procedures, annual certification | Q2 2026 | **Draft v0.2** — integrated Policy review recommendations #1 (third-party conflict-raising) and #3 (remote/written recusal) |
 | **Board Member Agreement** | Expectations, time commitment, fiduciary duties, confidentiality | Q2 2026 | Draft v0.1 |
 | **Sponsor Agreement Template** | Standard agreement with governance firewall provisions for all sponsors | Q2 2026 | Draft v0.1 |
 | **Whistleblower Policy** | Safe reporting channel for governance concerns | Q3 2026 | Not started |
@@ -51,6 +51,6 @@ Study these governance structures as templates:
 
 - [[Bylaws]] — *DRAFT v0.1 — Full 13-article draft covering board composition, officers, committees, sponsor firewall, advisory council, fiscal matters*
 - [[Sponsor Governance Policy]] — *DRAFT v0.1 — Comprehensive firewall provisions, sponsor participation channels, agreement requirements, enforcement*
-- [[Conflict of Interest Policy]] — *DRAFT v0.1 — Disclosure requirements, recusal procedures, sponsor-specific provisions, annual certification*
+- [[Conflict of Interest Policy]] — *DRAFT v0.2 — Disclosure requirements, recusal procedures (incl. third-party conflict-raising and remote/written proceedings), sponsor-specific provisions, annual certification*
 - [[Board Member Agreement]] — *DRAFT v0.1 — Fiduciary duties, time commitment, attendance, sponsor independence, confidentiality, compensation*
 - [[Sponsor Agreement Template]] — *DRAFT v0.1 — Full sponsor agreement with non-negotiable governance firewall provisions (Sections 4-9), customizable benefits and payment terms (Sections 1-3)*

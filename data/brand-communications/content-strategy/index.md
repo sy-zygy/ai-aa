@@ -43,10 +43,10 @@ All content maps to one of four messaging pillars (from [[Brand & Voice Guide]])
 | Human story drafts | 10 | **7 drafted** (H1-H7 — Hadrien, Ben, Pete, Hayley, ADHD study, Be My AI, Lynn White) |
 | Policy explainer threads | 5 | **2 drafted** |
 | Thought leadership / framing posts | 5 | **3 drafted** (T1, T3, T4 — evolution, blocking, rights framing) |
-| Sector spotlight outlines | 3 | Not started |
+| Sector spotlight outlines | 3 | **2 drafted** (Healthcare, Education) — 1 remaining (Government/Legal) |
 | Press kit | 1 | **Mission, key facts, FAQ, spokesperson prep drafted** |
 | Website launch content | 1 | Website v0.1 exists |
-| Long-form content pieces | 3 | **1 drafted** ("When AI Is the Only Interpreter in the Room") |
+| Long-form content pieces | 3 | **3 drafted** ("When AI Is the Only Interpreter in the Room" + Healthcare Spotlight + Education Spotlight) |
 
 ### Weeks 1-4 Content Calendar (Specific Post Assignments)
 

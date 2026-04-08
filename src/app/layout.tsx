@@ -16,7 +16,7 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Cabinet",
+  title: "AI-AA",
   description: "AI-first knowledge base and startup OS",
 };
 

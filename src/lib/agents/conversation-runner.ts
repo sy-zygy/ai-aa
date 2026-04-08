@@ -22,6 +22,7 @@ interface StartConversationInput {
   title: string;
   trigger: ConversationMeta["trigger"];
   prompt: string;
+  args?: string[];
   mentionedPaths?: string[];
   jobId?: string;
   jobName?: string;
@@ -42,7 +43,7 @@ function buildCabinetEpilogueInstructions(): string {
 function buildAgentContextHeader(persona: AgentPersona | null, agentSlug: string): string {
   if (!persona) {
     return [
-      "You are Cabinet's General agent.",
+      "You are AI-AA's General agent.",
       "Handle the request directly and use the knowledge base as your working area.",
     ].join("\n");
   }
@@ -100,7 +101,7 @@ export async function buildManualConversationPrompt(input: {
   const prompt = [
     buildAgentContextHeader(persona, input.agentSlug),
     "",
-    "Work in the Cabinet knowledge base at /data.",
+    "Work in the AI-AA knowledge base at /data.",
     "Reflect useful outputs in KB files, not only in terminal text.",
     buildCabinetEpilogueInstructions(),
     "",
@@ -139,7 +140,7 @@ export async function buildEditorConversationPrompt(input: {
     "",
     `You are editing the page at /data/${input.pagePath}.`,
     `Prefer making the requested changes directly in ${input.pagePath} unless the task clearly belongs in another KB file.`,
-    "Work in the Cabinet knowledge base at /data.",
+    "Work in the AI-AA knowledge base at /data.",
     "Edit KB files directly and reflect useful outputs in the KB, not only in terminal text.",
     buildCabinetEpilogueInstructions(),
     "",
@@ -171,6 +172,7 @@ export async function startConversationRun(
     await createDaemonSession({
       id: meta.id,
       prompt: input.prompt,
+      args: input.args,
       cwd: input.cwd,
       timeoutSeconds: input.timeoutSeconds,
     });
@@ -186,7 +188,10 @@ export async function startConversationRun(
   }
 
   if (input.onComplete) {
-    waitForConversationCompletion(meta.id, input.onComplete).catch((err) => {
+    const waiterTimeoutMs = input.timeoutSeconds && input.timeoutSeconds > 0
+      ? (input.timeoutSeconds + 300) * 1000
+      : undefined;
+    waitForConversationCompletion(meta.id, input.onComplete, waiterTimeoutMs).catch((err) => {
       console.error(`[conversation-runner] waitForConversationCompletion failed for ${meta.id}:`, err);
     });
   }
@@ -196,12 +201,15 @@ export async function startConversationRun(
 
 export async function waitForConversationCompletion(
   conversationId: string,
-  onComplete?: (completion: ConversationCompletion) => Promise<void> | void
+  onComplete?: (completion: ConversationCompletion) => Promise<void> | void,
+  timeoutMs?: number
 ): Promise<ConversationCompletion> {
-  const deadline = Date.now() + 35 * 60 * 1000;
+  const deadline = timeoutMs !== undefined && timeoutMs > 0
+    ? Date.now() + timeoutMs
+    : 0;
   let completionHandled = false;
 
-  while (Date.now() < deadline) {
+  while (deadline === 0 || Date.now() < deadline) {
     await new Promise((resolve) => setTimeout(resolve, 3000));
 
     let data: { status: string; output: string };
@@ -318,7 +326,7 @@ export async function startJobConversation(job: JobConfig): Promise<JobRun> {
   const prompt = [
     buildAgentContextHeader(persona, job.agentSlug || "agent"),
     "",
-    "This is a scheduled or manual Cabinet job.",
+    "This is a scheduled or manual AI-AA job.",
     "Reflect the results in KB files whenever useful.",
     buildCabinetEpilogueInstructions(),
     "",

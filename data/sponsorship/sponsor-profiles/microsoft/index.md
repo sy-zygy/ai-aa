@@ -8,8 +8,8 @@ order: 1
 
 # Microsoft — Sponsor Research Profile
 
-**Tier:** 1 (Founding Sponsor) | **Stage:** Research | **Priority:** #1
-**Last Updated:** 2026-04-05
+**Tier:** 1 (Founding Sponsor) | **Stage:** Outreach Ready | **Priority:** #1
+**Last Updated:** 2026-04-07
 
 ---
 
@@ -229,11 +229,12 @@ Microsoft Elevate combines corporate social responsibility, sales, and engineeri
 
 ## 12. Current Status
 
-- **Pipeline stage:** Research (complete)
-- **Next action:** Identify warm introduction path — Ability Summit 2026 (May 19-20) is the immediate opportunity
+- **Pipeline stage:** Outreach Drafted
+- **Next action:** CEO review and send Lay-Flurrie email by Apr 14; register for Ability Summit by Apr 14
 - **Priority contacts:** Jenny Lay-Flurrie (CAO), Justin Spelhaug (Elevate President)
-- **Target timeline:** Initial contact by May 2026 (Ability Summit); formal pitch by June 2026
+- **Target timeline:** Email sent Apr 14; Ability Summit May 19-20; formal pitch by June 2026
 - **Estimated ask:** $500K-$1M/year as Founding Sponsor
+- **Outreach materials:** See [[Microsoft Outreach]] for draft emails and Ability Summit networking plan
 
 ---
 

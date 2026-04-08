@@ -1,14 +1,14 @@
 ---
 title: "Sponsor Deck — Slide Outline"
 created: 2026-04-06T00:00:00Z
-modified: 2026-04-06T00:00:00Z
+modified: 2026-04-07T00:00:00Z
 tags: [sponsorship, pitch, deck, presentation, fundraising]
 order: 2
 ---
 
 # Sponsor Deck — Slide Outline
 
-**Owner:** Sponsorships Director | **Status:** DRAFT v0.2 — Content Draft | **Last Updated:** 2026-04-06
+**Owner:** Sponsorships Director | **Status:** READY v1.0 — CEO Approved | **Last Updated:** 2026-04-07
 
 10-15 slide visual pitch deck for first meetings, deep dives, and follow-up packages. Designed to be presented live (not emailed standalone — the Executive Summary serves that purpose).
 
@@ -49,9 +49,35 @@ A single, concrete, emotionally grounded story of a real person who lost access 
 3. The moment the institution blocked it
 4. The consequence — a decision made without understanding
 
-> **Customization:** Swap the story based on sponsor alignment. For Microsoft: a story involving Copilot or Immersive Reader. For Google: a story involving Google's Read Along or Gemini. For OpenAI: ChatGPT. Match the tool to the sponsor's products.
+> **Customization:** Swap the story based on sponsor alignment. Per-sponsor variants below.
 
-> **Source:** Request from Research Director — user stories featuring specific sponsor products.
+> **Source:** Research Director — product-specific user stories delivered April 6, 2026.
+
+#### Slide 2 — Microsoft Variant
+
+**"What Immersive Reader did was give me the ability to be on the same level as everyone else."**
+
+Elle-Mae Taylor was diagnosed with dyslexia as a child. Educators told her to focus on sports instead of academics. She had messy handwriting and couldn't express her thoughts in timed written exams. Then she discovered Microsoft Immersive Reader — page color overlays, line focus, Read Aloud, and dictation gave her tools to comprehend text at the same pace as her peers.
+
+Result: Elle-Mae earned the highest possible marks on her A-Levels. She is now a Microsoft intern who still uses Immersive Reader daily.
+
+**The connection to AI-AA:** If Immersive Reader is an auxiliary aid that transforms academic outcomes for students with dyslexia, then blocking it — or blocking the AI tools that extend its capabilities — constitutes denial of meaningful access under the ADA. Microsoft's investment in AI accessibility tools needs the policy infrastructure that ensures they're recognized, not blocked.
+
+**Supporting data:** EY survey of 300 employees with disabilities: **85% said Copilot creates a more inclusive workplace**, 68% said it reduced work anxiety, 76% said it helped them thrive. In the UK government's Copilot trial, **neurodiverse employees were 25% more satisfied** than neurotypical peers.
+
+*Source: [Microsoft Education Blog, June 2022](https://www.microsoft.com/en-us/education/blog/2022/06/how-immersive-reader-helped-a-student-succeed-in-school-and-life/); [Microsoft Source](https://news.microsoft.com/source/features/ai/how-ai-helps-neurodivergent-professionals-showcase-their-strengths/)*
+
+#### Slide 2 — Anthropic Variant
+
+**"Here's how a programming tool became my most powerful ally in a deeply personal, completely non-technical challenge."**
+
+A software engineer's mother had severe spinal degeneration after 45 years of physical labor. Her disability benefits claim was rejected. He used Claude Code to OCR and analyze 50+ scanned medical documents spanning 25+ years, cross-reference them against government disability regulations, and identify errors in the commission's rejection. Claude found that multiple vertebral segments should sum to 50%+ disability — not the 30% initially recognized. Claude produced 11 iterative versions of a 230-line legal appeal with 30+ specific medical citations.
+
+**The connection to AI-AA:** A non-lawyer used Claude as a comprehension bridge to navigate complex government disability regulations. This is exactly the auxiliary-aid use case AI-AA's doctrine protects. If government portals block AI comprehension tools, people like this engineer — and his disabled mother — lose their most powerful path to understanding systems designed to help them.
+
+**Supporting story:** A grieving family used a $20/month Claude subscription to analyze a $195,000 hospital bill for 4 hours of ICU care. Claude identified ~$100,000 in duplicative charges, procedures marked as mutually exclusive, and regulatory coding violations. The bill was reduced to $33,000 — an **83% reduction**.
+
+*Source: [DEV Community, 2026](https://dev.to/nunc/i-used-claude-code-to-write-a-legal-appeal-for-my-mothers-disability-benefits-40f4); [Tom's Hardware, October 2025](https://www.tomshardware.com/tech-industry/artificial-intelligence/grieving-family-uses-ai-chatbot-to-cut-hospital-bill-from-usd195-000-to-usd33-000-family-says-claude-highlighted-duplicative-charges-improper-coding-and-other-violations) (self-reported, not independently verified)*
 
 ---
 
@@ -199,10 +225,10 @@ Template structure:
 
 **Per-sponsor versions:**
 
-- **Microsoft:** "$25M AI for Accessibility. 35M Immersive Reader users. 91% of disabled employees call Copilot assistive tech. But when hospitals block AI, your investment hits a wall."
-- **Google:** "$75M AI Opportunity Fund. Read Along improves reading 81%. But schools banning AI don't distinguish Google's accessibility tools from general chatbots."
+- **Microsoft:** "$25M AI for Accessibility. 35M Immersive Reader users. 85% of employees with disabilities say Copilot creates a more inclusive workplace. Elle-Mae Taylor went from being told to 'focus on sports' to earning the highest possible A-Level marks — because Immersive Reader gave her parity. But when schools ban AI tools or hospitals block patient-portal extensions, your $25M investment hits a wall. AI-AA removes that wall."
+- **Google:** "$75M AI Opportunity Fund. Read Along improves reading 81%. 'Through My Eyes' with Understood.org reaches neurodivergent students. But schools banning AI don't distinguish Google's accessibility tools from general chatbots. AI-AA creates the legal framework that ensures Read Along, Gemini summarization, and Select-to-Speak are recognized as auxiliary aids — not blocked as chatbots."
 - **OpenAI:** "ChatGPT is the most widely used AI comprehension tool in the world. Millions use it as an accessibility aid. Without legal recognition, institutions treat it as a distraction, not an accommodation."
-- **Anthropic:** "Claude is deployed in healthcare, legal, and education — the exact settings where comprehension barriers cause the most harm. Responsible AI positioning without legal recognition is incomplete."
+- **Anthropic:** "A software engineer used Claude Code to analyze 50+ medical documents and win his disabled mother's benefits appeal. A grieving family used a $20/month Claude subscription to reduce a $195K hospital bill by 83%. These aren't edge cases — Claude already functions as a comprehension bridge for people navigating complex systems. Without legal recognition, institutions block Claude in exactly the settings where it saves lives. AI-AA builds the policy infrastructure that ensures Claude's accessibility use cases are protected."
 - **Meta:** "Ray-Ban Meta glasses provide live captioning and scene description — literal auxiliary aids. AI Glasses Impact Grants fund accessibility. AI-AA ensures those tools are recognized in the settings where people need them most."
 
 > **Design note:** This is the only slide that changes per meeting. All others are standard.

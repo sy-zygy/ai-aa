@@ -18,8 +18,8 @@ async function getGit(): Promise<SimpleGit | null> {
   try {
     git = simpleGit(DATA_DIR);
     await git.init();
-    await git.addConfig("user.email", "kb@cabinet.dev");
-    await git.addConfig("user.name", "Cabinet");
+    await git.addConfig("user.email", "kb@ai-aa.org");
+    await git.addConfig("user.name", "AI-AA");
     return git;
   } catch {
     return null;

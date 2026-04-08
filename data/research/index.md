@@ -1,7 +1,7 @@
 ---
 title: Research & Evidence
 created: 2026-04-05T00:00:00Z
-modified: 2026-04-06T00:00:00Z
+modified: 2026-04-07T17:30:00Z
 tags: [research, evidence, user-stories, case-studies, advisory-council, accessibility]
 order: 3
 ---
@@ -62,7 +62,7 @@ Real experiences of people who rely on AI to comprehend written information. Eac
 - Elderly users navigating complex digital systems
 - Non-native speakers with learning disabilities
 
-**Target:** 15+ documented stories by Q3 2026 | **Status:** 15/15 core + 3 supplementary
+**Target:** 15+ documented stories by Q3 2026 | **Status:** 20/15 core + 3 supplementary
 
 ### 2. Sector Case Studies
 
@@ -76,7 +76,7 @@ Institutional contexts where AI comprehension support is needed, blocked, or wor
 | Legal | Courts and legal-aid settings; self-represented litigants using AI for document comprehension | Medium |
 | Employment | Workplace AI policies; employees needing AI for benefits enrollment and policy documents | Medium |
 
-**Target:** 5 sector case studies by Q3 2026
+**Target:** 5 sector case studies by Q3 2026 | **Status:** 1 drafted (healthcare), 1 scoped (education), 3 not started
 
 ### 3. Harm Documentation
 
@@ -146,9 +146,10 @@ Understanding and documenting the opposition to inform our arguments:
 
 ## KB Sections
 
-- [[User Stories]] — *15 documented stories + 3 supplementary (target met)*
-- [[Sector Case Studies]] — *Healthcare, education, government, legal, employment*
-- [[Advisory Council]] — *12 candidates identified across all 6 categories (0 recruited)*
+- [[User Stories]] — *17 documented stories + 3 supplementary (target exceeded)*
+- [[Sector Case Studies]] — *Healthcare draft v0.1, education scoping draft, government/legal/employment not started*
+- [[Advisory Council]] — *12 candidates identified across all 6 categories (0 recruited); board cross-reference complete*
+- [[Advisory Council Candidates]] — *Summary list with board cross-reference and outreach prioritization*
 - [[Harm Documentation]] — *2 documented cases (AADJ v. Epic, Medicaid unwinding)*
-- [[Evidence Data for Doctrine Memo]] — *Reading-level data, AI accuracy, auxiliary aid error rates — keyed to memo sections*
+- [[Evidence Data for Doctrine Memo]] — *Reading-level data, AI accuracy, auxiliary aid error rates, workplace AI data, AI detector bias — keyed to memo sections*
 - [[Reliability Research]] — *AI accuracy, safety research, and safeguard frameworks*

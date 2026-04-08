@@ -52,10 +52,12 @@ interface IntegrationConfig {
     default_heartbeat_interval: string;
     active_hours: string;
     pause_on_error: boolean;
+    heartbeat_timeout: boolean;
+    heartbeat_interactive: boolean;
   };
 }
 
-type Tab = "providers" | "integrations" | "notifications";
+type Tab = "providers" | "integrations" | "heartbeats" | "notifications";
 
 export function SettingsPage() {
   const [providers, setProviders] = useState<ProviderInfo[]>([]);
@@ -178,6 +180,7 @@ export function SettingsPage() {
   const tabs: { id: Tab; label: string; icon: React.ReactNode }[] = [
     { id: "providers", label: "Providers", icon: <Cpu className="h-3.5 w-3.5" /> },
     { id: "integrations", label: "Integrations", icon: <Plug className="h-3.5 w-3.5" /> },
+    { id: "heartbeats", label: "Heartbeats", icon: <Clock className="h-3.5 w-3.5" /> },
     { id: "notifications", label: "Notifications", icon: <Bell className="h-3.5 w-3.5" /> },
   ];
 
@@ -191,7 +194,7 @@ export function SettingsPage() {
           </h2>
         </div>
         <div className="flex items-center gap-1.5">
-          {(tab === "integrations" || tab === "notifications") && (
+          {(tab === "integrations" || tab === "heartbeats" || tab === "notifications") && (
             <Button
               variant={saved ? "default" : "outline"}
               size="sm"
@@ -341,7 +344,7 @@ export function SettingsPage() {
                 <h3 className="text-[14px] font-semibold mb-3">About</h3>
                 <div className="space-y-2 text-[13px] text-muted-foreground">
                   <p>
-                    <span className="font-medium text-foreground">Cabinet</span>{" "}
+                    <span className="font-medium text-foreground">AI-AA</span>{" "}
                     — AI-first Company OS
                   </p>
                   <p>Version 0.1.0</p>
@@ -446,11 +449,16 @@ export function SettingsPage() {
                 </div>
               </div>
 
-              {/* Scheduling Defaults */}
-              <div className="border-t border-border pt-6">
+            </>
+          )}
+
+          {/* Heartbeats Tab */}
+          {tab === "heartbeats" && config && (
+            <>
+              <div>
                 <h3 className="text-[14px] font-semibold mb-1">Scheduling Defaults</h3>
                 <p className="text-xs text-muted-foreground mb-4">
-                  Configure default scheduling behavior for agents and jobs.
+                  Configure default scheduling behavior for agent heartbeats.
                 </p>
 
                 <div className="bg-card border border-border rounded-lg p-3 space-y-3">
@@ -503,6 +511,48 @@ export function SettingsPage() {
                       />
                     </button>
                   </div>
+
+                  <div className="flex items-center justify-between">
+                    <div>
+                      <p className="text-[12px] font-medium">Heartbeat Timeout</p>
+                      <p className="text-[10px] text-muted-foreground/60">Kill heartbeat sessions after 30 minutes. Disable to let sessions run until manually closed.</p>
+                    </div>
+                    <button
+                      onClick={() => updateScheduling("heartbeat_timeout", !config.scheduling.heartbeat_timeout)}
+                      className={cn(
+                        "h-4 w-8 rounded-full relative transition-colors",
+                        config.scheduling.heartbeat_timeout ? "bg-emerald-500" : "bg-muted-foreground/30"
+                      )}
+                    >
+                      <span
+                        className={cn(
+                          "absolute top-0.5 h-3 w-3 rounded-full bg-white transition-all",
+                          config.scheduling.heartbeat_timeout ? "left-4" : "left-0.5"
+                        )}
+                      />
+                    </button>
+                  </div>
+
+                  <div className="flex items-center justify-between">
+                    <div>
+                      <p className="text-[12px] font-medium">Interactive Mode</p>
+                      <p className="text-[10px] text-muted-foreground/60">Launch Claude Code TUI for review and follow-ups. Disable to run headless via -p flag.</p>
+                    </div>
+                    <button
+                      onClick={() => updateScheduling("heartbeat_interactive", !config.scheduling.heartbeat_interactive)}
+                      className={cn(
+                        "h-4 w-8 rounded-full relative transition-colors",
+                        config.scheduling.heartbeat_interactive ? "bg-emerald-500" : "bg-muted-foreground/30"
+                      )}
+                    >
+                      <span
+                        className={cn(
+                          "absolute top-0.5 h-3 w-3 rounded-full bg-white transition-all",
+                          config.scheduling.heartbeat_interactive ? "left-4" : "left-0.5"
+                        )}
+                      />
+                    </button>
+                  </div>
                 </div>
               </div>
             </>
@@ -529,7 +579,7 @@ export function SettingsPage() {
                         <div>
                           <p className="text-[13px] font-medium">Browser Push</p>
                           <p className="text-[11px] text-muted-foreground">
-                            Instant alerts when Cabinet tab is open or PWA installed
+                            Instant alerts when AI-AA tab is open or PWA installed
                           </p>
                         </div>
                       </div>
@@ -772,6 +822,9 @@ export function SettingsPage() {
           )}
 
           {tab === "integrations" && !config && configLoading && (
+            <p className="text-[13px] text-muted-foreground">Loading configuration...</p>
+          )}
+          {tab === "heartbeats" && !config && configLoading && (
             <p className="text-[13px] text-muted-foreground">Loading configuration...</p>
           )}
           {tab === "notifications" && !config && configLoading && (

@@ -1,5 +1,15 @@
 # Progress
 
+[2026-04-07] Added "Interactive Mode" toggle in Settings > Heartbeats. When enabled (default), heartbeats launch Claude Code TUI for review and follow-ups. When disabled, heartbeats run headless via the -p flag (non-interactive). Threaded `args` through daemon-client and conversation-runner so heartbeat.ts can switch between interactive and non-interactive spawning.
+
+[2026-04-07] Added "Heartbeat Timeout" toggle in Settings > Heartbeats. When disabled, heartbeat sessions no longer get killed after 30 minutes — they run until manually closed. Moved Scheduling Defaults section from the Integrations tab into a new dedicated Heartbeats tab. Both the PTY-level kill timer and the completion waiter deadline are disabled when the toggle is off.
+
+[2026-04-07] Added try/catch around polling fetches in agents-workspace (`refreshAgents` and `refreshConversations`) to silence "Failed to fetch" TypeErrors during network blips or dev server HMR reloads.
+
+[2026-04-06] Fixed heartbeat prompt not being passed to Claude CLI. The daemon was writing the multiline prompt directly to the PTY, where newlines were interpreted as Enter (submitting only the first line). Fixed by wrapping the prompt write in bracketed paste escape sequences (`\x1b[200~`...`\x1b[201~`) so Claude CLI's TUI treats newlines as literal text, preserving interactive mode for follow-up messages.
+
+[2026-04-06] Rebranded user-visible references from "Cabinet" to "AI-AA". Updated package.json name, page title, login heading, settings about text, notification titles, agent system prompts, terminal error messages, git identity, and documentation headers. Internal identifiers (DB filename, env vars, auth salt, custom events) left as-is for backward compatibility.
+
 [2026-04-05] Added alert dismiss/acknowledge feature. Alerts in the #alerts Slack channel can now be individually dismissed (hover → Dismiss button) or bulk-dismissed (Dismiss All). Dismissed alerts appear muted with "dismissed" badge. PulseStrip count now only reflects undismissed alerts. State persisted in /data/.agents/.slack/.dismissed-alerts.json.
 
 [2026-04-05] Removed Chat (Discord), Contribute (GitHub), and Stars buttons from the status bar. Cleaned up related dead code (SVG icons, constants, star-fetching logic).

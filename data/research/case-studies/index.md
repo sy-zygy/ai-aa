@@ -1,7 +1,7 @@
 ---
 title: Sector Case Studies
 created: 2026-04-05T00:00:00Z
-modified: 2026-04-05T00:00:00Z
+modified: 2026-04-07T17:30:00Z
 tags: [research, case-studies, healthcare, education, government, legal, employment]
 order: 2
 ---
@@ -29,12 +29,14 @@ Each case study documents a specific institutional context — a hospital, unive
 ## Planned Case Studies
 
 ### 1. Healthcare — Patient Portal AI Blocking
-*Status: Not started*
+*Status: Draft v0.1 (2026-04-07)*
 Focus: Major hospital systems that block AI tools on patient portals. Impact on patients trying to understand discharge instructions, medication guides, and consent forms.
+**See:** [[Healthcare Case Study|healthcare-patient-portals]]
 
-### 2. Education — University AI Policies and 504 Students
-*Status: Not started*
-Focus: Universities with blanket AI bans that don't exempt disability accommodations. Impact on students with IEPs/504 plans who rely on AI for reading comprehension.
+### 2. Education — AI Bans, IEPs, and the Accommodation Gap
+*Status: Scoping draft (2026-04-07)*
+Focus: Schools/universities with blanket AI bans that don't exempt disability accommodations. Impact on students with IEPs/504 plans. AI detector bias against non-standard writing. IDEA assistive technology mandates.
+**See:** [[Education Case Study|education-ai-bans]]
 
 ### 3. Government — Benefits Application Complexity
 *Status: Not started*

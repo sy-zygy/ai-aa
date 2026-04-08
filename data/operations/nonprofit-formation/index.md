@@ -1,7 +1,7 @@
 ---
 title: Non-Profit Formation
 created: 2026-04-05T00:00:00Z
-modified: 2026-04-06T00:00:00Z
+modified: 2026-04-07T00:00:00Z
 tags: [operations, nonprofit, 501c3, formation, legal-entity]
 order: 3
 ---
@@ -26,17 +26,19 @@ Tracker for standing up AI Access Alliance as a legal non-profit entity.
 
 | # | Step | Description | Target | Status |
 |---|------|-------------|--------|--------|
-| 1 | Choose state of incorporation | Delaware recommended — best nonprofit law, efficient filing, low cost | Q2 2026 | Recommended |
-| 2 | Draft Articles of Incorporation | State-specific template with required IRS provisions | Q2 2026 | **Draft v0.1** — see [[Articles of Incorporation — Draft]] |
-| 3 | File Articles of Incorporation | Submit to Secretary of State | Q2 2026 | Not started |
-| 4 | Draft Bylaws | Board structure, officer roles, meeting rules | Q2 2026 | Draft v0.1 |
-| 5 | Apply for EIN | IRS Form SS-4 (can be done online, instant) | Q2 2026 | Not started |
-| 6 | File Form 1023 or 1023-EZ | 501(c)(3) application to IRS | Q2 2026 | Not started |
-| 7 | State charitable solicitation registration | Required in most states before fundraising | Q2 2026 | Not started |
-| 8 | Set up bank account | Non-profit business checking account | Q2 2026 | Not started |
-| 9 | Set up accounting system | Basic bookkeeping, chart of accounts | Q2 2026 | Not started |
-| 10 | Draft fiscal policies | Expense policies, approval thresholds, financial controls | Q2 2026 | Not started |
-| 11 | Obtain D&O insurance | Directors & Officers liability coverage | Q2 2026 | Not started |
+| 1 | Choose state of incorporation | Delaware — best nonprofit law, efficient filing | Q2 2026 | **Done** ✓ |
+| 2 | Select registered agent | Northwest Registered Agent ($39 formation package) | Q2 2026 | **Done** ✓ — CEO approved |
+| 3 | Draft Articles of Incorporation | Delaware Certificate with IRS provisions | Q2 2026 | **Draft v0.1** — READY TO FILE. Filing readiness checklist complete (2026-04-07). |
+| 4 | File Articles of Incorporation | Via Northwest formation package + 24hr expedite | **Within 24hrs of founder details** | **Ready to execute** — all prep done, awaiting only founder legal name + address |
+| 5 | Draft Bylaws | Board structure, officer roles, meeting rules | Q2 2026 | Draft v0.1 |
+| 6 | Apply for EIN | IRS Form SS-4 (online, instant) | **Within 1 week of filing** | Pending |
+| 7 | Secure fiscal sponsorship | DREDF (primary) or Tides (fallback) | **April 15-20** | **Outreach letter FINALIZED** — governance firewall + board composition language strengthened |
+| 8 | File Form 1023 | Full 501(c)(3) application ($600) | **May-June 2026** | Hold until fiscal sponsorship active |
+| 9 | State charitable solicitation registration | Required before fundraising | Q2-Q3 2026 | Not started |
+| 10 | Set up bank account | Non-profit business checking | After EIN received | Not started |
+| 11 | Set up accounting system | Basic bookkeeping, chart of accounts | Q2-Q3 2026 | Not started |
+| 12 | Draft fiscal policies | Expense policies, approval thresholds | Q2-Q3 2026 | Not started |
+| 13 | Obtain D&O insurance | Directors & Officers liability coverage | Q2-Q3 2026 | Not started |
 
 ## Form 1023 vs. 1023-EZ
 
@@ -75,10 +77,21 @@ Tracker for standing up AI Access Alliance as a legal non-profit entity.
 - The full 1023 produces a more robust determination letter, which sponsors and foundations expect
 - Processing takes 3-6 months — filing early in Q2 is critical to have status confirmed by Q3-Q4
 
+### Decisions Made (CEO Directive — 2026-04-06)
+
+- ~~Registered agent selection~~ → **Northwest Registered Agent** ($39 formation package, includes Year 1 agent + address). APPROVED.
+- ~~Incorporator identity~~ → **Founder signs as incorporator.** No attorney needed.
+- ~~Initial directors~~ → **File with founder as sole initial director if no 2 confirmed board members by April 15.** Delaware requires minimum 1. Amend Articles later.
+- ~~Legal review~~ → **Proceed without if no pro bono counsel by April 12.** Continue sourcing Covington, Georgetown, DC Bar — but do not block filing.
+- ~~Fiscal sponsorship~~ → **DREDF first (cold outreach authorized).** Fallback to Tides Foundation by April 20. See [[Fiscal Sponsorship Options]].
+
 ### Remaining Decisions
 
-- Registered agent selection (recommend using a commercial registered agent service in Delaware, ~$100/year)
-- Legal counsel — **3 options identified, see [[Legal Counsel Options]]** (Covington & Burling via DREDF, Georgetown Nonprofit Clinic, DC Bar Pro Bono). CEO to confirm DREDF warm intro path.
 - Accounting firm or bookkeeper selection
-- Incorporator identity (CEO decision: founder or attorney?)
-- Initial directors for Articles (need founder name + 2 early-committed board members)
+- Form 1023 preparation timing (CEO: hold until May-June, after fiscal sponsorship active)
+
+### Blockers
+
+| Blocker | Owner | Status |
+|---------|-------|--------|
+| Founder legal name + mailing address | CEO → Human Founder | **Escalated — waiting on founder** |

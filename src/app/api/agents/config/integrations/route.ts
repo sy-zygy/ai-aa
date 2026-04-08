@@ -38,6 +38,8 @@ export interface IntegrationConfig {
     default_heartbeat_interval: string;
     active_hours: string;
     pause_on_error: boolean;
+    heartbeat_timeout: boolean;
+    heartbeat_interactive: boolean;
   };
 }
 
@@ -97,6 +99,8 @@ const DEFAULT_CONFIG: IntegrationConfig = {
     default_heartbeat_interval: "*/15 * * * *",
     active_hours: "8-22",
     pause_on_error: true,
+    heartbeat_timeout: true,
+    heartbeat_interactive: true,
   },
 };
 

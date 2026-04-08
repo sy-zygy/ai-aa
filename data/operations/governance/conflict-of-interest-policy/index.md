@@ -1,14 +1,14 @@
 ---
 title: Conflict of Interest Policy
 created: 2026-04-05T00:00:00Z
-modified: 2026-04-06T00:00:00Z
+modified: 2026-04-07T00:00:00Z
 tags: [operations, governance, conflict-of-interest, ethics, compliance]
 order: 3
 ---
 
 # Conflict of Interest Policy
 
-**Status:** DRAFT v0.1 | **Last Updated:** 2026-04-06 | **Owner:** Operations Director
+**Status:** DRAFT v0.2 | **Last Updated:** 2026-04-07 | **Owner:** Operations Director
 
 *This policy governs conflicts of interest for Directors, officers, Advisory Council members, and key employees of AI Access Alliance. It is incorporated into the Bylaws by reference (Article IX) and satisfies IRS requirements for 501(c)(3) organizations.*
 
@@ -72,12 +72,26 @@ The duty to disclose is ongoing. New conflicts must be disclosed as they arise, 
 ### 5.1 — Disclosure to the Board
 The Interested Person shall disclose the conflict of interest and all material facts to the Board or the relevant committee.
 
+### 5.1A — Third-Party Conflict Identification
+
+Any Director, officer, or committee member may raise a potential conflict of interest concerning another Covered Person. The Board Chair (or presiding officer) shall determine whether the matter warrants disclosure and potential recusal, applying the definitions in Section 2. The person raising the potential conflict shall not be subject to retaliation for doing so in good faith.
+
+*Rationale: Self-disclosure fails exactly when it's needed most — when someone doesn't recognize or doesn't want to acknowledge their own conflict. This provision ensures conflicts can be surfaced by anyone with knowledge of the situation. (Added per Policy Director review, 2026-04-07.)*
+
 ### 5.2 — Recusal
 After disclosure, the Interested Person shall leave the meeting during the discussion and vote on the matter giving rise to the conflict. The Interested Person:
 - May not participate in deliberation on the matter
 - May not vote on the matter
 - May not attempt to influence the deliberation or vote through informal channels
 - Shall be recorded as recused in the meeting minutes
+
+### 5.2A — Remote and Written Proceedings
+
+For actions taken by written consent, the Interested Person shall not receive the consent materials related to the conflicted matter and shall not sign the written consent. For virtual meetings, the Interested Person shall leave the virtual meeting room during the relevant discussion and vote.
+
+When the conflict relates to a portion of a broader agenda item, the Board Chair (or presiding officer) shall determine the scope of recusal and specify which portions of the discussion require the Interested Person's absence. This determination shall be recorded in the minutes.
+
+*Rationale: AI-AA will conduct significant business via written consent, email, and video call. Recusal procedures must cover these modalities, not only in-person meetings. (Added per Policy Director review, 2026-04-07.)*
 
 ### 5.3 — Determination by Disinterested Directors
 After the Interested Person has left the meeting, the remaining Board or committee members shall:

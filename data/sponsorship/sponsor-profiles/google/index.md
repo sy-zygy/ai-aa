@@ -8,8 +8,8 @@ order: 2
 
 # Google — Sponsor Research Profile
 
-**Tier:** 1 (Founding Sponsor) | **Stage:** Research | **Priority:** #2
-**Last Updated:** 2026-04-05
+**Tier:** 1 (Founding Sponsor) | **Stage:** Outreach Drafted | **Priority:** #2
+**Last Updated:** 2026-04-07
 
 ---
 

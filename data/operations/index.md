@@ -1,7 +1,7 @@
 ---
 title: Operations
 created: 2026-04-05T00:00:00Z
-modified: 2026-04-06T04:15:00Z
+modified: 2026-04-07T00:00:00Z
 tags: [operations, governance, organization, nonprofit, board, compliance]
 order: 6
 ---
@@ -64,19 +64,20 @@ If the answer isn't a confident "no," the governance structure needs work.
 
 | # | Deliverable | Target | Status |
 |---|-------------|--------|--------|
-| 1 | Articles of Incorporation (state filing) | Q2 2026 | **Draft v0.1** — blockers identified |
+| 1 | Articles of Incorporation (state filing) | **Awaiting founder details** | **READY TO FILE** within 24hrs of receiving founder info. Filing readiness checklist complete. |
 | 2 | Bylaws | Q2 2026 | Draft v0.1 |
-| 3 | EIN (IRS Form SS-4) | Q2 2026 | Not started |
-| 4 | 501(c)(3) application (IRS Form 1023 or 1023-EZ) | Q2 2026 | Not started |
-| 5 | State charitable solicitation registration | Q2 2026 | Not started |
-| 6 | Bank account and basic financial infrastructure | Q2 2026 | Not started |
+| 3 | EIN (IRS Form SS-4) | Within 1 week of filing | Pending (online, instant) |
+| 4 | Fiscal sponsorship (DREDF primary) | April 15-20 | **Outreach letter FINALIZED** — governance firewall language strengthened. Send window: April 15-20. |
+| 5 | 501(c)(3) application (Form 1023, $600) | May-June 2026 | Hold until fiscal sponsorship active |
+| 6 | State charitable solicitation registration | Q2-Q3 2026 | Not started |
+| 7 | Bank account and basic financial infrastructure | After EIN received | Not started |
 
 ### Governance Documents
 
 | # | Deliverable | Target | Status |
 |---|-------------|--------|--------|
 | 7 | Sponsor Governance Policy | Q2 2026 | Draft v0.1 |
-| 8 | Conflict of Interest Policy | Q2 2026 | Draft v0.1 |
+| 8 | Conflict of Interest Policy | Q2 2026 | **Draft v0.2** — integrated Policy Director's top 2 recommendations (third-party conflict-raising + remote recusal) |
 | 9 | Board Member Agreement | Q2 2026 | Draft v0.1 |
 | 10 | Whistleblower Policy | Q3 2026 | Not started |
 | 11 | Document Retention Policy | Q3 2026 | Not started |
@@ -85,7 +86,7 @@ If the answer isn't a confident "no," the governance structure needs work.
 
 | # | Deliverable | Target | Status |
 |---|-------------|--------|--------|
-| 12 | Board candidate pipeline (10+ vetted candidates) | Q2-Q3 2026 | 6 identified, 3 researched + COI vetted |
+| 12 | Board candidate pipeline (10+ vetted candidates) | Q2-Q3 2026 | **8 candidates:** 3 vetted, 2 researched, 3 identified. Approach letters ready for top 3. Finance seat sourcing in progress. |
 | 13 | Initial board seated (7-9 members) | Q3 2026 | Not started |
 | 14 | Advisory council recruited (12-15 members) | Q3 2026 | Not started |
 
