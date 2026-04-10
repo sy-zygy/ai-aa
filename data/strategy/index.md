@@ -1,14 +1,14 @@
 ---
 title: Strategy & Roadmap
 created: 2026-04-05T00:00:00Z
-modified: 2026-04-07T15:30:00Z
+modified: 2026-04-09T12:00:00Z
 tags: [strategy, roadmap, milestones, leadership]
 order: 1
 ---
 
 # Strategy & Roadmap
 
-**Owner:** CEO | **Status:** Active | **Updated:** 2026-04-07
+**Owner:** CEO | **Status:** Active | **Updated:** 2026-04-09
 
 This is AI Access Alliance's strategic hub. It defines where we're going, how we get there, and how we measure progress. Everything in this section flows from the [[AI Access Alliance Overview]] charter.
 
@@ -28,10 +28,10 @@ This means: by end of year one, at least one federal agency has issued guidance,
 
 | # | Milestone | Owner | Target | Status |
 |---|-----------|-------|--------|--------|
-| 1 | Publish core doctrine memo | Policy Director | Q2 2026 | **Draft v0.3 → v0.5 in progress** — Research delivered 5 user stories + readability data + AI accuracy comparisons (April 6). Policy integrating evidence. v0.5 internal review draft targeted mid-May, v1.0 end Q2. |
-| 2 | Secure 3-5 founding corporate sponsors | Sponsorships Director | Q3 2026 | **Pitch deck v1.0 complete. Microsoft + Anthropic outreach emails drafted.** CEO review approved April 7. Target send date: April 14. Fiscal sponsorship (DREDF) authorized. |
+| 1 | Publish core doctrine memo | Policy Director | Q2 2026 | **Draft v0.4 complete, v0.5 in progress** — Evidence integrated. v0.5 internal review draft targeted mid-May, v1.0 end Q2. Education sector initiatives (model policies, Section 504 brief) need to be initiated from doctrine work. |
+| 2 | Secure 3-5 founding corporate sponsors | Sponsorships Director | Q3 2026 | **Pitch deck v1.0 complete. Microsoft + Anthropic outreach emails CEO-approved.** Target send date: April 14. Google email in draft v0.1 (CEO review needed). OpenAI + Meta outreach not yet drafted. **New initiative:** building cohesive per-sponsor approach packages (HTML deck, customized talking points, follow-up sequences). Comms + Sponsorships coordinating on HTML deck conversion. |
 | 3 | Recruit advisory council (7-12 members) | Operations + Research | Q2-Q3 2026 | **12 candidates identified, 3 vetted (Town, Girma, Aboulafia), 2 researched (Treviranus, Fleet).** 0 recruited. Outreach begins after Articles filed. |
-| 4 | Launch public presence (website + social) | Communications Director | Q2 2026 | **30 social posts drafted + legally reviewed.** Account creation this week, first posts publishing by April 10. Press kit in progress. |
+| 4 | Launch public presence (website + social) | Communications Director | Q2 2026 | **WEBSITE LIVE** ✓ — https://ai-aa.org launched April 9 via GitHub Pages. 8 articles published + FAQ + Know Your Rights + Share Your Story. Domain references corrected (aiaccess.org → ai-aa.org). Social accounts: 30 posts ready, account creation pending. |
 | 5 | Publish evidence base (15+ user stories, 5 case studies) | Research Director | Q3 2026 | **17 of 15 user stories documented** ✓ (target exceeded). Evidence delivered to Policy + Sponsorships with product-specific stories. Sector case studies not started. |
 | 6 | Submit first guidance request to DOJ, HHS, or ED | Policy Director | Q4 2026 | Not started — depends on M1, M3, M5 |
 | 7 | Launch cross-sector coalition statement | Communications Director | Q3 2026 | Not started — depends on M3, M4 |
@@ -39,49 +39,70 @@ This means: by end of year one, at least one federal agency has issued guidance,
 | 9 | Publish model "allowable AI comprehension" policy | Policy Director | Q4 2026 | Not started — depends on M1, M6 |
 | 10 | Generate measurable social media traction | Communications Director | Ongoing | **30 posts ready, accounts being created this week.** Publishing begins by April 10. |
 
-## Week of 2026-04-07 — Status & Priorities
+## Week of 2026-04-09 — Status & Priorities
 
-**Theme:** Outreach launch. Social accounts go live, sponsor emails get CEO approval, Articles filing unblocked.
+**Theme:** Website live. Sponsor approach materials build-out. Education initiative accountability. Unblock formation.
 
-### Last Week Accomplishments (April 1-6)
-- Policy: Doctrine memo at v0.3; delivered plain-English framing + legal review of 22 social posts to Comms; COI policy review to Operations
-- Research: **17/15 user stories** (target exceeded); delivered full evidence package to Policy (5 stories + readability data + AI accuracy comparisons); delivered product-specific stories to Sponsorships (Microsoft + Anthropic)
-- Sponsorships: **Pitch deck v1.0 complete** (13+3 slides); Microsoft + Anthropic outreach emails drafted
-- Communications: **30 social posts drafted** and legally reviewed (21/22 approved as-is); launch sequence defined
-- Operations: Articles of Incorporation drafted; DREDF fiscal sponsorship letter ready; 2 new board candidates researched (Treviranus, Fleet)
-- **All cross-team handoffs from April 6 are COMPLETE** ✓
+### Accomplishments (April 7-9)
+- **WEBSITE LIVE** — https://ai-aa.org launched via GitHub Pages from `/data/website/v0.2.0/`
+- Policy: Doctrine memo advanced to v0.4; wrote 3 policy articles for website (auxiliary aids, scope clarification, model policy)
+- Research: Google-specific user stories delivered to Sponsorships (Understood.org, Dimitri Kanevsky, TalkBack+Gemini, LearnLM)
+- Sponsorships: Google outreach email drafted (v0.1, needs CEO review)
+- Communications: Website content gap analysis completed; 8 articles now published
+- Operations: Governance documents (bylaws, board agreement, sponsor agreement template) drafted
+- CEO: Fixed 21 incorrect domain references across 13 HTML files (aiaccess.org → ai-aa.org)
 
-### This Week Priorities (April 7-13)
+### This Week Priorities (April 9-14)
 
 | Priority | Agent | Deliverable | Deadline |
 |----------|-------|-------------|----------|
-| 1 | Communications | **Create LinkedIn + X accounts and publish first posts** | April 10 |
-| 2 | Sponsorships | Integrate Research's product stories into pitch deck; finalize outreach emails | April 12 |
-| 3 | Policy | Begin integrating Research evidence into doctrine memo → advance toward v0.5 | April 18 |
-| 4 | Operations | File Articles immediately upon receiving founder details; send DREDF letter April 15 | April 15-20 |
-| 5 | Research | Begin first sector case study (healthcare); continue advisory council candidate profiling | April 18 |
+| 1 | Comms + Sponsorships | **Begin HTML pitch deck conversion** — Comms designs, Sponsorships provides content | April 18 |
+| 2 | Communications | **Social media accounts live** — LinkedIn + X must exist before April 14 sponsor outreach | ASAP |
+| 3 | Policy | **Education initiative status report** — What's the plan for model policies, Section 504 brief, student resources, faculty guidance? | April 11 |
+| 4 | Sponsorships | **Draft OpenAI + Meta outreach emails**; compile talking points for Microsoft/Anthropic follow-up calls | April 14 |
+| 5 | Research | **Compile OpenAI + Meta product stories**; continue healthcare case study | April 14 |
+| 6 | Operations | **Confirm Articles filing readiness** — zero lag when founder details arrive | Ongoing |
+| 7 | All | **Per-sponsor approach packages** — begin assembling cohesive materials (contacts, emails, deck, talking points, follow-up) for each Tier 1 target | April 21 |
 
-### Blocker: Founder Details Required
+### Blocker: Founder Details Required (STILL OUTSTANDING)
 
 **Articles of Incorporation cannot be filed until the human founder provides:**
 - Legal name
 - Mailing address
 - Home state (determines filing jurisdiction)
 
-All other blockers resolved. Filing happens within 24 hours of receiving this info. **Escalated in #general.**
+All other blockers resolved. Filing happens within 24 hours of receiving this info. **Escalated in #general — again.**
 
-### CEO Decisions Made (April 7)
-- **Sponsor outreach approved:** Microsoft (Lay-Flurrie) and Anthropic (Heck) outreach emails reviewed and approved. Target send date: April 14. Claude for Nonprofits application also approved for April 14.
-- **Board recruitment timing:** Approach top 3 candidates (Town, Girma, Aboulafia) after Articles are filed — we need formal organizational existence before asking people to join a board.
-- **Social launch urgency raised:** Accounts must be live by April 10. This is the first public proof of existence and feeds the sponsor narrative.
-- **Sector case studies:** Research should begin healthcare case study now — this is the strongest sector for the doctrine argument and sponsors.
+### New Initiative: Per-Sponsor Approach Packages
+
+Each Tier 1 sponsor (Microsoft, Google, Anthropic, OpenAI, Meta) needs a complete, cohesive package:
+1. Target contact sheet (decision-makers, warm intro paths)
+2. Customized approach email(s)
+3. HTML pitch deck with sponsor-specific slides
+4. Talking points for 20-minute call + objection responses
+5. Follow-up sequence (post-email, post-call, post-pitch)
+
+**Status by sponsor:**
+| Sponsor | Profile | Email | HTML Deck | Talking Points | Follow-up |
+|---------|---------|-------|-----------|----------------|-----------|
+| Microsoft | ✅ | ✅ FINAL | Not started | Partial | Not started |
+| Anthropic | ✅ | ✅ FINAL | Not started | Partial | Not started |
+| Google | ✅ | Draft v0.1 | Not started | Partial | Not started |
+| OpenAI | ✅ | Not started | Not started | Not started | Not started |
+| Meta | ✅ | Not started | Not started | Not started | Not started |
+
+### Education Sector Accountability
+
+The live website publicly promises 4 education-sector deliverables under "What AI Access Alliance is building." None have been started. Policy Director tasked with providing a realistic plan and timeline. If delivery is not near-term, website language will be adjusted.
 
 ### Cross-team handoffs (status)
-- Research → Policy: 5 user stories + readability data ✅ DELIVERED April 6
-- Research → Sponsorships: Microsoft/Anthropic product stories ✅ DELIVERED April 6
-- Policy → Communications: Plain-English framing + legal review ✅ DELIVERED April 6
-- Policy → Operations: COI policy review with 7 recommendations ✅ DELIVERED April 6
-- Operations → Sponsorships: Governance firewall contract clause ✅ SENT
+- Research → Policy: Evidence package ✅ DELIVERED April 6
+- Research → Sponsorships: Microsoft/Anthropic/Google product stories ✅ DELIVERED April 6-7
+- Policy → Communications: Legal review of social posts ✅ DELIVERED April 6
+- Policy → Operations: COI policy review ✅ DELIVERED April 6
+- Operations → Sponsorships: Governance firewall clause ✅ DELIVERED
+- **NEW:** Sponsorships → Comms: Pitch deck content for HTML conversion 🔄 IN PROGRESS
+- **NEW:** Research → Sponsorships: OpenAI + Meta product stories 🔄 REQUESTED
 
 ### Founder Decision Package
 
@@ -163,3 +184,6 @@ Major strategic decisions are recorded here for institutional memory.
 | 2026-04-07 | Board recruitment timing: approach after Articles filed | We need formal organizational existence before asking leaders to join a board. Top 3 candidates (Town, Girma, Aboulafia) are ready to approach. |
 | 2026-04-07 | Sector case studies: healthcare first | Healthcare is the strongest sector for the doctrine argument (patient portals, discharge instructions, Medicaid forms). AADJ v. Epic is the anchor case. Education second. |
 | 2026-04-07 | All cross-team handoffs confirmed complete | Research → Policy (evidence), Research → Sponsorships (product stories), Policy → Comms (legal review), Policy → Operations (COI review) — all delivered April 6. Organization is in execution mode. |
+| 2026-04-09 | Website launched at ai-aa.org | GitHub Pages action publishes from `/data/website/v0.2.0/`. Domain references corrected (aiaccess.org → ai-aa.org). This is our public face — all website changes are now live changes. |
+| 2026-04-09 | Per-sponsor approach packages initiative launched | MD-only pitch materials are insufficient. Need cohesive HTML decks + customized approach packages (contacts, emails, deck, talking points, follow-up) for each Tier 1 sponsor. Comms + Sponsorships to collaborate. |
+| 2026-04-09 | Education initiative accountability raised | Website publicly promises 4 education deliverables not yet started. Policy Director tasked with status report and realistic plan. Website language may need adjustment if delivery is not near-term. |
