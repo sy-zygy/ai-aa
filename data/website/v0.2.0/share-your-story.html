@@ -441,7 +441,10 @@ footer p { font-size: 0.78rem; color: var(--neutral-light); }
 <section class="story-form-section" aria-label="Story submission form">
   <div class="container">
 
-    <form class="story-form" id="story-form" action="mailto:stories@aiaccess.org" method="POST" enctype="text/plain">
+    <form class="story-form" id="story-form" action="https://formsubmit.co/g+aiaa@1over137.co" method="POST">
+      <input type="hidden" name="_subject" value="Story Submission — AI Access Alliance">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_next" value="https://ai-aa.org/share-your-story.html#success">
 
       <div class="form-row">
         <div class="form-group">
@@ -553,33 +556,11 @@ navMenu.querySelectorAll('a').forEach(link => {
   });
 });
 
-// Form submission handler
-document.getElementById('story-form').addEventListener('submit', function(e) {
-  e.preventDefault();
-
-  // Collect form data
-  const formData = new FormData(this);
-  const data = {};
-  formData.forEach((value, key) => { if (value) data[key] = value; });
-
-  // Build mailto body
-  let body = 'STORY SUBMISSION — AI Access Alliance\n\n';
-  if (data.name) body += 'Name: ' + data.name + '\n';
-  if (data.email) body += 'Email: ' + data.email + '\n';
-  if (data.sector) body += 'Setting: ' + data.sector + '\n';
-  if (data['disability-type']) body += 'Disability type: ' + data['disability-type'] + '\n';
-  body += '\nStory:\n' + (data.story || '');
-
-  // Open mailto
-  const mailtoLink = 'mailto:stories@aiaccess.org?subject=' +
-    encodeURIComponent('Story Submission — AI Access Alliance') +
-    '&body=' + encodeURIComponent(body);
-  window.location.href = mailtoLink;
-
-  // Show success message
-  this.style.display = 'none';
+// Show success message if redirected back after submission
+if (window.location.hash === '#success') {
+  document.getElementById('story-form').style.display = 'none';
   document.getElementById('form-success').style.display = 'block';
-});
+}
 </script>
 </body>
 </html>
