@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Comprehension Tools Are the Next Auxiliary Aid — AI Access Alliance</title>
+<meta name="description" content="The ADA already requires auxiliary aids for effective communication. AI comprehension tools are the next step in a progression that began with TTY devices and screen readers. No new law is needed.">
+
+<!-- Open Graph -->
+<meta property="og:title" content="AI Comprehension Tools Are the Next Auxiliary Aid — AI Access Alliance">
+<meta property="og:description" content="The ADA already requires auxiliary aids for effective communication. AI comprehension tools are the next step in a progression that began with TTY devices and screen readers. No new law is needed.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://aiaccess.org/articles/ai-comprehension-next-auxiliary-aid.html">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="AI Comprehension Tools Are the Next Auxiliary Aid — AI Access Alliance">
+<meta name="twitter:description" content="The ADA already requires auxiliary aids for effective communication. AI comprehension tools are the next step in a progression that began with TTY devices and screen readers. No new law is needed.">
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --primary: #1E3A5F;
+  --primary-light: #2a4f7a;
+  --accent: #D4A017;
+  --accent-dark: #b8890f;
+  --accent-light: #fdf6e3;
+  --neutral: #4A4A4A;
+  --neutral-light: #6b6b6b;
+  --bg: #FAFAF7;
+  --green: #2D6A4F;
+  --green-light: #e8f5ee;
+  --white: #ffffff;
+}
+
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; font-size: 18px; }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  color: var(--primary);
+  background: var(--bg);
+  line-height: 1.7;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ─── Accessibility ─── */
+.skip-link {
+  position: absolute; left: -9999px; top: 0;
+  background: var(--primary); color: var(--white);
+  padding: 0.75rem 1.5rem; z-index: 200;
+  font-weight: 600; text-decoration: none;
+  border-radius: 0 0 8px 0;
+}
+.skip-link:focus { left: 0; }
+*:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+.sr-only {
+  position: absolute; width: 1px; height: 1px;
+  overflow: hidden; clip: rect(0,0,0,0);
+  white-space: nowrap; border: 0;
+}
+
+/* ─── Nav ─── */
+#nav {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+  background: rgba(250,250,247,0.92);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(30,58,95,0.06);
+  transition: box-shadow 0.3s;
+}
+#nav.scrolled { box-shadow: 0 2px 24px rgba(30,58,95,0.08); }
+#nav .container {
+  display: flex; align-items: center; justify-content: space-between;
+  height: 68px; max-width: 1100px; margin: 0 auto; padding: 0 2rem;
+}
+.nav-logo {
+  font-weight: 800; font-size: 1.15rem; color: var(--primary);
+  text-decoration: none; letter-spacing: -0.02em;
+}
+.nav-logo span { color: var(--accent); }
+.nav-links { display: flex; gap: 1.75rem; align-items: center; }
+.nav-links a {
+  text-decoration: none; color: var(--neutral);
+  font-size: 0.83rem; font-weight: 500; transition: color 0.2s;
+}
+.nav-links a:hover, .nav-links a:focus { color: var(--primary); }
+.nav-links a.active { color: var(--primary); font-weight: 700; }
+.nav-cta {
+  background: var(--accent) !important; color: var(--primary) !important;
+  padding: 0.5rem 1.25rem; border-radius: 6px;
+  font-weight: 700 !important; transition: background 0.2s !important;
+}
+.nav-cta:hover, .nav-cta:focus { background: var(--accent-dark) !important; }
+.mobile-toggle { display: none; background: none; border: none; cursor: pointer; color: var(--primary); }
+
+/* ─── Article Layout ─── */
+.article-header {
+  padding-top: calc(68px + 4rem);
+  padding-bottom: 3rem;
+  background: var(--white);
+  border-bottom: 1px solid rgba(30,58,95,0.06);
+}
+.article-header .container {
+  max-width: 740px; margin: 0 auto; padding: 0 2rem;
+}
+.article-meta {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.67rem; text-transform: uppercase;
+  letter-spacing: 0.12em; color: var(--green);
+  font-weight: 500; margin-bottom: 1.25rem;
+  display: flex; gap: 1.5rem; flex-wrap: wrap;
+}
+.article-header h1 {
+  font-size: clamp(1.8rem, 4vw, 2.6rem);
+  font-weight: 800; line-height: 1.2; letter-spacing: -0.02em;
+  margin-bottom: 1.25rem;
+}
+.article-header .subtitle {
+  font-size: 1.1rem; color: var(--neutral); line-height: 1.7;
+  max-width: 620px;
+}
+
+.article-body {
+  padding: 3.5rem 0 5rem;
+}
+.article-body .container {
+  max-width: 740px; margin: 0 auto; padding: 0 2rem;
+}
+.article-body h2 {
+  font-size: 1.4rem; font-weight: 800; margin-top: 2.5rem;
+  margin-bottom: 1rem; line-height: 1.3; letter-spacing: -0.01em;
+}
+.article-body h3 {
+  font-size: 1.15rem; font-weight: 700; margin-top: 2rem;
+  margin-bottom: 0.75rem; line-height: 1.3;
+}
+.article-body p {
+  font-size: 1rem; color: var(--neutral); line-height: 1.8;
+  margin-bottom: 1.25rem;
+}
+.article-body p strong { color: var(--primary); }
+.article-body ul, .article-body ol {
+  margin-bottom: 1.25rem; padding-left: 1.5rem;
+}
+.article-body li {
+  font-size: 1rem; color: var(--neutral); line-height: 1.8;
+  margin-bottom: 0.5rem;
+}
+.article-body li strong { color: var(--primary); }
+.article-body blockquote {
+  border-left: 3px solid var(--accent);
+  margin: 2rem 0; padding: 1rem 1.5rem;
+  background: var(--accent-light); border-radius: 0 8px 8px 0;
+}
+.article-body blockquote p {
+  color: var(--primary); font-weight: 500; font-style: italic;
+  margin-bottom: 0;
+}
+
+/* ─── Article CTA ─── */
+.article-cta {
+  padding: 3.5rem 0;
+  background: var(--primary);
+  color: var(--white);
+  text-align: center;
+}
+.article-cta .container {
+  max-width: 600px; margin: 0 auto; padding: 0 2rem;
+}
+.article-cta p {
+  font-size: 1.1rem; line-height: 1.6; margin-bottom: 1.5rem;
+  color: rgba(250,250,247,0.8);
+}
+.article-cta .tagline {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.72rem; text-transform: uppercase;
+  letter-spacing: 0.12em; color: var(--accent);
+  font-weight: 500; margin-bottom: 1rem;
+}
+.btn {
+  display: inline-flex; align-items: center; gap: 0.5rem;
+  padding: 0.85rem 1.75rem; border-radius: 8px;
+  font-weight: 700; font-size: 0.9rem; text-decoration: none;
+  transition: all 0.25s; cursor: pointer; border: none;
+  font-family: inherit;
+}
+.btn-primary { background: var(--accent); color: var(--primary); }
+.btn-primary:hover, .btn-primary:focus { background: var(--accent-dark); transform: translateY(-1px); box-shadow: 0 4px 16px rgba(212,160,23,0.3); }
+
+/* ─── Back link ─── */
+.back-link {
+  display: inline-flex; align-items: center; gap: 0.5rem;
+  font-size: 0.83rem; font-weight: 600; color: var(--primary);
+  text-decoration: none; margin-bottom: 2rem;
+  transition: color 0.2s;
+}
+.back-link:hover { color: var(--accent-dark); }
+.back-link svg { width: 16px; height: 16px; }
+
+/* ─── Footer ─── */
+footer {
+  padding: 3rem 0;
+  border-top: 1px solid rgba(30,58,95,0.06);
+  background: var(--bg);
+}
+footer .container {
+  display: flex; justify-content: space-between; align-items: center;
+  flex-wrap: wrap; gap: 1rem;
+  max-width: 1100px; margin: 0 auto; padding: 0 2rem;
+}
+.footer-brand { font-weight: 800; font-size: 1rem; color: var(--primary); }
+.footer-brand span { color: var(--accent); }
+footer p { font-size: 0.78rem; color: var(--neutral-light); }
+.footer-links { display: flex; gap: 1.5rem; }
+.footer-links a {
+  font-size: 0.78rem; color: var(--neutral); text-decoration: none;
+  transition: color 0.2s;
+}
+.footer-links a:hover, .footer-links a:focus { color: var(--primary); }
+
+/* ─── Responsive ─── */
+@media (max-width: 900px) {
+  .nav-links { display: none; flex-direction: column; position: absolute; top: 68px; left: 0; right: 0; background: var(--bg); padding: 1.5rem 2rem; border-bottom: 1px solid rgba(30,58,95,0.08); gap: 1rem; }
+  .nav-links.open { display: flex; }
+  .mobile-toggle { display: block; }
+}
+@media (max-width: 600px) {
+  html { font-size: 16px; }
+  .article-header h1 { font-size: 1.6rem; }
+}
+</style>
+</head>
+<body>
+
+<a href="#main" class="skip-link">Skip to main content</a>
+
+<!-- ─── Nav ─── -->
+<nav id="nav" role="navigation" aria-label="Main navigation">
+  <div class="container">
+    <a href="../index.html" class="nav-logo" aria-label="AI Access Alliance home">AI<span>:</span>AA</a>
+    <div class="nav-links" id="nav-menu" role="menubar">
+      <a href="../index.html#stories" role="menuitem">Stories</a>
+      <a href="../index.html#mission" role="menuitem">Mission</a>
+      <a href="index.html" role="menuitem" class="active">Articles</a>
+      <a href="../faq.html" role="menuitem">FAQ</a>
+      <a href="../index.html#who" role="menuitem">About</a>
+      <a href="../index.html#join" class="nav-cta" role="menuitem">Get Involved</a>
+    </div>
+    <button class="mobile-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-menu" id="menu-toggle">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+    </button>
+  </div>
+</nav>
+
+<main id="main">
+
+<!-- ─── Article Header ─── -->
+<header class="article-header">
+  <div class="container">
+    <a href="index.html" class="back-link">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+      All Articles
+    </a>
+    <div class="article-meta">
+      <span>Policy</span>
+      <span>April 2026</span>
+      <span>8 min read</span>
+    </div>
+    <h1>AI Comprehension Tools Are the Next Auxiliary Aid</h1>
+    <p class="subtitle">The ADA was built to evolve with technology. Screen readers were once novel too. Here is the legal case for recognizing AI comprehension tools under existing law.</p>
+  </div>
+</header>
+
+<!-- ─── Article Body ─── -->
+<article class="article-body">
+  <div class="container">
+
+    <p>In 1990, when Congress passed the Americans with Disabilities Act, the most advanced assistive technology for communication was the TTY device — a machine that let deaf people type messages over phone lines. By 2000, screen readers had become standard tools for blind computer users. By 2010, real-time captioning and video remote interpreting were routine accommodations.</p>
+
+    <p>None of these technologies existed when the ADA was written. All of them are now recognized as auxiliary aids — the legal term for tools and services that help people with disabilities communicate effectively. Congress planned for this. The law was deliberately designed to grow as technology grows.</p>
+
+    <p>Today, millions of people with cognitive, learning, and neurological disabilities use AI tools to understand written text. These tools summarize complex documents, explain medical jargon in plain language, and answer follow-up questions about what a paragraph means. For people with dyslexia, ADHD, intellectual disabilities, traumatic brain injuries, and autism, AI comprehension tools do something no previous technology could: they make written information understandable.</p>
+
+    <p><strong>We believe these tools should be recognized as the next auxiliary aid under existing law.</strong> No new legislation is needed. The legal principle is already there. Only the technology is new.</p>
+
+    <h2>What the law already says</h2>
+
+    <p>The ADA requires covered entities — hospitals, schools, government agencies, employers — to provide "auxiliary aids and services" so people with disabilities can communicate effectively. The statute defines auxiliary aids with a deliberately open-ended list, ending with the phrase "other similar services and actions" (42 U.S.C. Section 12103(1)).</p>
+
+    <p>The Department of Justice has been explicit about this. Its own guidance states:</p>
+
+    <blockquote>
+      <p>"The ADA does not provide an exhaustive list of the auxiliary aids that may be used... New devices are being invented and new technologies developed. What is important is effective communication."</p>
+    </blockquote>
+
+    <p>Congress was just as clear. The House committee reports on the ADA stated that the types of aids listed "are not to be considered an all inclusive list" and that "technological advances can be expected to further expand the means available" (H.R. Rep. No. 101-485, pt. 2, at 84, 108 (1990)).</p>
+
+    <p>This is not a loophole. It is the point. The auxiliary aids framework was built to accommodate technologies that did not yet exist — because Congress understood that the tools would change even as the need remained constant.</p>
+
+    <h2>The technology-evolution principle</h2>
+
+    <p>Every major assistive technology now considered a standard auxiliary aid was once new, imperfect, and met with skepticism. Consider the progression:</p>
+
+    <ul>
+      <li><strong>TTY devices (1980s-90s)</strong> — let deaf people communicate by phone. Now a standard accommodation.</li>
+      <li><strong>Screen readers (1990s)</strong> — converted visual text to audio for blind users. Now a standard accommodation.</li>
+      <li><strong>Real-time captioning / CART (1990s-2000s)</strong> — converted speech to written text for deaf users. Now a standard accommodation.</li>
+      <li><strong>Video remote interpreting (2000s)</strong> — provided sign language interpreters via video. Now codified in federal regulations (28 CFR Section 36.303(b)(1)).</li>
+      <li><strong>Text-to-speech software (2000s)</strong> — read text aloud for people with visual or reading disabilities. Now a standard accommodation.</li>
+    </ul>
+
+    <p>The pattern is always the same: a new technology emerges that helps people with disabilities access information. At first it is unfamiliar. Then it becomes accepted. Then it becomes required.</p>
+
+    <p><strong>AI comprehension tools are at the beginning of this same path.</strong> They serve the same fundamental function as every tool on that list — transforming information from a format the user cannot access into one they can. The difference is the disability they serve: not blindness or deafness, but cognitive and reading-related barriers to comprehension.</p>
+
+    <h2>Functional equivalence: the screen reader comparison</h2>
+
+    <p>A screen reader converts visual text into audio so a blind person can understand it. An AI comprehension tool converts complex text into simplified language so a person with a cognitive disability can understand it. The function is the same: making information accessible to someone who cannot process it in its original form.</p>
+
+    <p>This is not a loose analogy. The legal standard is "effective communication" — and both tools achieve it for different populations. A screen reader without audio is useless to a blind user. A dense medical document without simplification is equally useless to a person with an intellectual disability who reads at a third-grade level.</p>
+
+    <p>The ADA explicitly includes "reading" and "communicating" among the major life activities it protects (42 U.S.C. Section 12102(2)(A)). People whose disabilities substantially limit reading comprehension are entitled to auxiliary aids just as much as people whose disabilities affect vision or hearing.</p>
+
+    <h2>The comprehension gap is real and measured</h2>
+
+    <p>This is not a theoretical problem. The gap between how documents are written and how people can read them is enormous and well-documented:</p>
+
+    <ul>
+      <li><strong>Hospital discharge instructions</strong> are written at a 10th-grade reading level on average. The AMA recommends a 6th-grade level. A 2024 study in JAMA Network Open found that 88.7% of discharge summaries exceed a 7th-grade reading level.</li>
+      <li><strong>Medicaid renewal applications</strong> are written at an 11th- to 18th-grade reading level (mean: 15.5), while the average Medicaid enrollee reads at a 5th-grade level — a gap of 6 to 13 grade levels.</li>
+      <li><strong>IEP documents</strong> for special education students score at a 9.9 to 12.0 grade level. Only 13.3% of parents answer all five IEP comprehension questions correctly.</li>
+    </ul>
+
+    <p>Fourteen percent of American adults — roughly 30 million people — score Below Basic in prose literacy. Sixty-one million Americans live with a disability. For people at the intersection of these groups, the documents that control access to healthcare, education, benefits, and employment may as well be written in a foreign language.</p>
+
+    <h2>AI tools actually work for this</h2>
+
+    <p>The question of whether AI comprehension tools are effective enough to serve as auxiliary aids is not a matter of speculation. Peer-reviewed research has answered it:</p>
+
+    <ul>
+      <li>A 2024 study in <strong>JAMA Network Open</strong> found that GPT-4 transformed 50 hospital discharge summaries with dramatic results: understandability scores increased from 13% to 81%, reading level dropped from 11th grade to 6th grade, and word count decreased from 1,520 to 338 — all while preserving clinical accuracy.</li>
+      <li>Research published in the <strong>International Journal of Medical Informatics (2024)</strong> found that AI reduced neurosurgery abstracts from a 12th-grade to a 5th-grade reading level with over 95% content preservation.</li>
+      <li>A biomedical text simplification study achieved <strong>92-96% accuracy</strong> with 95.3% faithfulness to the original content.</li>
+    </ul>
+
+    <p>Some will object that AI tools can make mistakes. This is true — but it has never been the standard for auxiliary aids. Medical interpreters average 31 errors per clinical encounter, with 63% of those errors potentially clinically consequential (Flores et al., <em>Pediatrics</em>, 2003). Signed English transliteration achieves 61% accuracy. Automated speech recognition captioning runs at roughly 75% accuracy. None of these error rates have disqualified these technologies as auxiliary aids.</p>
+
+    <p>The legal standard is not perfection. It is "meaningful access" — established by the Supreme Court in <em>Alexander v. Choate</em> (1985). AI comprehension tools meet or exceed the accuracy of many accepted auxiliary aids.</p>
+
+    <h2>What we are asking for</h2>
+
+    <p>AI Access Alliance is asking federal agencies — the Department of Justice, HHS Office for Civil Rights, and the Department of Education OCR — to do what the statute already supports:</p>
+
+    <ol>
+      <li><strong>Recognize</strong> that AI comprehension tools may qualify as auxiliary aids under the ADA, Section 504, and Section 1557 when used by people with disabilities to understand text they are authorized to read.</li>
+      <li><strong>Clarify</strong> that blanket AI-blocking policies — on patient portals, in university classrooms, on government benefits websites — should include exceptions for authorized accessibility tools.</li>
+      <li><strong>Confirm</strong> that covered entities should consider AI comprehension tools as part of the accommodation process when requested by individuals with comprehension-related disabilities.</li>
+    </ol>
+
+    <p>We are not asking for new law. We are asking for existing law to be applied to modern tools — exactly as it was designed to be.</p>
+
+    <h2>The window is now</h2>
+
+    <p>Institutions are writing AI policies today that will determine access for years. Hospitals are deploying anti-bot measures on patient portals. Universities are issuing blanket AI bans. Government agencies are building digital services without considering AI accessibility.</p>
+
+    <p>If disability-rights perspectives are not part of these decisions, the default policies will be blanket restrictions — and the people who lose the most will be those who depend on these tools the most.</p>
+
+    <p>The law is clear. The technology works. The need is urgent. AI comprehension tools should be recognized as what they are: the next auxiliary aid in a progression that has been running for thirty-five years.</p>
+
+    <h3>Sources</h3>
+
+    <ul>
+      <li><a href="https://www.law.cornell.edu/uscode/text/42/12103" target="_blank">Americans with Disabilities Act, 42 U.S.C. Section 12103(1)</a> (definition of auxiliary aids and services)</li>
+      <li><a href="https://www.law.cornell.edu/uscode/text/42/12182" target="_blank">42 U.S.C. Section 12182(b)(2)(A)(iii)</a> (Title III effective-communication requirement)</li>
+      <li><a href="https://www.law.cornell.edu/cfr/text/28/36.303" target="_blank">28 CFR Section 36.303</a> (implementing regulations, illustrative examples of auxiliary aids)</li>
+      <li><a href="https://www.law.cornell.edu/uscode/text/42/12102" target="_blank">42 U.S.C. Section 12102(2)(A)</a> (major life activities including "reading" and "communicating")</li>
+      <li>H.R. Rep. No. 101-485, pt. 2, at 84, 108 (1990) (legislative history on technology evolution)</li>
+      <li><a href="https://www.ada.gov/resources/effective-communication/" target="_blank">ADA.gov, Effective Communication guidance</a> (DOJ interpretation of non-exhaustive list)</li>
+      <li><a href="https://supreme.justia.com/cases/federal/us/469/287/" target="_blank">Alexander v. Choate, 469 U.S. 287, 301 (1985)</a> ("meaningful access" standard)</li>
+      <li><a href="https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2815868" target="_blank">JAMA Network Open (2024)</a>, GPT-4 discharge summary simplification study</li>
+      <li><a href="https://publications.aap.org/pediatrics/article/111/1/6/28542/" target="_blank">Flores et al., Pediatrics (2003)</a>, medical interpreter error rates</li>
+      <li><a href="https://pubmed.ncbi.nlm.nih.gov/39667051/" target="_blank">Int'l J. Medical Informatics (2024)</a>, AI readability reduction studies</li>
+      <li><a href="https://archive.cdc.gov/www_cdc_gov/media/releases/2018/p0816-disability.html" target="_blank">CDC (2018)</a>, disability prevalence statistics</li>
+      <li><a href="https://nces.ed.gov/naal/" target="_blank">NAAL</a>, adult literacy statistics</li>
+      <li><a href="https://pubmed.ncbi.nlm.nih.gov/19395839/" target="_blank">Wilson et al. (2009)</a>; <a href="https://pubmed.ncbi.nlm.nih.gov/22682719/" target="_blank">Pati et al. (2012)</a>, Medicaid readability data</li>
+      <li><a href="https://dc.etsu.edu/etd/806/" target="_blank">East Tennessee State University (2003)</a>, IEP readability data</li>
+    </ul>
+
+  </div>
+</article>
+
+<!-- ─── CTA ─── -->
+<section class="article-cta" aria-label="Call to action">
+  <div class="container">
+    <p class="tagline">Everyone deserves to understand</p>
+    <p>AI Access Alliance is a disability-rights initiative building the legal, policy, and public infrastructure to ensure AI comprehension tools are recognized as accessibility accommodations under existing law.</p>
+    <a href="../index.html#join" class="btn btn-primary">Get Involved</a>
+  </div>
+</section>
+
+</main>
+
+<!-- ─── Footer ─── -->
+<footer role="contentinfo">
+  <div class="container">
+    <div>
+      <div class="footer-brand">AI<span>:</span>AA</div>
+      <p>AI Access Alliance &copy; 2026. All rights reserved.</p>
+      <p>The information on this site is for educational purposes and does not constitute legal advice.</p>
+    </div>
+    <nav class="footer-links" aria-label="Footer navigation">
+      <a href="../index.html#stories">Stories</a>
+      <a href="../index.html#mission">Mission</a>
+      <a href="index.html">Articles</a>
+      <a href="../faq.html">FAQ</a>
+      <a href="../index.html#who">About</a>
+      <a href="../index.html#join">Get Involved</a>
+    </nav>
+  </div>
+</footer>
+
+<script>
+window.addEventListener('scroll', () => {
+  document.getElementById('nav').classList.toggle('scrolled', window.scrollY > 20);
+});
+const menuToggle = document.getElementById('menu-toggle');
+const navMenu = document.getElementById('nav-menu');
+menuToggle.addEventListener('click', () => {
+  const isOpen = navMenu.classList.toggle('open');
+  menuToggle.setAttribute('aria-expanded', isOpen);
+  menuToggle.setAttribute('aria-label', isOpen ? 'Close menu' : 'Open menu');
+});
+navMenu.querySelectorAll('a').forEach(link => {
+  link.addEventListener('click', () => {
+    navMenu.classList.remove('open');
+    menuToggle.setAttribute('aria-expanded', 'false');
+    menuToggle.setAttribute('aria-label', 'Open menu');
+  });
+});
+</script>
+</body>
+</html>

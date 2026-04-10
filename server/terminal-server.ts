@@ -77,8 +77,26 @@ function submitInitialPrompt(session: Session): void {
     delete session.initialPromptTimer;
   }
 
+  // Use bracketed paste mode so newlines in the prompt are inserted literally
+  // instead of being interpreted as Enter (submit) by Claude CLI's TUI input.
+  session.pty.write("\x1b[200~");
   session.pty.write(session.initialPrompt);
+  session.pty.write("\x1b[201~");
   session.pty.write("\r");
+}
+
+// Schedule prompt submission with debounce — waits for Claude's TUI output
+// to settle before inserting text. This prevents garbled input when a
+// resize happens mid-render.
+function schedulePromptSubmit(session: Session): void {
+  if (session.initialPromptSent || session.exited) return;
+
+  if (session.initialPromptTimer) {
+    clearTimeout(session.initialPromptTimer);
+  }
+  session.initialPromptTimer = setTimeout(() => {
+    submitInitialPrompt(session);
+  }, 500);
 }
 
 // Resolve the claude binary path at startup
@@ -301,7 +319,9 @@ wss.on("connection", (ws, req) => {
       !session.initialPromptSent &&
       claudePromptReady(session.output.join(""))
     ) {
-      submitInitialPrompt(session);
+      // Debounce: wait for output to settle before submitting so a
+      // resize event doesn't garble the pasted prompt.
+      schedulePromptSubmit(session);
     }
     if (session.ws && session.ws.readyState === WebSocket.OPEN) {
       session.ws.send(data);
@@ -351,9 +371,11 @@ wss.on("connection", (ws, req) => {
   });
 
   if (session.initialPrompt) {
+    // Hard fallback in case claudePromptReady never fires.
+    // The debounced schedulePromptSubmit in onData handles the normal fast path.
     session.initialPromptTimer = setTimeout(() => {
       submitInitialPrompt(session);
-    }, 1500);
+    }, 5000);
   }
 });
 

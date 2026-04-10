@@ -21,6 +21,10 @@ All four drafted articles have been packaged and published to the website v0.2.0
 
 The articles listing page is at `articles/index.html`. The homepage (`index.html`) has been updated with an "Articles" nav link and a "Latest Articles" section.
 
+5. **AI Comprehension Tools Are the Next Auxiliary Aid** — `articles/ai-comprehension-next-auxiliary-aid.html` (Policy, 8 min)
+6. **What We're Asking For — And What We're Not** — `articles/what-we-are-asking-for.html` (Policy, 6 min)
+7. **Model Policy: How Institutions Can Get This Right** — `articles/model-policy-how-institutions-can-get-this-right.html` (Policy, 7 min)
+
 ## Drafted
 
 ### 1. When AI Is the Only Interpreter in the Room (Feature Article)
@@ -139,4 +143,4 @@ Covers: the comprehension gap (statistics + human examples), the blocking proble
 ---
 
 **Total articles drafted: 4 (1 feature article, 2 sector spotlights, 1 launch blog post)**
-**Total articles published: 4 (website v0.2.0)**
+**Total articles published: 7 (website v0.2.0) — 4 original + 3 policy articles**

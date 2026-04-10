@@ -178,6 +178,20 @@ function submitInitialPrompt(session: PtySession): void {
   session.pty.write("\r");
 }
 
+// Schedule prompt submission with debounce — waits for Claude's TUI output
+// to settle before inserting text. This prevents garbled input when a
+// WebSocket reconnection triggers a resize mid-render.
+function schedulePromptSubmit(session: PtySession): void {
+  if (session.initialPromptSent || session.exited) return;
+
+  if (session.initialPromptTimer) {
+    clearTimeout(session.initialPromptTimer);
+  }
+  session.initialPromptTimer = setTimeout(() => {
+    submitInitialPrompt(session);
+  }, 500);
+}
+
 async function syncConversationChunk(sessionId: string, chunk: string): Promise<void> {
   const meta = await readConversationMeta(sessionId);
   if (!meta) return;
@@ -366,7 +380,9 @@ function createDetachedSession(input: {
       !session.initialPromptSent &&
       claudePromptReady(session.output.join(""))
     ) {
-      submitInitialPrompt(session);
+      // Debounce: wait for output to settle before submitting so a
+      // WebSocket reconnect resize doesn't garble the pasted prompt.
+      schedulePromptSubmit(session);
     }
     void syncConversationChunk(input.sessionId, data).catch(() => {});
     if (session.ws && session.ws.readyState === WebSocket.OPEN) {
@@ -408,9 +424,11 @@ function createDetachedSession(input: {
   }
 
   if (session.initialPrompt) {
+    // Hard fallback in case claudePromptReady never fires (e.g. changed UI text).
+    // The debounced schedulePromptSubmit in onData handles the normal fast path.
     session.initialPromptTimer = setTimeout(() => {
       submitInitialPrompt(session);
-    }, 1500);
+    }, 5000);
   }
 
   return session;

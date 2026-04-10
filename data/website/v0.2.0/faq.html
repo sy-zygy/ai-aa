@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Frequently Asked Questions — AI Access Alliance</title>
+<meta name="description" content="Answers to common questions about AI Access Alliance, AI comprehension tools, disability rights, and how existing law applies to AI accessibility.">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Frequently Asked Questions — AI Access Alliance">
+<meta property="og:description" content="Answers to common questions about AI Access Alliance, AI comprehension tools, disability rights, and how existing law applies to AI accessibility.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://aiaccess.org/faq.html">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Frequently Asked Questions — AI Access Alliance">
+<meta name="twitter:description" content="Answers to common questions about AI Access Alliance, AI comprehension tools, disability rights, and how existing law applies to AI accessibility.">
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --primary: #1E3A5F;
+  --primary-light: #2a4f7a;
+  --accent: #D4A017;
+  --accent-dark: #b8890f;
+  --accent-light: #fdf6e3;
+  --neutral: #4A4A4A;
+  --neutral-light: #6b6b6b;
+  --bg: #FAFAF7;
+  --green: #2D6A4F;
+  --green-light: #e8f5ee;
+  --white: #ffffff;
+}
+
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; font-size: 18px; }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  color: var(--primary);
+  background: var(--bg);
+  line-height: 1.7;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ─── Accessibility ─── */
+.skip-link {
+  position: absolute; left: -9999px; top: 0;
+  background: var(--primary); color: var(--white);
+  padding: 0.75rem 1.5rem; z-index: 200;
+  font-weight: 600; text-decoration: none;
+  border-radius: 0 0 8px 0;
+}
+.skip-link:focus { left: 0; }
+*:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+.sr-only {
+  position: absolute; width: 1px; height: 1px;
+  overflow: hidden; clip: rect(0,0,0,0);
+  white-space: nowrap; border: 0;
+}
+
+/* ─── Nav ─── */
+#nav {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+  background: rgba(250,250,247,0.92);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(30,58,95,0.06);
+  transition: box-shadow 0.3s;
+}
+#nav.scrolled { box-shadow: 0 2px 24px rgba(30,58,95,0.08); }
+#nav .container {
+  display: flex; align-items: center; justify-content: space-between;
+  height: 68px; max-width: 1100px; margin: 0 auto; padding: 0 2rem;
+}
+.nav-logo {
+  font-weight: 800; font-size: 1.15rem; color: var(--primary);
+  text-decoration: none; letter-spacing: -0.02em;
+}
+.nav-logo span { color: var(--accent); }
+.nav-links { display: flex; gap: 1.75rem; align-items: center; }
+.nav-links a {
+  text-decoration: none; color: var(--neutral);
+  font-size: 0.83rem; font-weight: 500; transition: color 0.2s;
+}
+.nav-links a:hover, .nav-links a:focus { color: var(--primary); }
+.nav-links a.active { color: var(--primary); font-weight: 700; }
+.nav-cta {
+  background: var(--accent) !important; color: var(--primary) !important;
+  padding: 0.5rem 1.25rem; border-radius: 6px;
+  font-weight: 700 !important; transition: background 0.2s !important;
+}
+.nav-cta:hover, .nav-cta:focus { background: var(--accent-dark) !important; }
+.mobile-toggle { display: none; background: none; border: none; cursor: pointer; color: var(--primary); }
+
+/* ─── Page Header ─── */
+.page-header {
+  padding-top: calc(68px + 4rem);
+  padding-bottom: 3rem;
+  background: var(--white);
+  border-bottom: 1px solid rgba(30,58,95,0.06);
+}
+.page-header .container {
+  max-width: 800px; margin: 0 auto; padding: 0 2rem;
+}
+.page-header .section-label {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.67rem; text-transform: uppercase;
+  letter-spacing: 0.12em; color: var(--green); font-weight: 500;
+  margin-bottom: 1.25rem;
+}
+.page-header h1 {
+  font-size: clamp(1.8rem, 4vw, 2.6rem);
+  font-weight: 800; line-height: 1.2; letter-spacing: -0.02em;
+  margin-bottom: 1.25rem;
+}
+.page-header .subtitle {
+  font-size: 1.1rem; color: var(--neutral); line-height: 1.7;
+  max-width: 620px;
+}
+
+/* ─── FAQ Content ─── */
+.faq-body {
+  padding: 3.5rem 0 5rem;
+}
+.faq-body .container {
+  max-width: 800px; margin: 0 auto; padding: 0 2rem;
+}
+
+.faq-category {
+  margin-bottom: 3rem;
+}
+.faq-category-label {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.67rem; text-transform: uppercase;
+  letter-spacing: 0.12em; color: var(--green); font-weight: 500;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 2px solid var(--green-light);
+}
+
+.faq-item {
+  margin-bottom: 1rem;
+  border: 1px solid rgba(30,58,95,0.06);
+  border-radius: 10px;
+  background: var(--white);
+  overflow: hidden;
+  transition: box-shadow 0.3s;
+}
+.faq-item:hover {
+  box-shadow: 0 2px 12px rgba(30,58,95,0.04);
+}
+
+.faq-question {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.25rem 1.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--primary);
+  text-align: left;
+  line-height: 1.4;
+  gap: 1rem;
+}
+.faq-question:hover { color: var(--primary-light); }
+
+.faq-icon {
+  width: 20px; height: 20px; flex-shrink: 0;
+  transition: transform 0.3s;
+  color: var(--accent);
+}
+.faq-item.open .faq-icon {
+  transform: rotate(45deg);
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, padding 0.3s ease;
+}
+.faq-item.open .faq-answer {
+  max-height: 600px;
+}
+
+.faq-answer-inner {
+  padding: 0 1.5rem 1.5rem;
+}
+.faq-answer-inner p {
+  font-size: 0.95rem; color: var(--neutral); line-height: 1.8;
+  margin-bottom: 1rem;
+}
+.faq-answer-inner p:last-child { margin-bottom: 0; }
+.faq-answer-inner p strong { color: var(--primary); }
+.faq-answer-inner ul {
+  margin-bottom: 1rem; padding-left: 1.5rem;
+}
+.faq-answer-inner li {
+  font-size: 0.95rem; color: var(--neutral); line-height: 1.8;
+  margin-bottom: 0.4rem;
+}
+.faq-answer-inner li strong { color: var(--primary); }
+
+/* ─── CTA ─── */
+.page-cta {
+  padding: 3.5rem 0;
+  background: var(--primary);
+  color: var(--white);
+  text-align: center;
+}
+.page-cta .container {
+  max-width: 600px; margin: 0 auto; padding: 0 2rem;
+}
+.page-cta .tagline {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.72rem; text-transform: uppercase;
+  letter-spacing: 0.12em; color: var(--accent);
+  font-weight: 500; margin-bottom: 1rem;
+}
+.page-cta p {
+  font-size: 1.1rem; line-height: 1.6; margin-bottom: 1.5rem;
+  color: rgba(250,250,247,0.8);
+}
+.btn {
+  display: inline-flex; align-items: center; gap: 0.5rem;
+  padding: 0.85rem 1.75rem; border-radius: 8px;
+  font-weight: 700; font-size: 0.9rem; text-decoration: none;
+  transition: all 0.25s; cursor: pointer; border: none;
+  font-family: inherit;
+}
+.btn-primary { background: var(--accent); color: var(--primary); }
+.btn-primary:hover, .btn-primary:focus { background: var(--accent-dark); transform: translateY(-1px); box-shadow: 0 4px 16px rgba(212,160,23,0.3); }
+
+/* ─── Footer ─── */
+footer {
+  padding: 3rem 0;
+  border-top: 1px solid rgba(30,58,95,0.06);
+  background: var(--bg);
+}
+footer .container {
+  display: flex; justify-content: space-between; align-items: center;
+  flex-wrap: wrap; gap: 1rem;
+  max-width: 1100px; margin: 0 auto; padding: 0 2rem;
+}
+.footer-brand { font-weight: 800; font-size: 1rem; color: var(--primary); }
+.footer-brand span { color: var(--accent); }
+footer p { font-size: 0.78rem; color: var(--neutral-light); }
+.footer-links { display: flex; gap: 1.5rem; }
+.footer-links a {
+  font-size: 0.78rem; color: var(--neutral); text-decoration: none;
+  transition: color 0.2s;
+}
+.footer-links a:hover, .footer-links a:focus { color: var(--primary); }
+
+/* ─── Responsive ─── */
+@media (max-width: 900px) {
+  .nav-links { display: none; flex-direction: column; position: absolute; top: 68px; left: 0; right: 0; background: var(--bg); padding: 1.5rem 2rem; border-bottom: 1px solid rgba(30,58,95,0.08); gap: 1rem; }
+  .nav-links.open { display: flex; }
+  .mobile-toggle { display: block; }
+}
+@media (max-width: 600px) {
+  html { font-size: 16px; }
+  .page-header h1 { font-size: 1.6rem; }
+  .faq-question { font-size: 0.92rem; padding: 1rem 1.25rem; }
+  .faq-answer-inner { padding: 0 1.25rem 1.25rem; }
+}
+</style>
+</head>
+<body>
+
+<a href="#main" class="skip-link">Skip to main content</a>
+
+<!-- ─── Nav ─── -->
+<nav id="nav" role="navigation" aria-label="Main navigation">
+  <div class="container">
+    <a href="index.html" class="nav-logo" aria-label="AI Access Alliance home">AI<span>:</span>AA</a>
+    <div class="nav-links" id="nav-menu" role="menubar">
+      <a href="index.html#stories" role="menuitem">Stories</a>
+      <a href="index.html#mission" role="menuitem">Mission</a>
+      <a href="articles/index.html" role="menuitem">Articles</a>
+      <a href="faq.html" role="menuitem" class="active">FAQ</a>
+      <a href="index.html#who" role="menuitem">About</a>
+      <a href="index.html#join" class="nav-cta" role="menuitem">Get Involved</a>
+    </div>
+    <button class="mobile-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-menu" id="menu-toggle">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+    </button>
+  </div>
+</nav>
+
+<main id="main">
+
+<!-- ─── Page Header ─── -->
+<header class="page-header">
+  <div class="container">
+    <div class="section-label">Frequently Asked Questions</div>
+    <h1>Common questions about AI access and disability rights</h1>
+    <p class="subtitle">Quick answers about what AI Access Alliance does, what we mean by AI comprehension tools, and why existing law already supports this work.</p>
+  </div>
+</header>
+
+<!-- ─── FAQ Content ─── -->
+<section class="faq-body" aria-label="Frequently asked questions">
+  <div class="container">
+
+    <!-- Category: The Basics -->
+    <div class="faq-category">
+      <div class="faq-category-label">The Basics</div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          What is AI Access Alliance?
+          <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+        </button>
+        <div class="faq-answer" role="region">
+          <div class="faq-answer-inner">
+            <p>AI Access Alliance (AI-AA) is a disability-rights initiative focused on one specific goal: getting AI comprehension tools recognized as legitimate accessibility accommodations under existing law.</p>
+            <p>We are not a tech lobby. We do not represent AI companies. We build the legal, policy, and public infrastructure needed so that people who depend on AI to understand essential information are protected by the same civil-rights laws that protect people who use screen readers, sign-language interpreters, and other assistive technologies.</p>
+            <p>Our tagline is simple: <strong>Everyone deserves to understand.</strong></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          What do you mean by "AI comprehension tools"?
+          <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+        </button>
+        <div class="faq-answer" role="region">
+          <div class="faq-answer-inner">
+            <p>AI comprehension tools are software that helps people understand written text. They work by:</p>
+            <ul>
+              <li><strong>Summarizing</strong> long documents into key points</li>
+              <li><strong>Explaining</strong> complex passages in simpler language</li>
+              <li><strong>Defining</strong> technical, legal, or medical terms in context</li>
+              <li><strong>Reformatting</strong> dense text into bullet points or step-by-step instructions</li>
+              <li><strong>Answering clarifying questions</strong> about what a passage means</li>
+            </ul>
+            <p>These are tools that help someone <strong>understand</strong> information they already have the right to access. We are not talking about AI that generates essays, writes code, takes tests, or acts on someone's behalf. The distinction between comprehension and generation is central to our legal argument.</p>
+            <p><a href="what-is-ai-comprehension.html" style="color: var(--accent-dark); font-weight: 600;">Read our full explainer on AI comprehension tools &rarr;</a></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          What exactly are you asking federal agencies to do?
+          <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+        </button>
+        <div class="faq-answer" role="region">
+          <div class="faq-answer-inner">
+            <p>We are asking the federal agencies that enforce disability-rights law &mdash; the Department of Justice, HHS Office for Civil Rights, and the Department of Education Office for Civil Rights &mdash; to issue guidance that:</p>
+            <ul>
+              <li>Recognizes user-authorized AI comprehension tools as a category of <strong>auxiliary aid</strong> under the ADA and related statutes</li>
+              <li>Clarifies that blocking these tools without providing equally effective alternatives <strong>may constitute</strong> an accessibility barrier</li>
+              <li>Provides model language for hospitals, schools, and government agencies to update their AI policies with disability accommodation exemptions</li>
+            </ul>
+            <p>We are not asking for new legislation. The ADA's auxiliary-aids framework was deliberately designed to evolve with technology. Screen readers, video captioning, and real-time sign-language interpretation were all once novel &mdash; they are now standard accommodations. AI comprehension tools are the next step in that same progression.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Category: The Legal Argument -->
+    <div class="faq-category">
+      <div class="faq-category-label">The Legal Argument</div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          Does the ADA really cover this?
+          <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+        </button>
+        <div class="faq-answer" role="region">
+          <div class="faq-answer-inner">
+            <p>The ADA requires covered entities &mdash; including hospitals, schools, and government agencies &mdash; to provide "auxiliary aids and services" to ensure effective communication with people who have disabilities. Congress deliberately wrote this definition to be <strong>non-exhaustive and technology-neutral</strong> so it could evolve as new tools emerged.</p>
+            <p>The law covers people whose disability affects "major life activities," which explicitly include <strong>reading</strong> and <strong>communicating</strong>. People with cognitive disabilities, learning disabilities like dyslexia, ADHD, traumatic brain injuries, and autism often cannot independently comprehend complex written text. AI comprehension tools serve the same function for these individuals as screen readers serve for blind users: they transform information into a format the person can understand.</p>
+            <p>This is not a new legal theory. It is a straightforward application of the same principle that has expanded auxiliary aids from TTY devices in 1990 to video remote interpreting in 2010 to real-time automated captioning today.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          How is this different from arguing AI should be unregulated?
+          <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+        </button>
+        <div class="faq-answer" role="region">
+          <div class="faq-answer-inner">
+            <p>We are <strong>not</strong> making a general argument about AI regulation. We are making a narrow, specific argument about one use case: a person with a disability using AI to understand text they already have the right to read.</p>
+            <p>There are many legitimate reasons to regulate AI. We support thoughtful AI governance. But we believe there is a clear line between regulating how AI is built and deployed broadly, and blocking a person with a disability from using an assistive tool to understand their own medical records.</p>
+            <p>Our argument does <strong>not</strong> support:</p>
+            <ul>
+              <li>Generalized scraping rights for AI systems</li>
+              <li>Autonomous agents accessing systems without user direction</li>
+              <li>Bypassing copyright, paywalls, or access controls for non-disability purposes</li>
+              <li>Any claim that "all AI tools should have access to everything"</li>
+            </ul>
+            <p>We are asking for the same thing disability law has always asked for: that institutions not block the tools people need to understand information they are entitled to access.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          I rely on AI to understand things &mdash; what are my rights?
+          <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+        </button>
+        <div class="faq-answer" role="region">
+          <div class="faq-answer-inner">
+            <p>If you have a disability that affects your ability to read and understand written text, you may have the right to request AI comprehension tools as an accommodation under the Americans with Disabilities Act and related laws.</p>
+            <p>This area of law is still developing &mdash; which is exactly why AI Access Alliance exists. Today, there is no federal agency guidance that specifically names AI comprehension tools as auxiliary aids. But the legal framework that protects screen readers and sign-language interpreters may also protect the AI tools you depend on.</p>
+            <p><a href="know-your-rights.html" style="color: var(--accent-dark); font-weight: 600;">Read our Know Your Rights guide for specific steps you can take &rarr;</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Category: Common Concerns -->
+    <div class="faq-category">
+      <div class="faq-category-label">Common Concerns</div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          Isn't AI cheating in schools?
+          <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+        </button>
+        <div class="faq-answer" role="region">
+          <div class="faq-answer-inner">
+            <p>Using AI to <strong>write</strong> an essay is fundamentally different from using AI to <strong>understand</strong> an assignment. We draw a clear line between comprehension and generation.</p>
+            <p>A student with dyslexia who uses AI to understand what a reading assignment says is doing the same thing as a student who uses a dictionary, a tutor, or extra office hours. The comprehension tool does not produce the student's work &mdash; it helps the student access the material so they can do their own work.</p>
+            <p>Schools have legitimate concerns about academic integrity. We share those concerns. But blanket AI bans that make no exception for students with documented disabilities may violate Section 504 of the Rehabilitation Act, which requires individualized assessment of accommodations.</p>
+            <p>The goal is not to override academic integrity. It is to ensure that AI policies include disability accommodation exemptions &mdash; the same way testing policies already exempt students who use screen readers or extended time.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          What about patient data privacy and HIPAA?
+          <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+        </button>
+        <div class="faq-answer" role="region">
+          <div class="faq-answer-inner">
+            <p>Privacy is a legitimate and important concern. We take it seriously.</p>
+            <p>Our argument is specifically about <strong>user-authorized</strong> AI access. When a patient decides to use an AI tool to understand their own medical records, that is the patient exercising control over their own health information &mdash; the same principle that underpins HIPAA's patient access rights and CMS Patient Access API rules.</p>
+            <p>Hospitals and health systems should implement appropriate safeguards: data encryption, access logging, clear consent mechanisms. But blocking AI comprehension tools entirely &mdash; without providing an equally effective alternative for patients who cannot understand their records &mdash; addresses a privacy concern by creating an accessibility barrier.</p>
+            <p>Good policy addresses both concerns at once. Our model institutional policies include privacy-protective approaches that still allow comprehension access.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          Is AI Access Alliance funded by AI companies? Are you independent?
+          <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+        </button>
+        <div class="faq-answer" role="region">
+          <div class="faq-answer-inner">
+            <p>We are transparent about our funding model: corporate sponsors &mdash; including AI companies &mdash; fund the work. A disability-led advisory council governs the mission. These two functions are structurally separated by what we call the <strong>sponsor-mission firewall</strong>.</p>
+            <p>Here is how it works:</p>
+            <ul>
+              <li>Sponsor agreements include explicit provisions that <strong>funders cannot influence legal positions, policy recommendations, or coalition priorities</strong></li>
+              <li>The advisory council &mdash; composed of disability-rights advocates and people with lived experience &mdash; sets mission direction</li>
+              <li>All legal and policy positions are developed independently of sponsor input</li>
+            </ul>
+            <p>We acknowledge the tension openly. The reason the firewall exists is precisely because AI companies have a financial interest in expanded AI access. Our credibility depends on our legal and policy positions being driven by disability-rights principles, not industry interest. The firewall is non-negotiable.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Category: Getting Involved -->
+    <div class="faq-category">
+      <div class="faq-category-label">Getting Involved</div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          How can I help or get involved?
+          <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+        </button>
+        <div class="faq-answer" role="region">
+          <div class="faq-answer-inner">
+            <p>There are several ways to participate:</p>
+            <ul>
+              <li><strong>Share your story:</strong> If you rely on AI to understand important information, <a href="share-your-story.html" style="color: var(--accent-dark); font-weight: 600;">tell us about your experience</a>. Real stories are the most powerful evidence in this work.</li>
+              <li><strong>Volunteer:</strong> We need disability-rights advocates, legal researchers, accessibility practitioners, and people with lived experience. Email <a href="mailto:volunteer@aiaccess.org" style="color: var(--accent-dark); font-weight: 600;">volunteer@aiaccess.org</a>.</li>
+              <li><strong>Join the coalition:</strong> If your organization works on disability rights, legal aid, or accessibility, <a href="mailto:coalition@aiaccess.org" style="color: var(--accent-dark); font-weight: 600;">reach out about coalition membership</a>.</li>
+              <li><strong>Become a sponsor:</strong> Corporate sponsors fund the legal research, policy development, and public education that drive this work. Email <a href="mailto:sponsors@aiaccess.org" style="color: var(--accent-dark); font-weight: 600;">sponsors@aiaccess.org</a>.</li>
+              <li><strong>Spread the word:</strong> Share our articles and resources. The more people who understand this issue, the stronger the movement becomes.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          I have a story to share &mdash; how do I reach you?
+          <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+        </button>
+        <div class="faq-answer" role="region">
+          <div class="faq-answer-inner">
+            <p>Your experience matters deeply to this work. Real stories from real people are the most compelling evidence we can present to policymakers and institutions.</p>
+            <p>We have a dedicated page where you can share your story on your own terms: <a href="share-your-story.html" style="color: var(--accent-dark); font-weight: 600;">Share Your Story &rarr;</a></p>
+            <p>You control what gets shared. You can remain anonymous. You choose how much detail to include. We will never publish your story without your explicit permission.</p>
+            <p>If you prefer email, you can reach us at <a href="mailto:stories@aiaccess.org" style="color: var(--accent-dark); font-weight: 600;">stories@aiaccess.org</a>.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ─── CTA ─── -->
+<section class="page-cta" aria-label="Call to action">
+  <div class="container">
+    <p class="tagline">Everyone deserves to understand</p>
+    <p>Have a question we didn't answer? We'd love to hear from you.</p>
+    <a href="mailto:info@aiaccess.org" class="btn btn-primary">Contact Us</a>
+  </div>
+</section>
+
+</main>
+
+<!-- ─── Footer ─── -->
+<footer role="contentinfo">
+  <div class="container">
+    <div>
+      <div class="footer-brand">AI<span>:</span>AA</div>
+      <p>AI Access Alliance &copy; 2026. All rights reserved.</p>
+      <p>The information on this site is for educational purposes and does not constitute legal advice.</p>
+    </div>
+    <nav class="footer-links" aria-label="Footer navigation">
+      <a href="index.html#stories">Stories</a>
+      <a href="index.html#mission">Mission</a>
+      <a href="articles/index.html">Articles</a>
+      <a href="faq.html">FAQ</a>
+      <a href="index.html#who">About</a>
+      <a href="index.html#join">Get Involved</a>
+    </nav>
+  </div>
+</footer>
+
+<script>
+// Nav scroll effect
+window.addEventListener('scroll', () => {
+  document.getElementById('nav').classList.toggle('scrolled', window.scrollY > 20);
+});
+
+// Mobile menu toggle
+const menuToggle = document.getElementById('menu-toggle');
+const navMenu = document.getElementById('nav-menu');
+menuToggle.addEventListener('click', () => {
+  const isOpen = navMenu.classList.toggle('open');
+  menuToggle.setAttribute('aria-expanded', isOpen);
+  menuToggle.setAttribute('aria-label', isOpen ? 'Close menu' : 'Open menu');
+});
+navMenu.querySelectorAll('a').forEach(link => {
+  link.addEventListener('click', () => {
+    navMenu.classList.remove('open');
+    menuToggle.setAttribute('aria-expanded', 'false');
+    menuToggle.setAttribute('aria-label', 'Open menu');
+  });
+});
+
+// FAQ accordion
+document.querySelectorAll('.faq-question').forEach(button => {
+  button.addEventListener('click', () => {
+    const item = button.parentElement;
+    const isOpen = item.classList.contains('open');
+
+    // Close all other items
+    document.querySelectorAll('.faq-item.open').forEach(openItem => {
+      if (openItem !== item) {
+        openItem.classList.remove('open');
+        openItem.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+      }
+    });
+
+    // Toggle current item
+    item.classList.toggle('open');
+    button.setAttribute('aria-expanded', !isOpen);
+  });
+});
+</script>
+</body>
+</html>
